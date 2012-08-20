@@ -1,0 +1,256 @@
+#!/bin/bash
+#==================================================================================================
+#
+#  Compilation test script for the Blaze benchmark suite
+#
+#  Copyright (C) 2011 Klaus Iglberger
+#
+#  This file is part of the Blaze library. This library is free software; you can redistribute
+#  it and/or modify it under the terms of the GNU General Public License as published by the
+#  Free Software Foundation; either version 3, or (at your option) any later version.
+#
+#  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+#  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#  See the GNU General Public License for more details.
+#
+#  You should have received a copy of the GNU General Public License along with a special
+#  exception for linking and compiling against the Blaze library, the so-called "runtime
+#  exception"; see the file COPYING. If not, see http://www.gnu.org/licenses/.
+#
+#==================================================================================================
+
+
+# Environment configuration
+SCRIPT_PATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+BLAZEMARK_PATH=$SCRIPT_PATH/../../blaze/blazemark
+
+
+
+
+#==================================================================================================
+# Automatic make
+#==================================================================================================
+
+make -f $BLAZEMARK_PATH/Makefile clean ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile       ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile clean ; if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# First manual make
+#==================================================================================================
+
+make -f $BLAZEMARK_PATH/Makefile dvecdvecadd    ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile dvecsvecadd    ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile svecdvecadd    ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile svecsvecadd    ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile dvecdvecsub    ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile dvecdvecmult   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile dvecsvecmult   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile svecdvecmult   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile svecsvecmult   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile dvecscalarmult ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile svecscalarmult ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile daxpy          ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tdvecdvecmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tdvecsvecmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tsvecdvecmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tsvecsvecmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile dvectdvecmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile dvectsvecmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile svectdvecmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile svectsvecmult  ; if [ $? != 0 ]; then exit 1; fi
+
+make -f $BLAZEMARK_PATH/Makefile dmatdvecmult   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tdmatdvecmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile dmatsvecmult   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tdmatsvecmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile smatdvecmult   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tsmatdvecmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile smatsvecmult   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tsmatsvecmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tdvecdmatmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tdvectdmatmult ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tsvecdmatmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tsvectdmatmult ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tdvecsmatmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tdvectsmatmult ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tsvecsmatmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tsvectsmatmult ; if [ $? != 0 ]; then exit 1; fi
+
+make -f $BLAZEMARK_PATH/Makefile dmattrans      ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile smattrans      ; if [ $? != 0 ]; then exit 1; fi
+
+make -f $BLAZEMARK_PATH/Makefile dmatdmatadd    ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile dmattdmatadd   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tdmatdmatadd   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tdmattdmatadd  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile dmatsmatadd    ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile dmattsmatadd   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tdmatsmatadd   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tdmattsmatadd  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile smatdmatadd    ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile smattdmatadd   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tsmatdmatadd   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tsmattdmatadd  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile smatsmatadd    ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile smattsmatadd   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tsmatsmatadd   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tsmattsmatadd  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile dmatdmatsub    ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile dmatscalarmult ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile smatscalarmult ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile dmatdmatmult   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile dmattdmatmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tdmatdmatmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tdmattdmatmult ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile dmatsmatmult   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile dmattsmatmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tdmatsmatmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tdmattsmatmult ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile smatdmatmult   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile smattdmatmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tsmatdmatmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tsmattdmatmult ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile smatsmatmult   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile smattsmatmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tsmatsmatmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tsmattsmatmult ; if [ $? != 0 ]; then exit 1; fi
+
+make -f $BLAZEMARK_PATH/Makefile vec3vec3add    ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile vec6vec6add    ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile mat3vec3mult   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tmat3vec3mult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile mat6vec6mult   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tmat6vec6mult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile mat3mat3add    ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tmat3tmat3add  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile mat6mat6add    ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tmat6tmat6add  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile mat3mat3mult   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile mat3tmat3mult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tmat3mat3mult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tmat3tmat3mult ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile mat6mat6mult   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile mat6tmat6mult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tmat6mat6mult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tmat6tmat6mult ; if [ $? != 0 ]; then exit 1; fi
+
+make -f $BLAZEMARK_PATH/Makefile complex1       ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile complex2       ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile complex3       ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile complex4       ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile complex5       ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile complex6       ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile complex7       ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile complex8       ; if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Second manual make
+#==================================================================================================
+
+make -f $BLAZEMARK_PATH/Makefile dvecdvecadd    ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile dvecsvecadd    ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile svecdvecadd    ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile svecsvecadd    ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile dvecdvecsub    ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile dvecdvecmult   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile dvecsvecmult   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile svecdvecmult   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile svecsvecmult   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile dvecscalarmult ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile svecscalarmult ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile daxpy          ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tdvecdvecmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tdvecsvecmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tsvecdvecmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tsvecsvecmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile dvectdvecmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile dvectsvecmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile svectdvecmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile svectsvecmult  ; if [ $? != 0 ]; then exit 1; fi
+
+make -f $BLAZEMARK_PATH/Makefile dmatdvecmult   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tdmatdvecmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile dmatsvecmult   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tdmatsvecmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile smatdvecmult   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tsmatdvecmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile smatsvecmult   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tsmatsvecmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tdvecdmatmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tdvectdmatmult ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tsvecdmatmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tsvectdmatmult ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tdvecsmatmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tdvectsmatmult ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tsvecsmatmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tsvectsmatmult ; if [ $? != 0 ]; then exit 1; fi
+
+make -f $BLAZEMARK_PATH/Makefile dmattrans      ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile smattrans      ; if [ $? != 0 ]; then exit 1; fi
+
+make -f $BLAZEMARK_PATH/Makefile dmatdmatadd    ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile dmattdmatadd   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tdmatdmatadd   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tdmattdmatadd  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile dmatsmatadd    ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile dmattsmatadd   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tdmatsmatadd   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tdmattsmatadd  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile smatdmatadd    ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile smattdmatadd   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tsmatdmatadd   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tsmattdmatadd  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile smatsmatadd    ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile smattsmatadd   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tsmatsmatadd   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tsmattsmatadd  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile dmatdmatsub    ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile dmatscalarmult ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile smatscalarmult ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile dmatdmatmult   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile dmattdmatmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tdmatdmatmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tdmattdmatmult ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile dmatsmatmult   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile dmattsmatmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tdmatsmatmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tdmattsmatmult ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile smatdmatmult   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile smattdmatmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tsmatdmatmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tsmattdmatmult ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile smatsmatmult   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile smattsmatmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tsmatsmatmult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tsmattsmatmult ; if [ $? != 0 ]; then exit 1; fi
+
+make -f $BLAZEMARK_PATH/Makefile vec3vec3add    ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile vec6vec6add    ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile mat3vec3mult   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tmat3vec3mult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile mat6vec6mult   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tmat6vec6mult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile mat3mat3add    ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tmat3tmat3add  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile mat6mat6add    ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tmat6tmat6add  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile mat3mat3mult   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile mat3tmat3mult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tmat3mat3mult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tmat3tmat3mult ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile mat6mat6mult   ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile mat6tmat6mult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tmat6mat6mult  ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile tmat6tmat6mult ; if [ $? != 0 ]; then exit 1; fi
+
+make -f $BLAZEMARK_PATH/Makefile complex1       ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile complex2       ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile complex3       ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile complex4       ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile complex5       ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile complex6       ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile complex7       ; if [ $? != 0 ]; then exit 1; fi
+make -f $BLAZEMARK_PATH/Makefile complex8       ; if [ $? != 0 ]; then exit 1; fi

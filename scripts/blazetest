@@ -1,0 +1,1855 @@
+#!/bin/bash
+#==================================================================================================
+#
+#  Run script for the Blaze test suite
+#
+#  Copyright (C) 2011 Klaus Iglberger
+#
+#  This file is part of the Blaze library. This library is free software; you can redistribute
+#  it and/or modify it under the terms of the GNU General Public License as published by the
+#  Free Software Foundation; either version 3, or (at your option) any later version.
+#
+#  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+#  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#  See the GNU General Public License for more details.
+#
+#  You should have received a copy of the GNU General Public License along with a special
+#  exception for linking and compiling against the Blaze library, the so-called "runtime
+#  exception"; see the file COPYING. If not, see http://www.gnu.org/licenses/.
+#
+#==================================================================================================
+
+
+# Environment configuration
+SCRIPT_PATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+MATHTEST_PATH=$SCRIPT_PATH/../../blaze/blazetest/src/mathtest
+
+
+
+
+#==================================================================================================
+# Dense vector/dense vector addition
+#==================================================================================================
+
+echo " Running dense vector/dense vector addition tests..."
+$MATHTEST_PATH/dvecdvecadd/V2aV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/V2aV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/V2aVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/V2aVDb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/V2bV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/V2bV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/V2bVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/V2bVDb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvecdvecadd/V3aV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/V3aV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/V3aVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/V3aVDb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/V3bV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/V3bV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/V3bVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/V3bVDb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvecdvecadd/V4aV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/V4aV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/V4aVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/V4aVDb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/V4bV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/V4bV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/V4bVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/V4bVDb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvecdvecadd/V5aV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/V5aV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/V5aVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/V5aVDb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/V5bV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/V5bV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/V5bVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/V5bVDb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvecdvecadd/V6aV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/V6aV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/V6aVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/V6aVDb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/V6bV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/V6bV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/V6bVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/V6bVDb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvecdvecadd/VDaV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/VDaV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/VDaV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/VDaV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/VDaV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/VDaV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/VDaV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/VDaV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/VDaV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/VDaV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/VDaVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/VDaVDb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/VDbV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/VDbV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/VDbV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/VDbV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/VDbV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/VDbV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/VDbV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/VDbV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/VDbV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/VDbV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/VDbVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecadd/VDbVDb; if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Dense vector/sparse vector addition
+#==================================================================================================
+
+echo " Running dense vector/sparse vector addition tests..."
+$MATHTEST_PATH/dvecsvecadd/V2aVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecadd/V2aVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecadd/V2bVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecadd/V2bVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvecsvecadd/V3aVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecadd/V3aVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecadd/V3bVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecadd/V3bVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvecsvecadd/V4aVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecadd/V4aVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecadd/V4bVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecadd/V4bVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvecsvecadd/V5aVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecadd/V5aVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecadd/V5bVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecadd/V5bVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvecsvecadd/V6aVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecadd/V6aVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecadd/V6bVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecadd/V6bVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvecsvecadd/VDaVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecadd/VDaVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecadd/VDbVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecadd/VDbVCb; if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Sparse vector/dense vector addition
+#==================================================================================================
+
+echo " Running sparse vector/dense vector addition tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecadd/VCaV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecadd/VCaV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecadd/VCaV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecadd/VCaV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecadd/VCaV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecadd/VCaV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecadd/VCaV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecadd/VCaV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecadd/VCaV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecadd/VCaV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecadd/VCaVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecadd/VCaVDb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/svecdvecadd/VCbV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecadd/VCbV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecadd/VCbV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecadd/VCbV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecadd/VCbV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecadd/VCbV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecadd/VCbV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecadd/VCbV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecadd/VCbV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecadd/VCbV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecadd/VCbVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecadd/VCbVDb; if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Sparse vector/sparse vector addition
+#==================================================================================================
+
+echo " Running sparse vector/sparse vector addition tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecsvecadd/VCaVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecsvecadd/VCaVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecsvecadd/VCbVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecsvecadd/VCbVCb; if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Dense vector/dense vector subtraction
+#==================================================================================================
+
+echo " Running dense vector/dense vector subtraction tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/V2aV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/V2aV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/V2aVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/V2aVDb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/V2bV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/V2bV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/V2bVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/V2bVDb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvecdvecsub/V3aV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/V3aV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/V3aVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/V3aVDb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/V3bV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/V3bV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/V3bVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/V3bVDb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvecdvecsub/V4aV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/V4aV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/V4aVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/V4aVDb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/V4bV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/V4bV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/V4bVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/V4bVDb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvecdvecsub/V5aV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/V5aV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/V5aVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/V5aVDb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/V5bV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/V5bV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/V5bVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/V5bVDb; if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Dense vector/dense vector multiplication
+#==================================================================================================
+
+echo " Running dense vector/dense vector multiplication tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/V2aV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/V2aV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/V2aVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/V2aVDb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/V2bV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/V2bV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/V2bVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/V2bVDb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvecdvecmult/V3aV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/V3aV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/V3aVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/V3aVDb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/V3bV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/V3bV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/V3bVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/V3bVDb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvecdvecmult/V4aV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/V4aV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/V4aVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/V4aVDb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/V4bV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/V4bV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/V4bVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/V4bVDb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvecdvecmult/V5aV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/V5aV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/V5aVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/V5aVDb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/V5bV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/V5bV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/V5bVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/V5bVDb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvecdvecmult/V6aV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/V6aV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/V6aVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/V6aVDb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/V6bV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/V6bV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/V6bVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/V6bVDb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvecdvecmult/VDaV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/VDaV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/VDaV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/VDaV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/VDaV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/VDaV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/VDaV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/VDaV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/VDaV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/VDaV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/VDaVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/VDaVDb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/VDbV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/VDbV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/VDbV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/VDbV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/VDbV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/VDbV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/VDbV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/VDbV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/VDbV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/VDbV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/VDbVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecmult/VDbVDb; if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Dense vector/sparse vector multiplication
+#==================================================================================================
+
+echo " Running dense vector/sparse vector multiplication tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecmult/V2aVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecmult/V2aVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecmult/V2bVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecmult/V2bVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvecsvecmult/V3aVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecmult/V3aVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecmult/V3bVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecmult/V3bVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvecsvecmult/V4aVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecmult/V4aVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecmult/V4bVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecmult/V4bVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvecsvecmult/V5aVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecmult/V5aVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecmult/V5bVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecmult/V5bVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvecsvecmult/V6aVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecmult/V6aVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecmult/V6bVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecmult/V6bVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvecsvecmult/VDaVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecmult/VDaVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecmult/VDbVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecmult/VDbVCb; if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Sparse vector/dense vector multiplication
+#==================================================================================================
+
+echo " Running sparse vector/dense vector multiplication tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecmult/VCaV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecmult/VCaV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecmult/VCaV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecmult/VCaV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecmult/VCaV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecmult/VCaV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecmult/VCaV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecmult/VCaV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecmult/VCaV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecmult/VCaV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecmult/VCaVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecmult/VCaVDb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/svecdvecmult/VCbV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecmult/VCbV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecmult/VCbV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecmult/VCbV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecmult/VCbV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecmult/VCbV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecmult/VCbV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecmult/VCbV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecmult/VCbV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecmult/VCbV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecmult/VCbVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecmult/VCbVDb; if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Sparse vector/sparse vector multiplication
+#==================================================================================================
+
+echo " Running sparse vector/sparse vector multiplication tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecsvecmult/VCaVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecsvecmult/VCaVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecsvecmult/VCbVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecsvecmult/VCbVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvecdvecsub/V6aV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/V6aV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/V6aVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/V6aVDb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/V6bV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/V6bV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/V6bVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/V6bVDb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvecdvecsub/VDaV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDaV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDaV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDaV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDaV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDaV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDaV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDaV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDaV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDaV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDaVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDaVDb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDbV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDbV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDbV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDbV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDbV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDbV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDbV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDbV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDbV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDbV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDbVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDbVDb; if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Dense vector/sparse vector subtraction
+#==================================================================================================
+
+echo " Running dense vector/sparse vector subtraction tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecsub/V2aVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecsub/V2aVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecsub/V2bVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecsub/V2bVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvecsvecsub/V3aVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecsub/V3aVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecsub/V3bVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecsub/V3bVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvecsvecsub/V4aVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecsub/V4aVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecsub/V4bVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecsub/V4bVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvecsvecsub/V5aVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecsub/V5aVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecsub/V5bVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecsub/V5bVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvecsvecsub/V6aVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecsub/V6aVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecsub/V6bVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecsub/V6bVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvecsvecsub/VDaVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecsub/VDaVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecsub/VDbVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecsub/VDbVCb; if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Sparse vector/dense vector subtraction
+#==================================================================================================
+
+echo " Running sparse vector/dense vector subtraction tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCaV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCaV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCaV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCaV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCaV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCaV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCaV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCaV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCaV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCaV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCaVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCaVDb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/svecdvecsub/VCbV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCbV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCbV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCbV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCbV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCbV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCbV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCbV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCbV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCbV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCbVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCbVDb; if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Sparse vector/sparse vector subtraction
+#==================================================================================================
+
+echo " Running sparse vector/sparse vector subtraction tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecsvecsub/VCaVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecsvecsub/VCaVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecsvecsub/VCbVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecsvecsub/VCbVCb; if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Dense vector/dense vector inner product
+#==================================================================================================
+
+echo " Running dense vector/dense vector inner product tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/V2aV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/V2aV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/V2aVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/V2aVDb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/V2bV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/V2bV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/V2bVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/V2bVDb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/tdvecdvecmult/V3aV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/V3aV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/V3aVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/V3aVDb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/V3bV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/V3bV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/V3bVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/V3bVDb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/tdvecdvecmult/V4aV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/V4aV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/V4aVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/V4aVDb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/V4bV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/V4bV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/V4bVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/V4bVDb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/tdvecdvecmult/V5aV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/V5aV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/V5aVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/V5aVDb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/V5bV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/V5bV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/V5bVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/V5bVDb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/tdvecdvecmult/V6aV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/V6aV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/V6aVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/V6aVDb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/V6bV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/V6bV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/V6bVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/V6bVDb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/tdvecdvecmult/VDaV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/VDaV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/VDaV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/VDaV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/VDaV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/VDaV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/VDaV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/VDaV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/VDaV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/VDaV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/VDaVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/VDaVDb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/VDbV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/VDbV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/VDbV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/VDbV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/VDbV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/VDbV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/VDbV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/VDbV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/VDbV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/VDbV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/VDbVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdvecmult/VDbVDb; if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Dense vector/sparse vector inner product
+#==================================================================================================
+
+echo " Running dense vector/sparse vector inner product tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecsvecmult/V2aVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecsvecmult/V2aVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecsvecmult/V2bVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecsvecmult/V2bVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/tdvecsvecmult/V3aVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecsvecmult/V3aVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecsvecmult/V3bVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecsvecmult/V3bVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/tdvecsvecmult/V4aVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecsvecmult/V4aVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecsvecmult/V4bVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecsvecmult/V4bVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/tdvecsvecmult/V5aVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecsvecmult/V5aVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecsvecmult/V5bVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecsvecmult/V5bVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/tdvecsvecmult/V6aVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecsvecmult/V6aVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecsvecmult/V6bVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecsvecmult/V6bVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/tdvecsvecmult/VDaVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecsvecmult/VDaVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecsvecmult/VDbVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecsvecmult/VDbVCb; if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Sparse vector/dense vector inner product
+#==================================================================================================
+
+echo " Running sparse vector/dense vector inner product tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdvecmult/VCaV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdvecmult/VCaV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdvecmult/VCbV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdvecmult/VCbV2b; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/tsvecdvecmult/VCaV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdvecmult/VCaV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdvecmult/VCbV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdvecmult/VCbV3b; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/tsvecdvecmult/VCaV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdvecmult/VCaV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdvecmult/VCbV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdvecmult/VCbV4b; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/tsvecdvecmult/VCaV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdvecmult/VCaV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdvecmult/VCbV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdvecmult/VCbV5b; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/tsvecdvecmult/VCaV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdvecmult/VCaV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdvecmult/VCbV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdvecmult/VCbV6b; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/tsvecdvecmult/VCaVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdvecmult/VCaVDb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdvecmult/VCbVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdvecmult/VCbVDb; if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Sparse vector/sparse vector inner product
+#==================================================================================================
+
+echo " Running sparse vector/sparse vector inner product tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecsvecmult/VCaVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecsvecmult/VCaVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecsvecmult/VCbVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecsvecmult/VCbVCb; if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Dense vector/dense vector outer product
+#==================================================================================================
+
+echo " Running dense vector/dense vector outer product tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V2aV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V2aV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V2aV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V2aV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V2aV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V2aV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V2aV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V2aV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V2aV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V2aV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V2aVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V2aVDb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V2bV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V2bV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V2bV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V2bV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V2bV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V2bV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V2bV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V2bV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V2bV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V2bV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V2bVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V2bVDb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvectdvecmult/V3aV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V3aV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V3aV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V3aV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V3aV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V3aV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V3aV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V3aV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V3aV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V3aV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V3aVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V3aVDb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V3bV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V3bV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V3bV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V3bV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V3bV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V3bV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V3bV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V3bV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V3bV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V3bV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V3bVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V3bVDb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvectdvecmult/V4aV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V4aV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V4aV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V4aV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V4aV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V4aV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V4aV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V4aV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V4aV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V4aV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V4aVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V4aVDb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V4bV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V4bV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V4bV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V4bV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V4bV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V4bV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V4bV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V4bV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V4bV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V4bV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V4bVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V4bVDb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvectdvecmult/V5aV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V5aV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V5aV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V5aV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V5aV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V5aV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V5aV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V5aV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V5aV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V5aV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V5aVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V5aVDb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V5bV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V5bV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V5bV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V5bV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V5bV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V5bV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V5bV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V5bV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V5bV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V5bV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V5bVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V5bVDb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvectdvecmult/V6aV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V6aV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V6aV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V6aV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V6aV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V6aV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V6aV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V6aV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V6aV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V6aV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V6aVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V6aVDb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V6bV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V6bV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V6bV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V6bV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V6bV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V6bV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V6bV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V6bV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V6bV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V6bV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V6bVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/V6bVDb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvectdvecmult/VDaV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/VDaV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/VDaV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/VDaV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/VDaV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/VDaV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/VDaV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/VDaV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/VDaV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/VDaV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/VDaVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/VDaVDb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/VDbV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/VDbV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/VDbV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/VDbV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/VDbV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/VDbV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/VDbV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/VDbV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/VDbV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/VDbV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/VDbVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectdvecmult/VDbVDb; if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Dense vector/sparse vector outer product
+#==================================================================================================
+
+echo " Running dense vector/sparse vector outer product tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectsvecmult/V2aVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectsvecmult/V2aVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectsvecmult/V2bVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectsvecmult/V2bVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvectsvecmult/V3aVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectsvecmult/V3aVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectsvecmult/V3bVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectsvecmult/V3bVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvectsvecmult/V4aVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectsvecmult/V4aVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectsvecmult/V4bVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectsvecmult/V4bVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvectsvecmult/V5aVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectsvecmult/V5aVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectsvecmult/V5bVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectsvecmult/V5bVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvectsvecmult/V6aVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectsvecmult/V6aVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectsvecmult/V6bVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectsvecmult/V6bVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvectsvecmult/VDaVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectsvecmult/VDaVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectsvecmult/VDbVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvectsvecmult/VDbVCb; if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Sparse vector/dense vector outer product
+#==================================================================================================
+
+echo " Running sparse vector/dense vector outer product tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svectdvecmult/VCaV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svectdvecmult/VCaV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svectdvecmult/VCaV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svectdvecmult/VCaV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svectdvecmult/VCaV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svectdvecmult/VCaV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svectdvecmult/VCaV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svectdvecmult/VCaV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svectdvecmult/VCaV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svectdvecmult/VCaV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svectdvecmult/VCaVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svectdvecmult/VCaVDb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/svectdvecmult/VCbV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svectdvecmult/VCbV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svectdvecmult/VCbV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svectdvecmult/VCbV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svectdvecmult/VCbV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svectdvecmult/VCbV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svectdvecmult/VCbV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svectdvecmult/VCbV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svectdvecmult/VCbV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svectdvecmult/VCbV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svectdvecmult/VCbVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svectdvecmult/VCbVDb; if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Sparse vector/sparse vector outer product
+#==================================================================================================
+
+echo " Running sparse vector/sparse vector outer product tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svectsvecmult/VCaVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svectsvecmult/VCaVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svectsvecmult/VCbVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svectsvecmult/VCbVCb; if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Dense matrix/dense vector multiplication
+#==================================================================================================
+
+echo " Running dense matrix/dense vector multiplication tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M2x2aV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M2x2aV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M2x2aVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M2x2aVDb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M2x2bV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M2x2bV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M2x2bVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M2x2bVDb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatdvecmult/M3x3aV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M3x3aV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M3x3aVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M3x3aVDb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M3x3bV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M3x3bV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M3x3bVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M3x3bVDb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatdvecmult/M4x4aV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M4x4aV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M4x4aVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M4x4aVDb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M4x4bV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M4x4bV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M4x4bVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M4x4bVDb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatdvecmult/M5x5aV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M5x5aV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M5x5aVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M5x5aVDb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M5x5bV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M5x5bV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M5x5bVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M5x5bVDb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatdvecmult/M6x6aV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M6x6aV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M6x6aVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M6x6aVDb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M6x6bV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M6x6bV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M6x6bVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M6x6bVDb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatdvecmult/M7x13aV13a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M7x13aV13b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M7x13aVDa;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M7x13aVDb;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M7x13bV13a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M7x13bV13b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M7x13bVDa;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M7x13bVDb;  if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatdvecmult/M16x8aV8a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M16x8aV8b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M16x8aVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M16x8aVDb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M16x8bV8a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M16x8bV8b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M16x8bVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/M16x8bVDb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatdvecmult/MDaV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/MDaV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/MDaV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/MDaV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/MDaV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/MDaV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/MDaV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/MDaV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/MDaV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/MDaV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/MDaVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/MDaVDb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/MDbV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/MDbV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/MDbV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/MDbV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/MDbV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/MDbV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/MDbV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/MDbV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/MDbV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/MDbV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/MDbVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdvecmult/MDbVDb; if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Dense matrix/sparse vector multiplication
+#==================================================================================================
+
+echo " Running dense matrix/sparse vector multiplication tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsvecmult/M2x2aVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsvecmult/M2x2aVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsvecmult/M2x2bVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsvecmult/M2x2bVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatsvecmult/M3x3aVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsvecmult/M3x3aVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsvecmult/M3x3bVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsvecmult/M3x3bVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatsvecmult/M4x4aVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsvecmult/M4x4aVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsvecmult/M4x4bVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsvecmult/M4x4bVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatsvecmult/M5x5aVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsvecmult/M5x5aVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsvecmult/M5x5bVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsvecmult/M5x5bVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatsvecmult/M6x6aVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsvecmult/M6x6aVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsvecmult/M6x6bVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsvecmult/M6x6bVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatsvecmult/M7x13aVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsvecmult/M7x13aVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsvecmult/M7x13bVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsvecmult/M7x13bVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatsvecmult/M16x8aVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsvecmult/M16x8aVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsvecmult/M16x8bVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsvecmult/M16x8bVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatsvecmult/MDaVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsvecmult/MDaVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsvecmult/MDbVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsvecmult/MDbVCb; if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Sparse matrix/dense vector multiplication
+#==================================================================================================
+
+echo " Running sparse matrix/dense vector multiplication tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdvecmult/MCaV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdvecmult/MCaV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdvecmult/MCaV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdvecmult/MCaV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdvecmult/MCaV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdvecmult/MCaV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdvecmult/MCaV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdvecmult/MCaV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdvecmult/MCaV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdvecmult/MCaV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdvecmult/MCaVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdvecmult/MCaVDb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/smatdvecmult/MCbV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdvecmult/MCbV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdvecmult/MCbV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdvecmult/MCbV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdvecmult/MCbV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdvecmult/MCbV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdvecmult/MCbV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdvecmult/MCbV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdvecmult/MCbV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdvecmult/MCbV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdvecmult/MCbVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdvecmult/MCbVDb; if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Sparse matrix/sparse vector multiplication
+#==================================================================================================
+
+echo " Running sparse matrix/sparse vector multiplication tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatsvecmult/MCaVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatsvecmult/MCaVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatsvecmult/MCbVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatsvecmult/MCbVCb; if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Dense vector/dense matrix multiplication
+#==================================================================================================
+
+echo " Running dense vector/dense matrix multiplication tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/V2aM2x2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/V2aM2x2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/V2aMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/V2aMDb;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/V2bM2x2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/V2bM2x2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/V2bMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/V2bMDb;   if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/tdvecdmatmult/V3aM3x3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/V3aM3x3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/V3aMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/V3aMDb;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/V3bM3x3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/V3bM3x3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/V3bMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/V3bMDb;   if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/tdvecdmatmult/V4aM4x4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/V4aM4x4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/V4aMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/V4aMDb;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/V4bM4x4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/V4bM4x4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/V4bMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/V4bMDb;   if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/tdvecdmatmult/V5aM5x5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/V5aM5x5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/V5aMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/V5aMDb;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/V5bM5x5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/V5bM5x5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/V5bMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/V5bMDb;   if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/tdvecdmatmult/V6aM6x6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/V6aM6x6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/V6aMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/V6aMDb;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/V6bM6x6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/V6bM6x6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/V6bMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/V6bMDb;   if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/tdvecdmatmult/V7aM7x13a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/V7aM7x13b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/V7bM7x13a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/V7bM7x13b; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/tdvecdmatmult/V16aM16x8a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/V16aM16x8b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/V16bM16x8a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/V16bM16x8b; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/tdvecdmatmult/VDaM2x2a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/VDaM2x2b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/VDaM3x3a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/VDaM3x3b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/VDaM4x4a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/VDaM4x4b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/VDaM5x5a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/VDaM5x5b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/VDaM6x6a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/VDaM6x6b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/VDaM7x13a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/VDaM7x13b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/VDaM16x8a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/VDaM16x8b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/VDaMDa;    if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/VDaMDb;    if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/VDbM2x2a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/VDbM2x2b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/VDbM3x3a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/VDbM3x3b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/VDbM4x4a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/VDbM4x4b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/VDbM5x5a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/VDbM5x5b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/VDbM6x6a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/VDbM6x6b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/VDbM7x13a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/VDbM7x13b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/VDbM16x8a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/VDbM16x8b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/VDbMDa;    if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecdmatmult/VDbMDb;    if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Sparse vector/dense matrix multiplication
+#==================================================================================================
+
+echo " Running sparse vector/dense matrix multiplication tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdmatmult/VCaM2x2a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdmatmult/VCaM2x2b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdmatmult/VCaM3x3a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdmatmult/VCaM3x3b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdmatmult/VCaM4x4a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdmatmult/VCaM4x4b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdmatmult/VCaM5x5a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdmatmult/VCaM5x5b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdmatmult/VCaM6x6a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdmatmult/VCaM6x6b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdmatmult/VCaM7x13a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdmatmult/VCaM7x13b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdmatmult/VCaM16x8a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdmatmult/VCaM16x8b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdmatmult/VCaMDa;    if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdmatmult/VCaMDb;    if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/tsvecdmatmult/VCbM2x2a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdmatmult/VCbM2x2b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdmatmult/VCbM3x3a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdmatmult/VCbM3x3b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdmatmult/VCbM4x4a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdmatmult/VCbM4x4b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdmatmult/VCbM5x5a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdmatmult/VCbM5x5b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdmatmult/VCbM6x6a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdmatmult/VCbM6x6b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdmatmult/VCbM7x13a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdmatmult/VCbM7x13b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdmatmult/VCbM16x8a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdmatmult/VCbM16x8b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdmatmult/VCbMDa;    if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecdmatmult/VCbMDb;    if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Dense vector/sparse matrix multiplication
+#==================================================================================================
+
+echo " Running dense vector/sparse matrix multiplication tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecsmatmult/V2aMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecsmatmult/V2aMCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecsmatmult/V2bMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecsmatmult/V2bMCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/tdvecsmatmult/V3aMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecsmatmult/V3aMCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecsmatmult/V3bMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecsmatmult/V3bMCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/tdvecsmatmult/V4aMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecsmatmult/V4aMCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecsmatmult/V4bMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecsmatmult/V4bMCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/tdvecsmatmult/V5aMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecsmatmult/V5aMCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecsmatmult/V5bMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecsmatmult/V5bMCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/tdvecsmatmult/V6aMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecsmatmult/V6aMCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecsmatmult/V6bMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecsmatmult/V6bMCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/tdvecsmatmult/VDaMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecsmatmult/VDaMCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecsmatmult/VDbMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tdvecsmatmult/VDbMCb; if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Sparse vector/sparse matrix multiplication
+#==================================================================================================
+
+echo " Running sparse vector/sparse matrix multiplication tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecsmatmult/VCaMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecsmatmult/VCaMCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecsmatmult/VCbMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/tsvecsmatmult/VCbMCb; if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Dense matrix/dense matrix addition
+#==================================================================================================
+
+echo " Running dense matrix/dense matrix addition tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M2x2aM2x2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M2x2aM2x2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M2x2aMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M2x2aMDb;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M2x2bM2x2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M2x2bM2x2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M2x2bMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M2x2bMDb;   if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatdmatadd/M3x3aM3x3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M3x3aM3x3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M3x3aMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M3x3aMDb;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M3x3bM3x3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M3x3bM3x3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M3x3bMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M3x3bMDb;   if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatdmatadd/M4x4aM4x4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M4x4aM4x4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M4x4aMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M4x4aMDb;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M4x4bM4x4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M4x4bM4x4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M4x4bMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M4x4bMDb;   if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatdmatadd/M5x5aM5x5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M5x5aM5x5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M5x5aMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M5x5aMDb;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M5x5bM5x5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M5x5bM5x5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M5x5bMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M5x5bMDb;   if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatdmatadd/M6x6aM6x6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M6x6aM6x6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M6x6aMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M6x6aMDb;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M6x6bM6x6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M6x6bM6x6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M6x6bMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M6x6bMDb;   if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatdmatadd/M7x13aM7x13a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M7x13aM7x13b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M7x13aMDa;    if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M7x13aMDb;    if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M7x13bM7x13a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M7x13bM7x13b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M7x13bMDa;    if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M7x13bMDb;    if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatdmatadd/M16x8aM16x8a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M16x8aM16x8b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M16x8aMDa;    if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M16x8aMDb;    if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M16x8bM16x8a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M16x8bM16x8b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M16x8bMDa;    if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/M16x8bMDb;    if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatdmatadd/MDaM2x2a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/MDaM2x2b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/MDaM3x3a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/MDaM3x3b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/MDaM4x4a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/MDaM4x4b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/MDaM5x5a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/MDaM5x5b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/MDaM6x6a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/MDaM6x6b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/MDaM7x13a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/MDaM7x13b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/MDaM16x8a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/MDaM16x8b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/MDaMDa;    if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/MDaMDb;    if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/MDbM2x2a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/MDbM2x2b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/MDbM3x3a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/MDbM3x3b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/MDbM4x4a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/MDbM4x4b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/MDbM5x5a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/MDbM5x5b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/MDbM6x6a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/MDbM6x6b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/MDbM7x13a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/MDbM7x13b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/MDbM16x8a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/MDbM16x8b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/MDbMDa;    if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatadd/MDbMDb;    if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Dense matrix/sparse matrix addition
+#==================================================================================================
+
+echo " Running dense matrix/sparse matrix addition tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatadd/M2x2aMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatadd/M2x2aMCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatadd/M2x2bMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatadd/M2x2bMCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatsmatadd/M3x3aMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatadd/M3x3aMCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatadd/M3x3bMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatadd/M3x3bMCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatsmatadd/M4x4aMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatadd/M4x4aMCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatadd/M4x4bMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatadd/M4x4bMCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatsmatadd/M5x5aMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatadd/M5x5aMCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatadd/M5x5bMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatadd/M5x5bMCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatsmatadd/M6x6aMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatadd/M6x6aMCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatadd/M6x6bMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatadd/M6x6bMCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatsmatadd/M7x13aMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatadd/M7x13aMCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatadd/M7x13bMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatadd/M7x13bMCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatsmatadd/M16x8aMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatadd/M16x8aMCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatadd/M16x8bMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatadd/M16x8bMCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatsmatadd/MDaMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatadd/MDaMCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatadd/MDbMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatadd/MDbMCb; if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Sparse matrix/dense matrix addition
+#==================================================================================================
+
+echo " Running sparse matrix/dense matrix addition tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatadd/MCaM2x2a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatadd/MCaM2x2b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatadd/MCaM3x3a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatadd/MCaM3x3b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatadd/MCaM4x4a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatadd/MCaM4x4b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatadd/MCaM5x5a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatadd/MCaM5x5b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatadd/MCaM6x6a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatadd/MCaM6x6b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatadd/MCaM7x13a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatadd/MCaM7x13b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatadd/MCaM16x8a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatadd/MCaM16x8b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatadd/MCaMDa;    if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatadd/MCaMDb;    if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/smatdmatadd/MCbM2x2a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatadd/MCbM2x2b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatadd/MCbM3x3a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatadd/MCbM3x3b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatadd/MCbM4x4a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatadd/MCbM4x4b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatadd/MCbM5x5a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatadd/MCbM5x5b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatadd/MCbM6x6a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatadd/MCbM6x6b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatadd/MCbM7x13a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatadd/MCbM7x13b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatadd/MCbM16x8a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatadd/MCbM16x8b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatadd/MCbMDa;    if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatadd/MCbMDb;    if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Sparse matrix/sparse matrix addition
+#==================================================================================================
+
+echo " Running sparse matrix/sparse matrix addition tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatsmatadd/MCaMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatsmatadd/MCaMCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatsmatadd/MCbMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatsmatadd/MCbMCb; if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Dense matrix/dense matrix subtraction
+#==================================================================================================
+
+echo " Running dense matrix/dense matrix subtraction tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M2x2aM2x2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M2x2aM2x2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M2x2aMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M2x2aMDb;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M2x2bM2x2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M2x2bM2x2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M2x2bMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M2x2bMDb;   if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatdmatsub/M3x3aM3x3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M3x3aM3x3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M3x3aMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M3x3aMDb;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M3x3bM3x3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M3x3bM3x3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M3x3bMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M3x3bMDb;   if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatdmatsub/M4x4aM4x4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M4x4aM4x4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M4x4aMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M4x4aMDb;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M4x4bM4x4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M4x4bM4x4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M4x4bMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M4x4bMDb;   if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatdmatsub/M5x5aM5x5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M5x5aM5x5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M5x5aMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M5x5aMDb;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M5x5bM5x5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M5x5bM5x5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M5x5bMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M5x5bMDb;   if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatdmatsub/M6x6aM6x6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M6x6aM6x6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M6x6aMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M6x6aMDb;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M6x6bM6x6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M6x6bM6x6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M6x6bMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M6x6bMDb;   if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatdmatsub/M7x13aM7x13a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M7x13aM7x13b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M7x13aMDa;    if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M7x13aMDb;    if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M7x13bM7x13a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M7x13bM7x13b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M7x13bMDa;    if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M7x13bMDb;    if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatdmatsub/M16x8aM16x8a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M16x8aM16x8b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M16x8aMDa;    if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M16x8aMDb;    if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M16x8bM16x8a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M16x8bM16x8b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M16x8bMDa;    if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/M16x8bMDb;    if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatdmatsub/MDaM2x2a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/MDaM2x2b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/MDaM3x3a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/MDaM3x3b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/MDaM4x4a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/MDaM4x4b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/MDaM5x5a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/MDaM5x5b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/MDaM6x6a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/MDaM6x6b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/MDaM7x13a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/MDaM7x13b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/MDaM16x8a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/MDaM16x8b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/MDaMDa;    if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/MDaMDb;    if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/MDbM2x2a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/MDbM2x2b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/MDbM3x3a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/MDbM3x3b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/MDbM4x4a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/MDbM4x4b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/MDbM5x5a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/MDbM5x5b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/MDbM6x6a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/MDbM6x6b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/MDbM7x13a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/MDbM7x13b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/MDbM16x8a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/MDbM16x8b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/MDbMDa;    if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatsub/MDbMDb;    if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Dense matrix/sparse matrix subtraction
+#==================================================================================================
+
+echo " Running dense matrix/sparse matrix subtraction tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatsub/M2x2aMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatsub/M2x2aMCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatsub/M2x2bMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatsub/M2x2bMCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatsmatsub/M3x3aMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatsub/M3x3aMCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatsub/M3x3bMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatsub/M3x3bMCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatsmatsub/M4x4aMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatsub/M4x4aMCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatsub/M4x4bMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatsub/M4x4bMCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatsmatsub/M5x5aMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatsub/M5x5aMCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatsub/M5x5bMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatsub/M5x5bMCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatsmatsub/M6x6aMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatsub/M6x6aMCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatsub/M6x6bMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatsub/M6x6bMCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatsmatsub/M7x13aMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatsub/M7x13aMCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatsub/M7x13bMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatsub/M7x13bMCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatsmatsub/M16x8aMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatsub/M16x8aMCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatsub/M16x8bMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatsub/M16x8bMCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatsmatsub/MDaMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatsub/MDaMCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatsub/MDbMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatsub/MDbMCb; if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Sparse matrix/dense matrix subtraction
+#==================================================================================================
+
+echo " Running sparse matrix/dense matrix subtraction tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatsub/MCaM2x2a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatsub/MCaM2x2b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatsub/MCaM3x3a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatsub/MCaM3x3b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatsub/MCaM4x4a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatsub/MCaM4x4b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatsub/MCaM5x5a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatsub/MCaM5x5b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatsub/MCaM6x6a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatsub/MCaM6x6b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatsub/MCaM7x13a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatsub/MCaM7x13b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatsub/MCaM16x8a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatsub/MCaM16x8b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatsub/MCaMDa;    if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatsub/MCaMDb;    if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/smatdmatsub/MCbM2x2a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatsub/MCbM2x2b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatsub/MCbM3x3a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatsub/MCbM3x3b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatsub/MCbM4x4a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatsub/MCbM4x4b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatsub/MCbM5x5a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatsub/MCbM5x5b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatsub/MCbM6x6a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatsub/MCbM6x6b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatsub/MCbM7x13a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatsub/MCbM7x13b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatsub/MCbM16x8a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatsub/MCbM16x8b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatsub/MCbMDa;    if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatsub/MCbMDb;    if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Sparse matrix/sparse matrix subtraction
+#==================================================================================================
+
+echo " Running sparse matrix/sparse matrix subtraction tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatsmatsub/MCaMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatsmatsub/MCaMCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatsmatsub/MCbMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatsmatsub/MCbMCb; if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Dense matrix/dense matrix multiplication
+#==================================================================================================
+
+echo " Running dense matrix/dense matrix multiplication tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M2x2aM2x2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M2x2aM2x2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M2x2aMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M2x2aMDb;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M2x2bM2x2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M2x2bM2x2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M2x2bMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M2x2bMDb;   if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatdmatmult/M3x3aM3x3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M3x3aM3x3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M3x3aMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M3x3aMDb;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M3x3bM3x3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M3x3bM3x3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M3x3bMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M3x3bMDb;   if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatdmatmult/M4x4aM4x4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M4x4aM4x4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M4x4aMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M4x4aMDb;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M4x4bM4x4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M4x4bM4x4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M4x4bMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M4x4bMDb;   if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatdmatmult/M5x5aM5x5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M5x5aM5x5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M5x5aMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M5x5aMDb;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M5x5bM5x5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M5x5bM5x5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M5x5bMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M5x5bMDb;   if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatdmatmult/M5x7aM7x5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M5x7aM7x5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M5x7aM7x9a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M5x7aM7x9b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M5x7aMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M5x7aMDb;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M5x7bM7x5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M5x7bM7x5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M5x7bM7x9a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M5x7bM7x9b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M5x7bMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M5x7bMDb;   if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatdmatmult/M6x6aM6x6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M6x6aM6x6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M6x6aMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M6x6aMDb;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M6x6bM6x6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M6x6bM6x6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M6x6bMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M6x6bMDb;   if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatdmatmult/M9x7aM7x5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M9x7aM7x5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M9x7aM7x9a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M9x7aM7x9b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M9x7aMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M9x7aMDb;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M9x7bM7x5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M9x7bM7x5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M9x7bM7x9a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M9x7bM7x9b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M9x7bMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/M9x7bMDb;   if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatdmatmult/MDaM2x2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/MDaM2x2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/MDaM3x3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/MDaM3x3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/MDaM4x4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/MDaM4x4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/MDaM5x5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/MDaM5x5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/MDaM6x6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/MDaM6x6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/MDaM7x5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/MDaM7x5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/MDaM7x9a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/MDaM7x9b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/MDaMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/MDaMDb;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/MDbM2x2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/MDbM2x2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/MDbM3x3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/MDbM3x3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/MDbM4x4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/MDbM4x4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/MDbM5x5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/MDbM5x5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/MDbM6x6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/MDbM6x6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/MDbM7x5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/MDbM7x5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/MDbM7x9a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/MDbM7x9b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/MDbMDa;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatdmatmult/MDbMDb;   if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Dense matrix/sparse matrix multiplication
+#==================================================================================================
+
+echo " Running dense matrix/sparse matrix multiplication tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatmult/M2x2aMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatmult/M2x2aMCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatmult/M2x2bMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatmult/M2x2bMCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatsmatmult/M3x3aMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatmult/M3x3aMCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatmult/M3x3bMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatmult/M3x3bMCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatsmatmult/M4x4aMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatmult/M4x4aMCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatmult/M4x4bMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatmult/M4x4bMCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatsmatmult/M5x5aMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatmult/M5x5aMCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatmult/M5x5bMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatmult/M5x5bMCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatsmatmult/M6x6aMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatmult/M6x6aMCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatmult/M6x6bMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatmult/M6x6bMCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatsmatmult/M7x13aMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatmult/M7x13aMCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatmult/M7x13bMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatmult/M7x13bMCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatsmatmult/M16x8aMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatmult/M16x8aMCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatmult/M16x8bMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatmult/M16x8bMCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dmatsmatmult/MDaMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatmult/MDaMCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatmult/MDbMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dmatsmatmult/MDbMCb; if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Sparse matrix/dense matrix multiplication
+#==================================================================================================
+
+echo " Running sparse matrix/dense matrix multiplication tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatmult/MCaM2x2a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatmult/MCaM2x2b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatmult/MCaM3x3a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatmult/MCaM3x3b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatmult/MCaM4x4a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatmult/MCaM4x4b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatmult/MCaM5x5a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatmult/MCaM5x5b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatmult/MCaM6x6a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatmult/MCaM6x6b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatmult/MCaM7x13a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatmult/MCaM7x13b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatmult/MCaM16x8a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatmult/MCaM16x8b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatmult/MCaMDa;    if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatmult/MCaMDb;    if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/smatdmatmult/MCbM2x2a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatmult/MCbM2x2b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatmult/MCbM3x3a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatmult/MCbM3x3b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatmult/MCbM4x4a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatmult/MCbM4x4b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatmult/MCbM5x5a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatmult/MCbM5x5b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatmult/MCbM6x6a;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatmult/MCbM6x6b;  if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatmult/MCbM7x13a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatmult/MCbM7x13b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatmult/MCbM16x8a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatmult/MCbM16x8b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatmult/MCbMDa;    if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatdmatmult/MCbMDb;    if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Sparse matrix/sparse matrix multiplication
+#==================================================================================================
+
+echo " Running sparse matrix/sparse matrix multiplication tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatsmatmult/MCaMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatsmatmult/MCaMCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatsmatmult/MCbMCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/smatsmatmult/MCbMCb; if [ $? != 0 ]; then exit 1; fi

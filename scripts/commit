@@ -1,0 +1,104 @@
+#!/bin/bash
+#==================================================================================================
+#
+#  Commit test script for the Blaze benchmark suite
+#
+#  Copyright (C) 2011 Klaus Iglberger
+#
+#  This file is part of the Blaze library. This library is free software; you can redistribute
+#  it and/or modify it under the terms of the GNU General Public License as published by the
+#  Free Software Foundation; either version 3, or (at your option) any later version.
+#
+#  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+#  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#  See the GNU General Public License for more details.
+#
+#  You should have received a copy of the GNU General Public License along with a special
+#  exception for linking and compiling against the Blaze library, the so-called "runtime
+#  exception"; see the file COPYING. If not, see http://www.gnu.org/licenses/.
+#
+#==================================================================================================
+
+
+# Environment configuration
+SCRIPT_PATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+BLAZE_PATH=$SCRIPT_PATH/../../blaze
+BLAZETEST_PATH=$BLAZE_PATH/blazetest
+BLAZEMARK_PATH=$BLAZE_PATH/blazemark
+
+
+
+
+#==================================================================================================
+# Compilation of the Blaze library
+#==================================================================================================
+
+echo
+echo "==================================================================================================="
+echo "= Compilation of the Blaze library"
+echo "==================================================================================================="
+echo
+
+make -f $BLAZE_PATH/Makefile clean
+make -f $BLAZE_PATH/Makefile
+if [ $? != 0 ]; then echo " Error during compilation of the Blaze library"; exit 1; fi
+
+
+
+
+#==================================================================================================
+# Compilation of the Blaze test suite
+#==================================================================================================
+
+echo
+echo "==================================================================================================="
+echo "= Compilation of the Blaze test suite"
+echo "==================================================================================================="
+echo
+
+make -f $BLAZETEST_PATH/Makefile clean
+make -f $BLAZETEST_PATH/Makefile
+if [ $? != 0 ]; then echo " Error during compilation of the Blaze test suite"; exit 1; fi
+
+
+
+
+#==================================================================================================
+# Execution of the Blaze test suite
+#==================================================================================================
+
+echo
+echo "==================================================================================================="
+echo "= Execution of the Blaze test suite"
+echo "==================================================================================================="
+echo
+
+./blazetest
+if [ $? != 0 ]; then echo " Error during execution of the Blaze test suite"; exit 1; fi
+
+
+
+
+#==================================================================================================
+# Compilation of the Blaze benchmark suite
+#==================================================================================================
+
+echo
+echo "==================================================================================================="
+echo "= Compilation of the Blaze benchmark suite"
+echo "==================================================================================================="
+echo
+
+./blazemark
+if [ $? != 0 ]; then echo " Error during compilation of the Blaze benchmark suite"; exit 1; fi
+
+
+
+
+#==================================================================================================
+# Finishing the commit test
+#==================================================================================================
+
+echo
+echo " Commit test succeeded!"
+echo
