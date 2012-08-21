@@ -3,7 +3,7 @@
 //  \file Sandbox.cpp
 //  \brief Sandbox for various Blaze test scenarios
 //
-//  Copyright (C) 2011 Klaus Iglberger
+//  Copyright (C) 2011 Klaus Iglberger - All Rights Reserved
 //
 //  This file is part of the Blaze library. This library is free software; you can redistribute
 //  it and/or modify it under the terms of the GNU General Public License as published by the
@@ -50,7 +50,7 @@
 
 //#include <armadillo>
 
-#include <gmm/gmm.h>
+//#include <gmm/gmm.h>
 
 using namespace blaze;
 
@@ -66,7 +66,7 @@ using namespace blaze;
 //*************************************************************************************************
 /*!\brief The main function for the Blaze test scenarios.
 //
-// \return void
+// \return 0 in case of a successful execution, 1 in case of errors.
 */
 int main()
 {
@@ -194,7 +194,6 @@ int main()
    // Operations
    x = d1 + d2;
    std::cerr << "\n result =\n" << x << "\n\n";
-
 
    // Single element access
 //    std::cout << " x[0] = " << ( S1 * d1 )[0] << "\n";
@@ -830,6 +829,3 @@ int main()
    // END TIMING TEST /////////////////////////////////////////////////////////////////////////////
 }
 //*************************************************************************************************
-
-
-
