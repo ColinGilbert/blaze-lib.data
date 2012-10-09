@@ -223,6 +223,119 @@ $MATHTEST_PATH/dvecdvecsub/V5bV5b; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dvecdvecsub/V5bVDa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dvecdvecsub/V5bVDb; if [ $? != 0 ]; then exit 1; fi
 
+$MATHTEST_PATH/dvecdvecsub/V6aV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/V6aV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/V6aVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/V6aVDb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/V6bV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/V6bV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/V6bVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/V6bVDb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvecdvecsub/VDaV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDaV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDaV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDaV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDaV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDaV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDaV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDaV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDaV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDaV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDaVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDaVDb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDbV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDbV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDbV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDbV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDbV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDbV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDbV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDbV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDbV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDbV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDbVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdvecsub/VDbVDb; if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Dense vector/sparse vector subtraction
+#==================================================================================================
+
+echo " Running dense vector/sparse vector subtraction tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecsub/V2aVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecsub/V2aVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecsub/V2bVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecsub/V2bVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvecsvecsub/V3aVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecsub/V3aVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecsub/V3bVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecsub/V3bVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvecsvecsub/V4aVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecsub/V4aVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecsub/V4bVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecsub/V4bVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvecsvecsub/V5aVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecsub/V5aVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecsub/V5bVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecsub/V5bVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvecsvecsub/V6aVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecsub/V6aVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecsub/V6bVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecsub/V6bVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvecsvecsub/VDaVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecsub/VDaVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecsub/VDbVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsvecsub/VDbVCb; if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Sparse vector/dense vector subtraction
+#==================================================================================================
+
+echo " Running sparse vector/dense vector subtraction tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCaV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCaV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCaV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCaV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCaV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCaV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCaV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCaV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCaV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCaV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCaVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCaVDb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/svecdvecsub/VCbV2a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCbV2b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCbV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCbV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCbV4a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCbV4b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCbV5a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCbV5b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCbV6a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCbV6b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCbVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdvecsub/VCbVDb; if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Sparse vector/sparse vector subtraction
+#==================================================================================================
+
+echo " Running sparse vector/sparse vector subtraction tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecsvecsub/VCaVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecsvecsub/VCaVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecsvecsub/VCbVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecsvecsub/VCbVCb; if [ $? != 0 ]; then exit 1; fi
+
 
 #==================================================================================================
 # Dense vector/dense vector multiplication
@@ -378,118 +491,74 @@ $MATHTEST_PATH/svecsvecmult/VCaVCb; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/svecsvecmult/VCbVCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/svecsvecmult/VCbVCb; if [ $? != 0 ]; then exit 1; fi
 
-$MATHTEST_PATH/dvecdvecsub/V6aV6a; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecdvecsub/V6aV6b; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecdvecsub/V6aVDa; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecdvecsub/V6aVDb; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecdvecsub/V6bV6a; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecdvecsub/V6bV6b; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecdvecsub/V6bVDa; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecdvecsub/V6bVDb; if [ $? != 0 ]; then exit 1; fi
 
-$MATHTEST_PATH/dvecdvecsub/VDaV2a; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecdvecsub/VDaV2b; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecdvecsub/VDaV3a; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecdvecsub/VDaV3b; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecdvecsub/VDaV4a; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecdvecsub/VDaV4b; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecdvecsub/VDaV5a; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecdvecsub/VDaV5b; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecdvecsub/VDaV6a; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecdvecsub/VDaV6b; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecdvecsub/VDaVDa; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecdvecsub/VDaVDb; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecdvecsub/VDbV2a; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecdvecsub/VDbV2b; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecdvecsub/VDbV3a; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecdvecsub/VDbV3b; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecdvecsub/VDbV4a; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecdvecsub/VDbV4b; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecdvecsub/VDbV5a; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecdvecsub/VDbV5b; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecdvecsub/VDbV6a; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecdvecsub/VDbV6b; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecdvecsub/VDbVDa; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecdvecsub/VDbVDb; if [ $? != 0 ]; then exit 1; fi
+#==================================================================================================
+# Dense vector/dense vector cross product
+#==================================================================================================
+
+echo " Running dense vector/dense vector cross product tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdveccross/V3aV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdveccross/V3aV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdveccross/V3aVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdveccross/V3aVDb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvecdveccross/V3bV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdveccross/V3bV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdveccross/V3bVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdveccross/V3bVDb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvecdveccross/VDaV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdveccross/VDaV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdveccross/VDaVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdveccross/VDaVDb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/dvecdveccross/VDbV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdveccross/VDbV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdveccross/VDbVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecdveccross/VDbVDb; if [ $? != 0 ]; then exit 1; fi
 
 
 #==================================================================================================
-# Dense vector/sparse vector subtraction
+# Dense vector/sparse vector cross product
 #==================================================================================================
 
-echo " Running dense vector/sparse vector subtraction tests..."; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecsvecsub/V2aVCa; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecsvecsub/V2aVCb; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecsvecsub/V2bVCa; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecsvecsub/V2bVCb; if [ $? != 0 ]; then exit 1; fi
+echo " Running dense vector/sparse vector cross product tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsveccross/V3aVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsveccross/V3aVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsveccross/V3bVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsveccross/V3bVCb; if [ $? != 0 ]; then exit 1; fi
 
-$MATHTEST_PATH/dvecsvecsub/V3aVCa; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecsvecsub/V3aVCb; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecsvecsub/V3bVCa; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecsvecsub/V3bVCb; if [ $? != 0 ]; then exit 1; fi
-
-$MATHTEST_PATH/dvecsvecsub/V4aVCa; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecsvecsub/V4aVCb; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecsvecsub/V4bVCa; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecsvecsub/V4bVCb; if [ $? != 0 ]; then exit 1; fi
-
-$MATHTEST_PATH/dvecsvecsub/V5aVCa; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecsvecsub/V5aVCb; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecsvecsub/V5bVCa; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecsvecsub/V5bVCb; if [ $? != 0 ]; then exit 1; fi
-
-$MATHTEST_PATH/dvecsvecsub/V6aVCa; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecsvecsub/V6aVCb; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecsvecsub/V6bVCa; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecsvecsub/V6bVCb; if [ $? != 0 ]; then exit 1; fi
-
-$MATHTEST_PATH/dvecsvecsub/VDaVCa; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecsvecsub/VDaVCb; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecsvecsub/VDbVCa; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dvecsvecsub/VDbVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsveccross/VDaVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsveccross/VDaVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsveccross/VDbVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dvecsveccross/VDbVCb; if [ $? != 0 ]; then exit 1; fi
 
 
 #==================================================================================================
-# Sparse vector/dense vector subtraction
+# Sparse vector/dense vector cross product
 #==================================================================================================
 
-echo " Running sparse vector/dense vector subtraction tests..."; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/svecdvecsub/VCaV2a; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/svecdvecsub/VCaV2b; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/svecdvecsub/VCaV3a; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/svecdvecsub/VCaV3b; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/svecdvecsub/VCaV4a; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/svecdvecsub/VCaV4b; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/svecdvecsub/VCaV5a; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/svecdvecsub/VCaV5b; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/svecdvecsub/VCaV6a; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/svecdvecsub/VCaV6b; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/svecdvecsub/VCaVDa; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/svecdvecsub/VCaVDb; if [ $? != 0 ]; then exit 1; fi
+echo " Running sparse vector/dense vector cross product tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdveccross/VCaV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdveccross/VCaV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdveccross/VCaVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdveccross/VCaVDb; if [ $? != 0 ]; then exit 1; fi
 
-$MATHTEST_PATH/svecdvecsub/VCbV2a; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/svecdvecsub/VCbV2b; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/svecdvecsub/VCbV3a; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/svecdvecsub/VCbV3b; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/svecdvecsub/VCbV4a; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/svecdvecsub/VCbV4b; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/svecdvecsub/VCbV5a; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/svecdvecsub/VCbV5b; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/svecdvecsub/VCbV6a; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/svecdvecsub/VCbV6b; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/svecdvecsub/VCbVDa; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/svecdvecsub/VCbVDb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdveccross/VCbV3a; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdveccross/VCbV3b; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdveccross/VCbVDa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecdveccross/VCbVDb; if [ $? != 0 ]; then exit 1; fi
 
 
 #==================================================================================================
-# Sparse vector/sparse vector subtraction
+# Sparse vector/sparse vector cross product
 #==================================================================================================
 
-echo " Running sparse vector/sparse vector subtraction tests..."; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/svecsvecsub/VCaVCa; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/svecsvecsub/VCaVCb; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/svecsvecsub/VCbVCa; if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/svecsvecsub/VCbVCb; if [ $? != 0 ]; then exit 1; fi
+echo " Running sparse vector/sparse vector cross product tests..."; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecsveccross/VCaVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecsveccross/VCaVCb; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecsveccross/VCbVCa; if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/svecsveccross/VCbVCb; if [ $? != 0 ]; then exit 1; fi
 
 
 #==================================================================================================
