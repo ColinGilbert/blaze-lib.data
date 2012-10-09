@@ -125,7 +125,7 @@ fi
 # Blaze specific settings
 
 INSTALL_PATH="$( cd "$( dirname "$0" )" && pwd )"
-BLAZE_PATH="${INSTALL_PATH%%/data}/trunk"
+BLAZE_PATH="${INSTALL_PATH%%/data}/blaze"
 
 
 ############################
