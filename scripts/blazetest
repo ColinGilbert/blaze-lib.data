@@ -23,8 +23,29 @@
 # Environment configuration
 SCRIPT_PATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 MATHTEST_PATH=$SCRIPT_PATH/../../blaze/blazetest/src/mathtest
+UTILTEST_PATH=$SCRIPT_PATH/../../blaze/blazetest/src/utiltest
 
 
+
+
+#==================================================================================================
+# Vectors
+#==================================================================================================
+
+echo " Running vector tests..."
+$MATHTEST_PATH/staticvector/StaticVector;         if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dynamicvector/DynamicVector;       if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/compressedvector/CompressedVector; if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Matrices
+#==================================================================================================
+
+echo " Running vector tests..."
+$MATHTEST_PATH/staticvector/StaticVector;         if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dynamicvector/DynamicVector;       if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/compressedvector/CompressedVector; if [ $? != 0 ]; then exit 1; fi
 
 
 #==================================================================================================
@@ -1922,3 +1943,13 @@ $MATHTEST_PATH/smatsmatmult/MCaMCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/smatsmatmult/MCaMCb; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/smatsmatmult/MCbMCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/smatsmatmult/MCbMCb; if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Utility classes
+#==================================================================================================
+
+echo " Running utility class tests...";
+
+$UTILTEST_PATH/uniqueptr/UniquePtr;     if [ $? != 0 ]; then exit 1; fi
+$UTILTEST_PATH/uniquearray/UniqueArray; if [ $? != 0 ]; then exit 1; fi
