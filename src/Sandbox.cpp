@@ -79,109 +79,115 @@ int main()
    d1[0] = 1;
    d1[1] = 2;
 //    d1[2] = 3;
+//    d1[2] = 3;
 //    d1[3] = 4;
 //    d1[4] = 5;
 //    d1[5] = 6;
 
-   DynamicVector<int,columnVector> d2( 2UL );
-   d2[0] = 1;
-   d2[1] = 2;
-//    d2[2] = 3.0;
-//    d2[3] = 4.0;
-//    d2[4] = 5.0;
-//    d2[5] = 6.0;
+   DynamicVector<int,rowVector> d2( 2UL );
+   d2[0] = 2;
+   d2[1] = 4;
+//    d2[2] = 6;
+//    d2[3] = 8;
+//    d2[4] = 10;
+//    d2[5] = 12;
 
    // Sparse vectors
-   CompressedVector<int,rowVector> s1( 2 );
+   CompressedVector<int,rowVector> s1( 3UL );
+   //s1[0] = 1;
    s1[1] = 2;
+   //s1[2] = 3;
 
-   CompressedVector<double,columnVector> s2( 6 );
-   s2[0] = 1.0;
-   s2[3] = 4.0;
+   CompressedVector<int,rowVector> s2( 3UL );
+   s2[0] = 1;
+   s2[1] = 2;
 
    // Dense matrices
-   StaticMatrix<int,6UL,6UL,rowMajor> D1;
-   D1(0,0) = 1.0;
-   D1(0,2) = 2.0;
-   D1(0,4) = 3.0;
-   D1(1,1) = 4.0;
-   D1(1,3) = 5.0;
-   D1(1,5) = 6.0;
-   D1(2,0) = 7.0;
-   D1(2,2) = 8.0;
-   D1(2,4) = 9.0;
-   D1(3,1) = 1.0;
-   D1(3,3) = 2.0;
-   D1(3,5) = 3.0;
-   D1(4,0) = 4.0;
-   D1(4,2) = 5.0;
-   D1(4,4) = 6.0;
-   D1(5,1) = 7.0;
-   D1(5,3) = 8.0;
-   D1(5,5) = 9.0;
+   StaticMatrix<float,2UL,2UL,rowMajor> D1;
+   D1(0,0) = 1;
+   D1(0,1) = -2;
+   //D1(0,2) = 1;
+   D1(1,0) = -3;
+   D1(1,1) = 4;
+   //D1(1,2) = 2;
+   //D1(2,0) = 4;
+   //D1(2,1) = 0;
+   //D1(2,2) = 5;
 
-   DynamicMatrix<int,columnMajor> D2( 6UL, 6UL, 0 );
-   D2(0,0) = 1.0;
-   D2(0,2) = 2.0;
-   D2(0,4) = 3.0;
-   D2(1,1) = 4.0;
-   D2(1,3) = 5.0;
-   D2(1,5) = 6.0;
-   D2(2,0) = 7.0;
-   D2(2,2) = 8.0;
-   D2(2,4) = 9.0;
-   D2(3,1) = 1.0;
-   D2(3,3) = 2.0;
-   D2(3,5) = 3.0;
-   D2(4,0) = 4.0;
-   D2(4,2) = 5.0;
-   D2(4,4) = 6.0;
-   D2(5,1) = 7.0;
-   D2(5,3) = 8.0;
-   D2(5,5) = 9.0;
+//    D1(0,0) = 1.0;
+//    D1(0,2) = 2.0;
+//    D1(0,4) = 3.0;
+//    D1(1,1) = 4.0;
+//    D1(1,3) = 5.0;
+//    D1(1,5) = 6.0;
+//    D1(2,0) = 7.0;
+//    D1(2,2) = 8.0;
+//    D1(2,4) = 9.0;
+//    D1(3,1) = 1.0;
+//    D1(3,3) = 2.0;
+//    D1(3,5) = 3.0;
+//    D1(4,0) = 4.0;
+//    D1(4,2) = 5.0;
+//    D1(4,4) = 6.0;
+//    D1(5,1) = 7.0;
+//    D1(5,3) = 8.0;
+//    D1(5,5) = 9.0;
+
+   DynamicMatrix<int,rowMajor> D2( 2UL, 2UL, 0 );
+   D2(0,0) = 1;
+   D2(0,1) = -2;
+   D2(1,0) = -3;
+   D2(1,1) = 4;
+
+//    D2(0,0) = 1.0;
+//    D2(0,2) = 2.0;
+//    D2(0,4) = 3.0;
+//    D2(1,1) = 4.0;
+//    D2(1,3) = 5.0;
+//    D2(1,5) = 6.0;
+//    D2(2,0) = 7.0;
+//    D2(2,2) = 8.0;
+//    D2(2,4) = 9.0;
+//    D2(3,1) = 1.0;
+//    D2(3,3) = 2.0;
+//    D2(3,5) = 3.0;
+//    D2(4,0) = 4.0;
+//    D2(4,2) = 5.0;
+//    D2(4,4) = 6.0;
+//    D2(5,1) = 7.0;
+//    D2(5,3) = 8.0;
+//    D2(5,5) = 9.0;
+
+   DynamicMatrix<int,columnMajor> D3( 2UL, 2UL, 0 );
+   D3(0,0) = 1;
+   D3(0,1) = -2;
+   D3(1,0) = -3;
+   D3(1,1) = 4;
 
    // Sparse matrices
-   CompressedMatrix<int,columnMajor> S1( 6, 6 );
+   CompressedMatrix<float,rowMajor> S1( 2UL, 2UL );
    S1(0,0) = 1;
-   S1(0,2) = 2;
-   S1(0,4) = 3;
+   S1(0,1) = -2;
+   S1(1,0) = -3;
    S1(1,1) = 4;
-   S1(1,3) = 5;
-   S1(1,5) = 6;
-   S1(2,0) = 7;
-   S1(2,2) = 8;
-   S1(2,4) = 9;
-   S1(3,1) = 1;
-   S1(3,3) = 2;
-   S1(3,5) = 3;
-   S1(4,0) = 4;
-   S1(4,2) = 5;
-   S1(4,4) = 6;
-   S1(5,1) = 7;
-   S1(5,3) = 8;
-   S1(5,5) = 9;
 
-   CompressedMatrix<double,rowMajor> S2( 6, 6 );
-   S2(0,0) = 1.0;
-   S2(0,2) = 2.0;
-   S2(1,1) = 3.0;
-   S2(1,3) = 4.0;
-   S2(2,0) = 5.0;
-   S2(2,2) = 6.0;
-   S2(3,1) = 7.0;
-   S2(3,3) = 8.0;
+   CompressedMatrix<int,rowMajor> S2( 2UL, 2UL );
+   S2(0,0) = 1;
+   S2(0,1) = -2;
+   S2(1,0) = -3;
+   S2(1,1) = 4;
 
    // Target vectors
-   DynamicVector<int,columnVector> x( 2UL );
-   x[0] = 1;
-   x[1] = 2;
+   DynamicVector<int,rowVector> x( 2UL, 0 );
+//    x[0] = 1;
+//    x[1] = 2;
 //    x[2] = 3;
 //    x[3] = 4;
 //    x[4] = 5;
 //    x[5] = 6;
 
    // Target matrices
-   CompressedMatrix<int,rowMajor> X( 6, 6 );
+   CompressedMatrix<int,rowMajor> X( 3UL, 3UL );
 //    X(0,0) = 1.0;
 //    X(0,2) = 2.0;
 //    X(1,1) = 3.0;
@@ -192,8 +198,8 @@ int main()
 //    X(3,3) = 8.0;
 
    // Operations
-   x = d1 + d2;
-   std::cerr << "\n result =\n" << x << "\n\n";
+   X = S1 * S2;
+   std::cerr << "\n result =\n" << X << "\n\n";
 
    // Single element access
 //    std::cout << " x[0] = " << ( S1 * d1 )[0] << "\n";
@@ -737,7 +743,7 @@ int main()
 
    const size_t reps( 5 );
 
-   const size_t steps  ( 15000 );
+   const size_t steps  ( 1800 );
    unsigned int counter( 0 );
 
    //--Test specific variables---------------------------------------------------------------------
@@ -746,10 +752,10 @@ int main()
 
    //const size_t M( 5000 );
    const size_t N( 1000000 );
-   const size_t F(   10000 );
+   //const size_t F(   10000 );
 
-   DynamicVector<double> a( N ), c( N );
-   CompressedVector<double> b( N, F ), d( N, F );
+//    DynamicVector<double> a( N ), c( N );
+//    CompressedVector<double> b( N, F ), d( N, F );
 
 //    CompressedMatrix<double,rowMajor> S1( N, N );
 //    CompressedMatrix<double,columnMajor> S2( N, N );
@@ -761,14 +767,14 @@ int main()
 //       }
 //    }
 
-   for( size_t i=0UL; i<N; ++i ) {
-      a[i] = blaze::rand<double>();
-      c[i] = blaze::rand<double>();
-   }
-
-   for( size_t i=0; i<F; ++i ) {
-      b[rand<size_t>(0,N-1)] = rand<double>();
-   }
+//    for( size_t i=0UL; i<N; ++i ) {
+//       a[i] = blaze::rand<double>();
+//       c[i] = blaze::rand<double>();
+//    }
+//
+//    for( size_t i=0; i<F; ++i ) {
+//       b[rand<size_t>(0,N-1)] = rand<double>();
+//    }
 
 //    for( size_t i=0; i<N; ++i ) {
 //       for( size_t j=0; j<F; ++j ) {
@@ -776,7 +782,7 @@ int main()
 //       }
 //    }
 
-   d = a * c * b;
+//    d = a * c * b;
 
    //----------------------------------------------------------------------------------------------
 
@@ -797,9 +803,9 @@ int main()
       {
          //--Performance measurement---------------------------------------------------------------
 
-         d = a * c * b;
+         // TODO
 
-         if( d.size() != N ) std::cerr << " Line " << __LINE__ << ": ERROR detected!!!\n";
+         if( vec.size() != N ) std::cerr << " Line " << __LINE__ << ": ERROR detected!!!\n";
 
          //----------------------------------------------------------------------------------------
       }
