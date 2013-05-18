@@ -33,19 +33,33 @@ UTILTEST_PATH=$SCRIPT_PATH/../../blaze/blazetest/src/utiltest
 #==================================================================================================
 
 echo " Running vector tests..."
-$MATHTEST_PATH/staticvector/StaticVector;         if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dynamicvector/DynamicVector;       if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/compressedvector/CompressedVector; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/staticvector/ClassTest;     if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dynamicvector/ClassTest;    if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/compressedvector/ClassTest; if [ $? != 0 ]; then exit 1; fi
 
 
 #==================================================================================================
 # Matrices
 #==================================================================================================
 
-echo " Running vector tests..."
-$MATHTEST_PATH/staticvector/StaticVector;         if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/dynamicvector/DynamicVector;       if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/compressedvector/CompressedVector; if [ $? != 0 ]; then exit 1; fi
+echo " Running matrix tests..."
+
+$MATHTEST_PATH/staticmatrix/ClassTest;     if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/dynamicmatrix/ClassTest;    if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/compressedmatrix/ClassTest; if [ $? != 0 ]; then exit 1; fi
+
+
+#==================================================================================================
+# Views
+#==================================================================================================
+
+echo " Running view tests..."
+
+$MATHTEST_PATH/denserow/ClassTest;     if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/densecolum/ClassTest;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/sparserow/ClassTest;    if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/sparsecolumn/ClassTest; if [ $? != 0 ]; then exit 1; fi
 
 
 #==================================================================================================
@@ -53,6 +67,7 @@ $MATHTEST_PATH/compressedvector/CompressedVector; if [ $? != 0 ]; then exit 1; f
 #==================================================================================================
 
 echo " Running dense vector/dense vector addition tests..."
+
 $MATHTEST_PATH/dvecdvecadd/V2aV2a; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dvecdvecadd/V2aV2b; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dvecdvecadd/V2aVDa; if [ $? != 0 ]; then exit 1; fi
@@ -123,12 +138,15 @@ $MATHTEST_PATH/dvecdvecadd/VDbV6b; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dvecdvecadd/VDbVDa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dvecdvecadd/VDbVDb; if [ $? != 0 ]; then exit 1; fi
 
+$MATHTEST_PATH/dvecdvecadd/AliasingTest; if [ $? != 0 ]; then exit 1; fi
+
 
 #==================================================================================================
 # Dense vector/sparse vector addition
 #==================================================================================================
 
 echo " Running dense vector/sparse vector addition tests..."
+
 $MATHTEST_PATH/dvecsvecadd/V2aVCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dvecsvecadd/V2aVCb; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dvecsvecadd/V2bVCa; if [ $? != 0 ]; then exit 1; fi
@@ -159,12 +177,15 @@ $MATHTEST_PATH/dvecsvecadd/VDaVCb; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dvecsvecadd/VDbVCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dvecsvecadd/VDbVCb; if [ $? != 0 ]; then exit 1; fi
 
+$MATHTEST_PATH/dvecsvecadd/AliasingTest; if [ $? != 0 ]; then exit 1; fi
+
 
 #==================================================================================================
 # Sparse vector/dense vector addition
 #==================================================================================================
 
 echo " Running sparse vector/dense vector addition tests...";
+
 $MATHTEST_PATH/svecdvecadd/VCaV2a; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/svecdvecadd/VCaV2b; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/svecdvecadd/VCaV3a; if [ $? != 0 ]; then exit 1; fi
@@ -191,16 +212,21 @@ $MATHTEST_PATH/svecdvecadd/VCbV6b; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/svecdvecadd/VCbVDa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/svecdvecadd/VCbVDb; if [ $? != 0 ]; then exit 1; fi
 
+$MATHTEST_PATH/svecdvecadd/AliasingTest; if [ $? != 0 ]; then exit 1; fi
+
 
 #==================================================================================================
 # Sparse vector/sparse vector addition
 #==================================================================================================
 
 echo " Running sparse vector/sparse vector addition tests...";
+
 $MATHTEST_PATH/svecsvecadd/VCaVCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/svecsvecadd/VCaVCb; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/svecsvecadd/VCbVCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/svecsvecadd/VCbVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/svecsvecadd/AliasingTest; if [ $? != 0 ]; then exit 1; fi
 
 
 #==================================================================================================
@@ -208,6 +234,7 @@ $MATHTEST_PATH/svecsvecadd/VCbVCb; if [ $? != 0 ]; then exit 1; fi
 #==================================================================================================
 
 echo " Running dense vector/dense vector subtraction tests...";
+
 $MATHTEST_PATH/dvecdvecsub/V2aV2a; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dvecdvecsub/V2aV2b; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dvecdvecsub/V2aVDa; if [ $? != 0 ]; then exit 1; fi
@@ -278,12 +305,15 @@ $MATHTEST_PATH/dvecdvecsub/VDbV6b; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dvecdvecsub/VDbVDa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dvecdvecsub/VDbVDb; if [ $? != 0 ]; then exit 1; fi
 
+$MATHTEST_PATH/dvecdvecsub/AliasingTest; if [ $? != 0 ]; then exit 1; fi
+
 
 #==================================================================================================
 # Dense vector/sparse vector subtraction
 #==================================================================================================
 
 echo " Running dense vector/sparse vector subtraction tests...";
+
 $MATHTEST_PATH/dvecsvecsub/V2aVCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dvecsvecsub/V2aVCb; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dvecsvecsub/V2bVCa; if [ $? != 0 ]; then exit 1; fi
@@ -314,12 +344,15 @@ $MATHTEST_PATH/dvecsvecsub/VDaVCb; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dvecsvecsub/VDbVCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dvecsvecsub/VDbVCb; if [ $? != 0 ]; then exit 1; fi
 
+$MATHTEST_PATH/dvecsvecsub/AliasingTest; if [ $? != 0 ]; then exit 1; fi
+
 
 #==================================================================================================
 # Sparse vector/dense vector subtraction
 #==================================================================================================
 
 echo " Running sparse vector/dense vector subtraction tests...";
+
 $MATHTEST_PATH/svecdvecsub/VCaV2a; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/svecdvecsub/VCaV2b; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/svecdvecsub/VCaV3a; if [ $? != 0 ]; then exit 1; fi
@@ -346,16 +379,21 @@ $MATHTEST_PATH/svecdvecsub/VCbV6b; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/svecdvecsub/VCbVDa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/svecdvecsub/VCbVDb; if [ $? != 0 ]; then exit 1; fi
 
+$MATHTEST_PATH/svecdvecsub/AliasingTest; if [ $? != 0 ]; then exit 1; fi
+
 
 #==================================================================================================
 # Sparse vector/sparse vector subtraction
 #==================================================================================================
 
 echo " Running sparse vector/sparse vector subtraction tests...";
+
 $MATHTEST_PATH/svecsvecsub/VCaVCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/svecsvecsub/VCaVCb; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/svecsvecsub/VCbVCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/svecsvecsub/VCbVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/svecsvecsub/AliasingTest; if [ $? != 0 ]; then exit 1; fi
 
 
 #==================================================================================================
@@ -363,6 +401,7 @@ $MATHTEST_PATH/svecsvecsub/VCbVCb; if [ $? != 0 ]; then exit 1; fi
 #==================================================================================================
 
 echo " Running dense vector/dense vector multiplication tests...";
+
 $MATHTEST_PATH/dvecdvecmult/V2aV2a; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dvecdvecmult/V2aV2b; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dvecdvecmult/V2aVDa; if [ $? != 0 ]; then exit 1; fi
@@ -433,12 +472,15 @@ $MATHTEST_PATH/dvecdvecmult/VDbV6b; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dvecdvecmult/VDbVDa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dvecdvecmult/VDbVDb; if [ $? != 0 ]; then exit 1; fi
 
+$MATHTEST_PATH/dvecdvecmult/AliasingTest; if [ $? != 0 ]; then exit 1; fi
+
 
 #==================================================================================================
 # Dense vector/sparse vector multiplication
 #==================================================================================================
 
 echo " Running dense vector/sparse vector multiplication tests...";
+
 $MATHTEST_PATH/dvecsvecmult/V2aVCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dvecsvecmult/V2aVCb; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dvecsvecmult/V2bVCa; if [ $? != 0 ]; then exit 1; fi
@@ -469,12 +511,15 @@ $MATHTEST_PATH/dvecsvecmult/VDaVCb; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dvecsvecmult/VDbVCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dvecsvecmult/VDbVCb; if [ $? != 0 ]; then exit 1; fi
 
+$MATHTEST_PATH/dvecsvecmult/AliasingTest; if [ $? != 0 ]; then exit 1; fi
+
 
 #==================================================================================================
 # Sparse vector/dense vector multiplication
 #==================================================================================================
 
 echo " Running sparse vector/dense vector multiplication tests...";
+
 $MATHTEST_PATH/svecdvecmult/VCaV2a; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/svecdvecmult/VCaV2b; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/svecdvecmult/VCaV3a; if [ $? != 0 ]; then exit 1; fi
@@ -501,16 +546,21 @@ $MATHTEST_PATH/svecdvecmult/VCbV6b; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/svecdvecmult/VCbVDa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/svecdvecmult/VCbVDb; if [ $? != 0 ]; then exit 1; fi
 
+$MATHTEST_PATH/svecdvecmult/AliasingTest; if [ $? != 0 ]; then exit 1; fi
+
 
 #==================================================================================================
 # Sparse vector/sparse vector multiplication
 #==================================================================================================
 
 echo " Running sparse vector/sparse vector multiplication tests...";
+
 $MATHTEST_PATH/svecsvecmult/VCaVCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/svecsvecmult/VCaVCb; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/svecsvecmult/VCbVCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/svecsvecmult/VCbVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/svecsvecmult/AliasingTest; if [ $? != 0 ]; then exit 1; fi
 
 
 #==================================================================================================
@@ -518,6 +568,7 @@ $MATHTEST_PATH/svecsvecmult/VCbVCb; if [ $? != 0 ]; then exit 1; fi
 #==================================================================================================
 
 echo " Running dense vector/dense vector cross product tests...";
+
 $MATHTEST_PATH/dvecdveccross/V3aV3a; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dvecdveccross/V3aV3b; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dvecdveccross/V3aVDa; if [ $? != 0 ]; then exit 1; fi
@@ -538,12 +589,15 @@ $MATHTEST_PATH/dvecdveccross/VDbV3b; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dvecdveccross/VDbVDa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dvecdveccross/VDbVDb; if [ $? != 0 ]; then exit 1; fi
 
+$MATHTEST_PATH/dvecdveccross/AliasingTest; if [ $? != 0 ]; then exit 1; fi
+
 
 #==================================================================================================
 # Dense vector/sparse vector cross product
 #==================================================================================================
 
 echo " Running dense vector/sparse vector cross product tests...";
+
 $MATHTEST_PATH/dvecsveccross/V3aVCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dvecsveccross/V3aVCb; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dvecsveccross/V3bVCa; if [ $? != 0 ]; then exit 1; fi
@@ -554,12 +608,15 @@ $MATHTEST_PATH/dvecsveccross/VDaVCb; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dvecsveccross/VDbVCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dvecsveccross/VDbVCb; if [ $? != 0 ]; then exit 1; fi
 
+$MATHTEST_PATH/dvecsveccross/AliasingTest; if [ $? != 0 ]; then exit 1; fi
+
 
 #==================================================================================================
 # Sparse vector/dense vector cross product
 #==================================================================================================
 
 echo " Running sparse vector/dense vector cross product tests...";
+
 $MATHTEST_PATH/svecdveccross/VCaV3a; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/svecdveccross/VCaV3b; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/svecdveccross/VCaVDa; if [ $? != 0 ]; then exit 1; fi
@@ -570,16 +627,21 @@ $MATHTEST_PATH/svecdveccross/VCbV3b; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/svecdveccross/VCbVDa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/svecdveccross/VCbVDb; if [ $? != 0 ]; then exit 1; fi
 
+$MATHTEST_PATH/svecdveccross/AliasingTest; if [ $? != 0 ]; then exit 1; fi
+
 
 #==================================================================================================
 # Sparse vector/sparse vector cross product
 #==================================================================================================
 
 echo " Running sparse vector/sparse vector cross product tests...";
+
 $MATHTEST_PATH/svecsveccross/VCaVCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/svecsveccross/VCaVCb; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/svecsveccross/VCbVCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/svecsveccross/VCbVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/svecsveccross/AliasingTest; if [ $? != 0 ]; then exit 1; fi
 
 
 #==================================================================================================
@@ -587,6 +649,7 @@ $MATHTEST_PATH/svecsveccross/VCbVCb; if [ $? != 0 ]; then exit 1; fi
 #==================================================================================================
 
 echo " Running dense vector/dense vector inner product tests...";
+
 $MATHTEST_PATH/tdvecdvecmult/V2aV2a; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/tdvecdvecmult/V2aV2b; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/tdvecdvecmult/V2aVDa; if [ $? != 0 ]; then exit 1; fi
@@ -663,6 +726,7 @@ $MATHTEST_PATH/tdvecdvecmult/VDbVDb; if [ $? != 0 ]; then exit 1; fi
 #==================================================================================================
 
 echo " Running dense vector/sparse vector inner product tests...";
+
 $MATHTEST_PATH/tdvecsvecmult/V2aVCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/tdvecsvecmult/V2aVCb; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/tdvecsvecmult/V2bVCa; if [ $? != 0 ]; then exit 1; fi
@@ -699,6 +763,7 @@ $MATHTEST_PATH/tdvecsvecmult/VDbVCb; if [ $? != 0 ]; then exit 1; fi
 #==================================================================================================
 
 echo " Running sparse vector/dense vector inner product tests...";
+
 $MATHTEST_PATH/tsvecdvecmult/VCaV2a; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/tsvecdvecmult/VCaV2b; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/tsvecdvecmult/VCbV2a; if [ $? != 0 ]; then exit 1; fi
@@ -735,6 +800,7 @@ $MATHTEST_PATH/tsvecdvecmult/VCbVDb; if [ $? != 0 ]; then exit 1; fi
 #==================================================================================================
 
 echo " Running sparse vector/sparse vector inner product tests...";
+
 $MATHTEST_PATH/tsvecsvecmult/VCaVCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/tsvecsvecmult/VCaVCb; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/tsvecsvecmult/VCbVCa; if [ $? != 0 ]; then exit 1; fi
@@ -746,6 +812,7 @@ $MATHTEST_PATH/tsvecsvecmult/VCbVCb; if [ $? != 0 ]; then exit 1; fi
 #==================================================================================================
 
 echo " Running dense vector/dense vector outer product tests...";
+
 $MATHTEST_PATH/dvectdvecmult/V2aV2a; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dvectdvecmult/V2aV2b; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dvectdvecmult/V2aV3a; if [ $? != 0 ]; then exit 1; fi
@@ -896,12 +963,15 @@ $MATHTEST_PATH/dvectdvecmult/VDbV6b; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dvectdvecmult/VDbVDa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dvectdvecmult/VDbVDb; if [ $? != 0 ]; then exit 1; fi
 
+$MATHTEST_PATH/dvectdvecmult/AliasingTest; if [ $? != 0 ]; then exit 1; fi
+
 
 #==================================================================================================
 # Dense vector/sparse vector outer product
 #==================================================================================================
 
 echo " Running dense vector/sparse vector outer product tests...";
+
 $MATHTEST_PATH/dvectsvecmult/V2aVCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dvectsvecmult/V2aVCb; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dvectsvecmult/V2bVCa; if [ $? != 0 ]; then exit 1; fi
@@ -932,12 +1002,15 @@ $MATHTEST_PATH/dvectsvecmult/VDaVCb; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dvectsvecmult/VDbVCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dvectsvecmult/VDbVCb; if [ $? != 0 ]; then exit 1; fi
 
+$MATHTEST_PATH/dvectsvecmult/AliasingTest; if [ $? != 0 ]; then exit 1; fi
+
 
 #==================================================================================================
 # Sparse vector/dense vector outer product
 #==================================================================================================
 
 echo " Running sparse vector/dense vector outer product tests...";
+
 $MATHTEST_PATH/svectdvecmult/VCaV2a; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/svectdvecmult/VCaV2b; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/svectdvecmult/VCaV3a; if [ $? != 0 ]; then exit 1; fi
@@ -964,16 +1037,21 @@ $MATHTEST_PATH/svectdvecmult/VCbV6b; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/svectdvecmult/VCbVDa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/svectdvecmult/VCbVDb; if [ $? != 0 ]; then exit 1; fi
 
+$MATHTEST_PATH/svectdvecmult/AliasingTest; if [ $? != 0 ]; then exit 1; fi
+
 
 #==================================================================================================
 # Sparse vector/sparse vector outer product
 #==================================================================================================
 
 echo " Running sparse vector/sparse vector outer product tests...";
+
 $MATHTEST_PATH/svectsvecmult/VCaVCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/svectsvecmult/VCaVCb; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/svectsvecmult/VCbVCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/svectsvecmult/VCbVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/svectsvecmult/AliasingTest; if [ $? != 0 ]; then exit 1; fi
 
 
 #==================================================================================================
@@ -981,6 +1059,7 @@ $MATHTEST_PATH/svectsvecmult/VCbVCb; if [ $? != 0 ]; then exit 1; fi
 #==================================================================================================
 
 echo " Running dense matrix/dense vector multiplication tests...";
+
 $MATHTEST_PATH/dmatdvecmult/M2x2aV2a; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dmatdvecmult/M2x2aV2b; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dmatdvecmult/M2x2aVDa; if [ $? != 0 ]; then exit 1; fi
@@ -1069,12 +1148,15 @@ $MATHTEST_PATH/dmatdvecmult/MDbV6b; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dmatdvecmult/MDbVDa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dmatdvecmult/MDbVDb; if [ $? != 0 ]; then exit 1; fi
 
+$MATHTEST_PATH/dmatdvecmult/AliasingTest; if [ $? != 0 ]; then exit 1; fi
+
 
 #==================================================================================================
 # Dense matrix/sparse vector multiplication
 #==================================================================================================
 
 echo " Running dense matrix/sparse vector multiplication tests...";
+
 $MATHTEST_PATH/dmatsvecmult/M2x2aVCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dmatsvecmult/M2x2aVCb; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dmatsvecmult/M2x2bVCa; if [ $? != 0 ]; then exit 1; fi
@@ -1115,12 +1197,15 @@ $MATHTEST_PATH/dmatsvecmult/MDaVCb; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dmatsvecmult/MDbVCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dmatsvecmult/MDbVCb; if [ $? != 0 ]; then exit 1; fi
 
+$MATHTEST_PATH/dmatsvecmult/AliasingTest; if [ $? != 0 ]; then exit 1; fi
+
 
 #==================================================================================================
 # Sparse matrix/dense vector multiplication
 #==================================================================================================
 
 echo " Running sparse matrix/dense vector multiplication tests...";
+
 $MATHTEST_PATH/smatdvecmult/MCaV2a; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/smatdvecmult/MCaV2b; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/smatdvecmult/MCaV3a; if [ $? != 0 ]; then exit 1; fi
@@ -1147,16 +1232,21 @@ $MATHTEST_PATH/smatdvecmult/MCbV6b; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/smatdvecmult/MCbVDa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/smatdvecmult/MCbVDb; if [ $? != 0 ]; then exit 1; fi
 
+$MATHTEST_PATH/smatdvecmult/AliasingTest; if [ $? != 0 ]; then exit 1; fi
+
 
 #==================================================================================================
 # Sparse matrix/sparse vector multiplication
 #==================================================================================================
 
 echo " Running sparse matrix/sparse vector multiplication tests...";
+
 $MATHTEST_PATH/smatsvecmult/MCaVCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/smatsvecmult/MCaVCb; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/smatsvecmult/MCbVCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/smatsvecmult/MCbVCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/smatsvecmult/AliasingTest; if [ $? != 0 ]; then exit 1; fi
 
 
 #==================================================================================================
@@ -1164,6 +1254,7 @@ $MATHTEST_PATH/smatsvecmult/MCbVCb; if [ $? != 0 ]; then exit 1; fi
 #==================================================================================================
 
 echo " Running dense vector/dense matrix multiplication tests...";
+
 $MATHTEST_PATH/tdvecdmatmult/V2aM2x2a; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/tdvecdmatmult/V2aM2x2b; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/tdvecdmatmult/V2aMDa;   if [ $? != 0 ]; then exit 1; fi
@@ -1252,12 +1343,15 @@ $MATHTEST_PATH/tdvecdmatmult/VDbM16x8b; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/tdvecdmatmult/VDbMDa;    if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/tdvecdmatmult/VDbMDb;    if [ $? != 0 ]; then exit 1; fi
 
+$MATHTEST_PATH/tdvecdmatmult/AliasingTest; if [ $? != 0 ]; then exit 1; fi
+
 
 #==================================================================================================
 # Sparse vector/dense matrix multiplication
 #==================================================================================================
 
 echo " Running sparse vector/dense matrix multiplication tests...";
+
 $MATHTEST_PATH/tsvecdmatmult/VCaM2x2a;  if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/tsvecdmatmult/VCaM2x2b;  if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/tsvecdmatmult/VCaM3x3a;  if [ $? != 0 ]; then exit 1; fi
@@ -1292,12 +1386,15 @@ $MATHTEST_PATH/tsvecdmatmult/VCbM16x8b; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/tsvecdmatmult/VCbMDa;    if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/tsvecdmatmult/VCbMDb;    if [ $? != 0 ]; then exit 1; fi
 
+$MATHTEST_PATH/tsvecdmatmult/AliasingTest; if [ $? != 0 ]; then exit 1; fi
+
 
 #==================================================================================================
 # Dense vector/sparse matrix multiplication
 #==================================================================================================
 
 echo " Running dense vector/sparse matrix multiplication tests...";
+
 $MATHTEST_PATH/tdvecsmatmult/V2aMCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/tdvecsmatmult/V2aMCb; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/tdvecsmatmult/V2bMCa; if [ $? != 0 ]; then exit 1; fi
@@ -1328,16 +1425,21 @@ $MATHTEST_PATH/tdvecsmatmult/VDaMCb; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/tdvecsmatmult/VDbMCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/tdvecsmatmult/VDbMCb; if [ $? != 0 ]; then exit 1; fi
 
+$MATHTEST_PATH/tdvecsmatmult/AliasingTest; if [ $? != 0 ]; then exit 1; fi
+
 
 #==================================================================================================
 # Sparse vector/sparse matrix multiplication
 #==================================================================================================
 
 echo " Running sparse vector/sparse matrix multiplication tests...";
+
 $MATHTEST_PATH/tsvecsmatmult/VCaMCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/tsvecsmatmult/VCaMCb; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/tsvecsmatmult/VCbMCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/tsvecsmatmult/VCbMCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/tsvecsmatmult/AliasingTest; if [ $? != 0 ]; then exit 1; fi
 
 
 #==================================================================================================
@@ -1345,6 +1447,7 @@ $MATHTEST_PATH/tsvecsmatmult/VCbMCb; if [ $? != 0 ]; then exit 1; fi
 #==================================================================================================
 
 echo " Running dense matrix/dense matrix addition tests...";
+
 $MATHTEST_PATH/dmatdmatadd/M2x2aM2x2a; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dmatdmatadd/M2x2aM2x2b; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dmatdmatadd/M2x2aMDa;   if [ $? != 0 ]; then exit 1; fi
@@ -1441,12 +1544,15 @@ $MATHTEST_PATH/dmatdmatadd/MDbM16x8b; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dmatdmatadd/MDbMDa;    if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dmatdmatadd/MDbMDb;    if [ $? != 0 ]; then exit 1; fi
 
+$MATHTEST_PATH/dmatdmatadd/AliasingTest; if [ $? != 0 ]; then exit 1; fi
+
 
 #==================================================================================================
 # Dense matrix/sparse matrix addition
 #==================================================================================================
 
 echo " Running dense matrix/sparse matrix addition tests...";
+
 $MATHTEST_PATH/dmatsmatadd/M2x2aMCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dmatsmatadd/M2x2aMCb; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dmatsmatadd/M2x2bMCa; if [ $? != 0 ]; then exit 1; fi
@@ -1487,12 +1593,15 @@ $MATHTEST_PATH/dmatsmatadd/MDaMCb; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dmatsmatadd/MDbMCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dmatsmatadd/MDbMCb; if [ $? != 0 ]; then exit 1; fi
 
+$MATHTEST_PATH/dmatsmatadd/AliasingTest; if [ $? != 0 ]; then exit 1; fi
+
 
 #==================================================================================================
 # Sparse matrix/dense matrix addition
 #==================================================================================================
 
 echo " Running sparse matrix/dense matrix addition tests...";
+
 $MATHTEST_PATH/smatdmatadd/MCaM2x2a;  if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/smatdmatadd/MCaM2x2b;  if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/smatdmatadd/MCaM3x3a;  if [ $? != 0 ]; then exit 1; fi
@@ -1533,10 +1642,13 @@ $MATHTEST_PATH/smatdmatadd/MCbMDb;    if [ $? != 0 ]; then exit 1; fi
 #==================================================================================================
 
 echo " Running sparse matrix/sparse matrix addition tests...";
+
 $MATHTEST_PATH/smatsmatadd/MCaMCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/smatsmatadd/MCaMCb; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/smatsmatadd/MCbMCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/smatsmatadd/MCbMCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/smatsmatadd/AliasingTest; if [ $? != 0 ]; then exit 1; fi
 
 
 #==================================================================================================
@@ -1544,6 +1656,7 @@ $MATHTEST_PATH/smatsmatadd/MCbMCb; if [ $? != 0 ]; then exit 1; fi
 #==================================================================================================
 
 echo " Running dense matrix/dense matrix subtraction tests...";
+
 $MATHTEST_PATH/dmatdmatsub/M2x2aM2x2a; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dmatdmatsub/M2x2aM2x2b; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dmatdmatsub/M2x2aMDa;   if [ $? != 0 ]; then exit 1; fi
@@ -1640,12 +1753,15 @@ $MATHTEST_PATH/dmatdmatsub/MDbM16x8b; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dmatdmatsub/MDbMDa;    if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dmatdmatsub/MDbMDb;    if [ $? != 0 ]; then exit 1; fi
 
+$MATHTEST_PATH/dmatdmatsub/AliasingTest; if [ $? != 0 ]; then exit 1; fi
+
 
 #==================================================================================================
 # Dense matrix/sparse matrix subtraction
 #==================================================================================================
 
 echo " Running dense matrix/sparse matrix subtraction tests...";
+
 $MATHTEST_PATH/dmatsmatsub/M2x2aMCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dmatsmatsub/M2x2aMCb; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dmatsmatsub/M2x2bMCa; if [ $? != 0 ]; then exit 1; fi
@@ -1686,12 +1802,15 @@ $MATHTEST_PATH/dmatsmatsub/MDaMCb; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dmatsmatsub/MDbMCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dmatsmatsub/MDbMCb; if [ $? != 0 ]; then exit 1; fi
 
+$MATHTEST_PATH/dmatsmatsub/AliasingTest; if [ $? != 0 ]; then exit 1; fi
+
 
 #==================================================================================================
 # Sparse matrix/dense matrix subtraction
 #==================================================================================================
 
 echo " Running sparse matrix/dense matrix subtraction tests...";
+
 $MATHTEST_PATH/smatdmatsub/MCaM2x2a;  if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/smatdmatsub/MCaM2x2b;  if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/smatdmatsub/MCaM3x3a;  if [ $? != 0 ]; then exit 1; fi
@@ -1726,16 +1845,21 @@ $MATHTEST_PATH/smatdmatsub/MCbM16x8b; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/smatdmatsub/MCbMDa;    if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/smatdmatsub/MCbMDb;    if [ $? != 0 ]; then exit 1; fi
 
+$MATHTEST_PATH/smatdmatsub/AliasingTest; if [ $? != 0 ]; then exit 1; fi
+
 
 #==================================================================================================
 # Sparse matrix/sparse matrix subtraction
 #==================================================================================================
 
 echo " Running sparse matrix/sparse matrix subtraction tests...";
+
 $MATHTEST_PATH/smatsmatsub/MCaMCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/smatsmatsub/MCaMCb; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/smatsmatsub/MCbMCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/smatsmatsub/MCbMCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/smatsmatsub/AliasingTest; if [ $? != 0 ]; then exit 1; fi
 
 
 #==================================================================================================
@@ -1743,6 +1867,7 @@ $MATHTEST_PATH/smatsmatsub/MCbMCb; if [ $? != 0 ]; then exit 1; fi
 #==================================================================================================
 
 echo " Running dense matrix/dense matrix multiplication tests...";
+
 $MATHTEST_PATH/dmatdmatmult/M2x2aM2x2a; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dmatdmatmult/M2x2aM2x2b; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dmatdmatmult/M2x2aMDa;   if [ $? != 0 ]; then exit 1; fi
@@ -1847,12 +1972,15 @@ $MATHTEST_PATH/dmatdmatmult/MDbM7x9b; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dmatdmatmult/MDbMDa;   if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dmatdmatmult/MDbMDb;   if [ $? != 0 ]; then exit 1; fi
 
+$MATHTEST_PATH/dmatdmatmult/AliasingTest; if [ $? != 0 ]; then exit 1; fi
+
 
 #==================================================================================================
 # Dense matrix/sparse matrix multiplication
 #==================================================================================================
 
 echo " Running dense matrix/sparse matrix multiplication tests...";
+
 $MATHTEST_PATH/dmatsmatmult/M2x2aMCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dmatsmatmult/M2x2aMCb; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dmatsmatmult/M2x2bMCa; if [ $? != 0 ]; then exit 1; fi
@@ -1893,12 +2021,15 @@ $MATHTEST_PATH/dmatsmatmult/MDaMCb; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dmatsmatmult/MDbMCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/dmatsmatmult/MDbMCb; if [ $? != 0 ]; then exit 1; fi
 
+$MATHTEST_PATH/dmatsmatmult/AliasingTest; if [ $? != 0 ]; then exit 1; fi
+
 
 #==================================================================================================
 # Sparse matrix/dense matrix multiplication
 #==================================================================================================
 
 echo " Running sparse matrix/dense matrix multiplication tests...";
+
 $MATHTEST_PATH/smatdmatmult/MCaM2x2a;  if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/smatdmatmult/MCaM2x2b;  if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/smatdmatmult/MCaM3x3a;  if [ $? != 0 ]; then exit 1; fi
@@ -1933,16 +2064,21 @@ $MATHTEST_PATH/smatdmatmult/MCbM16x8b; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/smatdmatmult/MCbMDa;    if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/smatdmatmult/MCbMDb;    if [ $? != 0 ]; then exit 1; fi
 
+$MATHTEST_PATH/smatdmatmult/AliasingTest; if [ $? != 0 ]; then exit 1; fi
+
 
 #==================================================================================================
 # Sparse matrix/sparse matrix multiplication
 #==================================================================================================
 
 echo " Running sparse matrix/sparse matrix multiplication tests...";
+
 $MATHTEST_PATH/smatsmatmult/MCaMCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/smatsmatmult/MCaMCb; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/smatsmatmult/MCbMCa; if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/smatsmatmult/MCbMCb; if [ $? != 0 ]; then exit 1; fi
+
+$MATHTEST_PATH/smatsmatmult/AliasingTest; if [ $? != 0 ]; then exit 1; fi
 
 
 #==================================================================================================
