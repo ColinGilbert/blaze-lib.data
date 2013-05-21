@@ -57,7 +57,7 @@ $MATHTEST_PATH/compressedmatrix/ClassTest; if [ $? != 0 ]; then exit 1; fi
 echo " Running view tests..."
 
 $MATHTEST_PATH/denserow/ClassTest;     if [ $? != 0 ]; then exit 1; fi
-$MATHTEST_PATH/densecolum/ClassTest;   if [ $? != 0 ]; then exit 1; fi
+$MATHTEST_PATH/densecolumn/ClassTest;  if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/sparserow/ClassTest;    if [ $? != 0 ]; then exit 1; fi
 $MATHTEST_PATH/sparsecolumn/ClassTest; if [ $? != 0 ]; then exit 1; fi
 
