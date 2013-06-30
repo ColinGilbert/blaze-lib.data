@@ -73,7 +73,7 @@ echo "= Execution of the Blaze test suite"
 echo "==================================================================================================="
 echo
 
-./blazetest
+$BLAZETEST_PATH/run
 if [ $? != 0 ]; then echo " Error during execution of the Blaze test suite"; exit 1; fi
 
 
