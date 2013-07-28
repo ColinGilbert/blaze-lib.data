@@ -2,12 +2,15 @@ Release Instructions
 ====================
 
 - Tests with the following compilers
-  - GCC 4.2 - 4.7
+  - GCC 4.2 - 4.8
   - Intel 11.1 and 12.1
   - clang 4.1
   - VS 2010 and 2012
 - Adapt the version information in <blaze/system/Version.h>
 - Create a tag with message 'Blaze version x.y'
+  - use 'git tag' to display all tags
+  - use 'git show vXXX' to show a specific tag
+  - use 'git tag -a vXXX -m 'Blaze version XXX' to create the tag
 - Create the Blaze download 'blaze-x.y.tar.gz':
   - Clone the created tag
   - Remove the directory '.git'
@@ -17,8 +20,9 @@ Release Instructions
 - Test the two archives
 - Upload of the two archives
 - Adapting the project home page
-  - Download images
-  - News section
+  - Update the download images
+  - Update the linked version of Blaze
+  - Update the news section
 - Announce the release in the following newsletters:
   - NA-Digest
   - Gauss-Allianz (redaktion@gauss-allianz.de)
