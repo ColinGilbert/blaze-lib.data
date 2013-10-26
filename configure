@@ -25,7 +25,7 @@
 
 # Checking the number of command line arguments
 if [ $# -ge 2 ]; then
-   echo "Invalid use of the Blazemark configuration script. Type './configure -h' to display the help."
+   echo "Invalid use of the Blaze sandbox configuration script. Type './configure -h' to display the help."
    exit 1
 fi
 
@@ -234,7 +234,7 @@ fi
 cat > Makefile <<EOF
 #==================================================================================================
 #
-#  Makefile for the Blaze benchmark suite
+#  Makefile for the Blaze sandbox
 #
 #  Copyright (C) 2011 Klaus Iglberger - All Rights Reserved
 #
