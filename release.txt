@@ -3,9 +3,10 @@ Release Instructions
 
 - Tests with the following compilers
   - GCC 4.2 - 4.8
-  - Intel 11.1 and 12.1
+  - Intel 12.1 and 13.1
   - clang 4.1
-  - VS 2010 and 2012
+  - VS 2010, 2012 and 2013
+- Turn of all internal and user assertions
 - Adapt the version information in <blaze/system/Version.h>
 - Create a tag with message 'Blaze version x.y'
   - use 'git tag' to display all tags
