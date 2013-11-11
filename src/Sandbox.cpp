@@ -3,19 +3,32 @@
 //  \file Sandbox.cpp
 //  \brief Sandbox for various Blaze test scenarios
 //
-//  Copyright (C) 2011 Klaus Iglberger - All Rights Reserved
+//  Copyright (C) 2013 Klaus Iglberger - All Rights Reserved
 //
-//  This file is part of the Blaze library. This library is free software; you can redistribute
-//  it and/or modify it under the terms of the GNU General Public License as published by the
-//  Free Software Foundation; either version 3, or (at your option) any later version.
+//  This file is part of the Blaze library. You can redistribute it and/or modify it under
+//  the terms of the New (Revised) BSD License. Redistribution and use in source and binary
+//  forms, with or without modification, are permitted provided that the following conditions
+//  are met:
 //
-//  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
-//  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-//  See the GNU General Public License for more details.
+//  1. Redistributions of source code must retain the above copyright notice, this list of
+//     conditions and the following disclaimer.
+//  2. Redistributions in binary form must reproduce the above copyright notice, this list
+//     of conditions and the following disclaimer in the documentation and/or other materials
+//     provided with the distribution.
+//  3. Neither the names of the Blaze development group nor the names of its contributors
+//     may be used to endorse or promote products derived from this software without specific
+//     prior written permission.
 //
-//  You should have received a copy of the GNU General Public License along with a special
-//  exception for linking and compiling against the Blaze library, the so-called "runtime
-//  exception"; see the file COPYING. If not, see http://www.gnu.org/licenses/.
+//  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY
+//  EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+//  OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+//  SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+//  INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+//  TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+//  BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+//  CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN
+//  ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
+//  DAMAGE.
 */
 //=================================================================================================
 
@@ -71,92 +84,67 @@ using namespace blaze;
 int main()
 {
    // OPERATION TEST //////////////////////////////////////////////////////////////////////////////
-   /*
+
    //setSeed( 306732 );
 
    // Dense vectors
-   StaticVector<int,2UL,columnVector> d1;
+   StaticVector<double,3UL,columnVector> d1;
    d1[0] = 1;
    d1[1] = 2;
-//    d1[2] = 3;
-//    d1[2] = 3;
-//    d1[3] = 4;
-//    d1[4] = 5;
-//    d1[5] = 6;
+   d1[2] = 3;
 
-   DynamicVector<int,rowVector> d2( 2UL );
-   d2[0] = 2;
-   d2[1] = 4;
-//    d2[2] = 6;
-//    d2[3] = 8;
-//    d2[4] = 10;
-//    d2[5] = 12;
+   DynamicVector<double,columnVector> d2( 3UL );
+   d2[0] = 1;
+   d2[1] = 2;
+   d2[2] = 3;
+
+   DynamicVector<int,rowVector> d3( 12U );
+   d3[0] = 1;
+   d3[1] = 2;
+   d3[2] = 3;
+   d3[3] = 4;
+   d3[4] = 5;
+   d3[5] = 6;
+   d3[6] = 7;
+   d3[7] = 8;
+   d3[8] = 9;
+   d3[9] = 10;
+   d3[10] = 11;
+   d3[11] = 12;
 
    // Sparse vectors
-   CompressedVector<int,rowVector> s1( 3UL );
-   //s1[0] = 1;
-   s1[1] = 2;
-   //s1[2] = 3;
+   CompressedVector<int,rowVector> s1( 8UL, 3UL );
+   s1[3] = 1;
+   s1[4] = 2;
+   s1[5] = 3;
 
-   CompressedVector<int,rowVector> s2( 3UL );
-   s2[0] = 1;
-   s2[1] = 2;
+   CompressedVector<int,columnVector> s2( 3UL );
+   s2[0] = 21;
+   s2[1] = 22;
+   s2[2] = 23;
 
    // Dense matrices
-   StaticMatrix<float,2UL,2UL,rowMajor> D1;
+   StaticMatrix<double,3UL,3UL,rowMajor> D1;
    D1(0,0) = 1;
-   D1(0,1) = -2;
-   //D1(0,2) = 1;
-   D1(1,0) = -3;
-   D1(1,1) = 4;
-   //D1(1,2) = 2;
-   //D1(2,0) = 4;
-   //D1(2,1) = 0;
-   //D1(2,2) = 5;
+   D1(0,1) = 0;
+   D1(0,2) = 2;
+   D1(1,0) = 0;
+   D1(1,1) = 3;
+   D1(1,2) = 0;
+   D1(2,0) = 4;
+   D1(2,1) = 0;
+   D1(2,2) = 5;
 
-//    D1(0,0) = 1.0;
-//    D1(0,2) = 2.0;
-//    D1(0,4) = 3.0;
-//    D1(1,1) = 4.0;
-//    D1(1,3) = 5.0;
-//    D1(1,5) = 6.0;
-//    D1(2,0) = 7.0;
-//    D1(2,2) = 8.0;
-//    D1(2,4) = 9.0;
-//    D1(3,1) = 1.0;
-//    D1(3,3) = 2.0;
-//    D1(3,5) = 3.0;
-//    D1(4,0) = 4.0;
-//    D1(4,2) = 5.0;
-//    D1(4,4) = 6.0;
-//    D1(5,1) = 7.0;
-//    D1(5,3) = 8.0;
-//    D1(5,5) = 9.0;
-
-   DynamicMatrix<int,rowMajor> D2( 2UL, 2UL, 0 );
+   DynamicMatrix<double,rowMajor> D2( 3UL, 3UL, 0 );
    D2(0,0) = 1;
-   D2(0,1) = -2;
-   D2(1,0) = -3;
-   D2(1,1) = 4;
-
-//    D2(0,0) = 1.0;
-//    D2(0,2) = 2.0;
-//    D2(0,4) = 3.0;
-//    D2(1,1) = 4.0;
-//    D2(1,3) = 5.0;
-//    D2(1,5) = 6.0;
-//    D2(2,0) = 7.0;
-//    D2(2,2) = 8.0;
-//    D2(2,4) = 9.0;
-//    D2(3,1) = 1.0;
-//    D2(3,3) = 2.0;
-//    D2(3,5) = 3.0;
-//    D2(4,0) = 4.0;
-//    D2(4,2) = 5.0;
-//    D2(4,4) = 6.0;
-//    D2(5,1) = 7.0;
-//    D2(5,3) = 8.0;
-//    D2(5,5) = 9.0;
+   D2(0,1) = 0;
+   D2(0,2) = 2;
+   D2(1,0) = 0;
+   D2(1,1) = 3;
+   D2(1,2) = 0;
+   D2(2,0) = 4;
+   D2(2,1) = 0;
+   D2(2,2) = 5;
 
    DynamicMatrix<int,columnMajor> D3( 2UL, 2UL, 0 );
    D3(0,0) = 1;
@@ -165,11 +153,12 @@ int main()
    D3(1,1) = 4;
 
    // Sparse matrices
-   CompressedMatrix<float,rowMajor> S1( 2UL, 2UL );
+   CompressedMatrix<int,rowMajor> S1( 3UL, 3UL, 5UL );
    S1(0,0) = 1;
-   S1(0,1) = -2;
-   S1(1,0) = -3;
-   S1(1,1) = 4;
+   S1(0,2) = 2;
+   S1(1,1) = 3;
+   S1(2,0) = 4;
+   S1(2,2) = 5;
 
    CompressedMatrix<int,rowMajor> S2( 2UL, 2UL );
    S2(0,0) = 1;
@@ -178,16 +167,13 @@ int main()
    S2(1,1) = 4;
 
    // Target vectors
-   DynamicVector<int,rowVector> x( 2UL, 0 );
-//    x[0] = 1;
-//    x[1] = 2;
-//    x[2] = 3;
-//    x[3] = 4;
-//    x[4] = 5;
-//    x[5] = 6;
+   DynamicVector<double,columnVector> x( 3UL, 0 );
+//    x[3] = -8;
+//    x[4] = -6;
+//    x[5] = -4;
 
    // Target matrices
-   CompressedMatrix<int,rowMajor> X( 3UL, 3UL );
+   DynamicMatrix<double,rowMajor> X( 3UL, 3UL, 0 );
 //    X(0,0) = 1.0;
 //    X(0,2) = 2.0;
 //    X(1,1) = 3.0;
@@ -198,8 +184,8 @@ int main()
 //    X(3,3) = 8.0;
 
    // Operations
-   X = S1 * S2;
-   std::cerr << "\n result =\n" << X << "\n\n";
+   x = d1 + d2;
+   std::cerr << "\n result =\n" << x << "\n\n";
 
    // Single element access
 //    std::cout << " x[0] = " << ( S1 * d1 )[0] << "\n";
@@ -226,37 +212,30 @@ int main()
 //    std::cout << " d[1] = " << ( eval(A) * eval(a) )[1] << "\n";
 //    std::cout << " d[2] = " << ( eval(A) * eval(a) )[2] << "\n";
 //    std::cout << " d[3] = " << ( eval(A) * eval(a) )[3] << "\n";
-   */
+
 
    /*
-   complex* A = new complex[4];
-   A[0] = complex( 1.0F, 0.0F );
-   A[1] = complex( 2.0F, 0.0F );
-   A[2] = complex( 3.0F, 0.0F );
-   A[3] = complex( 4.0F, 0.0F );
+   float array1[8] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 };
+   float array2[8] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
 
-   complex* B = new complex[4];
-   B[0] = complex( 1.0F, 0.0F );
-   B[1] = complex( 2.0F, 0.0F );
-   B[2] = complex( 3.0F, 0.0F );
-   B[3] = complex( 4.0F, 0.0F );
+   __m128i mask = _mm_setzero_si128();
+   __m128 vector = _mm_maskload_ps( array1, mask );
+   _mm_store_ps( array2, vector );
 
-   complex* C = new complex[4];
+   std::cerr << "\n array1 = {" << array1[0] << "," << array1[1] << "," << array1[2] << "," << array1[3] << "," << array1[4] << "," << array1[5] << "," << array1[6] << "," << array1[7] << "}\n";
+   std::cerr << "\n array2 = {" << array2[0] << "," << array2[1] << "," << array2[2] << "," << array2[3] << "," << array2[4] << "," << array2[5] << "," << array2[6] << "," << array2[7] << "}\n";
+   */
 
-   const complex alpha( 1.0F, 0.0F );
-   const complex beta ( 0.0F, 0.0F );
 
-   cblas_cgemm( CblasRowMajor, CblasNoTrans, CblasNoTrans, 2, 2, 2, &alpha,
-                A, 2, B, 2, &beta, C, 2 );
-
-   std::cerr << "\n";
-   for( size_t i=0UL; i<2UL; ++i ) {
-      for( size_t j=0UL; j<2UL; ++j ) {
-         std::cerr << " " << C[i*2+j];
-      }
-      std::cerr << "\n";
-   }
-   std::cerr << "\n";
+   /*
+   std::cerr << "\n"
+             << " BLAZE_SSE_MODE   = " << BLAZE_SSE_MODE << "\n"
+             << " BLAZE_SSE2_MODE  = " << BLAZE_SSE2_MODE << "\n"
+             << " BLAZE_SSE3_MODE  = " << BLAZE_SSE3_MODE << "\n"
+             << " BLAZE_SSSE3_MODE = " << BLAZE_SSSE3_MODE << "\n"
+             << " BLAZE_SSE4_MODE  = " << BLAZE_SSE4_MODE << "\n"
+             << " BLAZE_AVX_MODE   = " << BLAZE_AVX_MODE << "\n"
+             << std::endl;
    */
 
    /*
@@ -741,9 +720,9 @@ int main()
    /*
    using namespace blaze::timing;
 
-   const size_t reps( 5 );
+   const size_t reps( 1 );
 
-   const size_t steps  ( 1800 );
+   const size_t steps  ( 1 );
    unsigned int counter( 0 );
 
    //--Test specific variables---------------------------------------------------------------------
@@ -751,11 +730,17 @@ int main()
    setSeed( 306732 );
 
    //const size_t M( 5000 );
-   const size_t N( 1000000 );
+   const size_t N( 30000 );
    //const size_t F(   10000 );
 
-//    DynamicVector<double> a( N ), c( N );
+   ThreadPool threadpool( 2 );
+
+
+
+   DynamicVector<double> a( N, 2.0 ), c( N, 3.0 ), e( N );
 //    CompressedVector<double> b( N, F ), d( N, F );
+
+   DynamicMatrix<double> D1( N, N, 1.0 );
 
 //    CompressedMatrix<double,rowMajor> S1( N, N );
 //    CompressedMatrix<double,columnMajor> S2( N, N );
@@ -772,6 +757,12 @@ int main()
 //       c[i] = blaze::rand<double>();
 //    }
 //
+//    for( size_t i=0; i<N; ++i ) {
+//       for( size_t j=0; j<N; ++j ) {
+//          D1(i,j) = blaze::rand<double>();
+//       }
+//    }
+
 //    for( size_t i=0; i<F; ++i ) {
 //       b[rand<size_t>(0,N-1)] = rand<double>();
 //    }
@@ -781,8 +772,6 @@ int main()
 //          S1(i,rand<size_t>(0,N-1)) = rand<double>();
 //       }
 //    }
-
-//    d = a * c * b;
 
    //----------------------------------------------------------------------------------------------
 
@@ -803,9 +792,20 @@ int main()
       {
          //--Performance measurement---------------------------------------------------------------
 
-         // TODO
+//          for( size_t i=0UL; i<2UL; ++i ) {
+//             subvector( c, i*15000UL, 15000UL ) = subvector( D1 * a, i*15000UL, 15000UL );
+//          }
 
-         if( vec.size() != N ) std::cerr << " Line " << __LINE__ << ": ERROR detected!!!\n";
+         #pragma omp parallel for schedule(dynamic,1) shared( a, c, D1 )
+         for( size_t i=0UL; i<2UL; ++i ) {
+            subvector( c, i*15000UL, 15000UL ) = subvector( D1 * a, i*15000UL, 15000UL );
+         }
+
+//          threadpool.schedule( Task1( a, c, D1 ) );
+//          threadpool.schedule( Task2( a, c, D1 ) );
+//          threadpool.wait();
+
+         if( c.size() != N ) std::cerr << " Line " << __LINE__ << ": ERROR detected!!!\n";
 
          //----------------------------------------------------------------------------------------
       }
