@@ -50,10 +50,13 @@ git clone http://code.google.com/p/blaze-lib ./blaze-$MAJOR.$MINOR
 cd blaze-$MAJOR.$MINOR
 rm -rf .git
 find * -type f -iname ".gitignore" -exec rm -f {} \;
-./configure
-make doc
-cp -r doc/html/* ../blaze-docu-$MAJOR.$MINOR
 cd ..
 tar czf blaze-$MAJOR.$MINOR.tar.gz ./blaze-$MAJOR.$MINOR
+cd blaze-$MAJOR.$MINOR
+./configure
+make doc > tmp.txt
+rm tmp.txt
+cp -r doc/html/* ../blaze-docu-$MAJOR.$MINOR
+cd ..
 tar czf blaze-docu-$MAJOR.$MINOR.tar.gz ./blaze-docu-$MAJOR.$MINOR
 rm -rf blaze-$MAJOR.$MINOR blaze-docu-$MAJOR.$MINOR
