@@ -1,0 +1,1075 @@
+# Grace project file
+#
+@version 50122
+@page size 792, 612
+@page scroll 5%
+@page inout 5%
+@link page off
+@map font 0 to "Times-Roman", "Times-Roman"
+@map font 1 to "Times-Italic", "Times-Italic"
+@map font 2 to "Times-Bold", "Times-Bold"
+@map font 3 to "Times-BoldItalic", "Times-BoldItalic"
+@map font 4 to "Helvetica", "Helvetica"
+@map font 5 to "Helvetica-Oblique", "Helvetica-Oblique"
+@map font 6 to "Helvetica-Bold", "Helvetica-Bold"
+@map font 7 to "Helvetica-BoldOblique", "Helvetica-BoldOblique"
+@map font 8 to "Courier", "Courier"
+@map font 9 to "Courier-Oblique", "Courier-Oblique"
+@map font 10 to "Courier-Bold", "Courier-Bold"
+@map font 11 to "Courier-BoldOblique", "Courier-BoldOblique"
+@map font 12 to "Symbol", "Symbol"
+@map font 13 to "ZapfDingbats", "ZapfDingbats"
+@map color 0 to (255, 255, 255), "white"
+@map color 1 to (0, 0, 0), "black"
+@map color 2 to (255, 0, 0), "red"
+@map color 3 to (0, 255, 0), "green"
+@map color 4 to (0, 0, 255), "blue"
+@map color 5 to (255, 255, 0), "yellow"
+@map color 6 to (188, 143, 143), "brown"
+@map color 7 to (130, 130, 130), "grey"
+@map color 8 to (148, 0, 211), "violet"
+@map color 9 to (0, 150, 255), "cyan"
+@map color 10 to (255, 0, 255), "magenta"
+@map color 11 to (255, 165, 0), "orange"
+@map color 12 to (114, 33, 188), "indigo"
+@map color 13 to (103, 7, 72), "maroon"
+@map color 14 to (64, 224, 208), "turquoise"
+@map color 15 to (0, 139, 0), "green4"
+@reference date 0
+@date wrap off
+@date wrap year 1950
+@default linewidth 1.0
+@default linestyle 1
+@default color 1
+@default pattern 1
+@default font 4
+@default char size 1.000000
+@default symbol size 1.000000
+@default sformat "%16.8g"
+@background color 0
+@page background fill on
+@timestamp off
+@timestamp 0.03, 0.03
+@timestamp color 1
+@timestamp rot 0
+@timestamp font 4
+@timestamp char size 1.000000
+@timestamp def "Sun Aug 14 11:42:44 2011"
+
+# Blitz++ & uBLAS
+@with string
+@    string on
+@    string loctype view
+@    string 0.95, 0.166
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 0.700000
+@    string def "Blitz++ & uBLAS"
+
+# MTL4
+@with string
+@    string on
+@    string loctype view
+@    string 0.585, 0.30
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 0.700000
+@    string def "MTL4"
+
+# Eigen3
+@with string
+@    string on
+@    string loctype view
+@    string 0.795, 0.46
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 0.700000
+@    string def "Eigen3"
+
+# Intel MKL
+@with string
+@    string on
+@    string loctype view
+@    string 0.53, 0.43
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 0.700000
+@    string def "MKL"
+
+# Blaze
+@with string
+@    string on
+@    string loctype view
+@    string 0.465, 0.66
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 0.700000
+@    string def "Blaze"
+
+# Peak Performance
+@with string
+@    string on
+@    string loctype view
+@    string 0.6, 0.825
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 0.700000
+@    string def "Peak Performance"
+
+@r0 off
+@link r0 to g0
+@r0 type above
+@r0 linestyle 1
+@r0 linewidth 1.0
+@r0 color 1
+@r0 line 0, 0, 0, 0
+@r1 off
+@link r1 to g0
+@r1 type above
+@r1 linestyle 1
+@r1 linewidth 1.0
+@r1 color 1
+@r1 line 0, 0, 0, 0
+@r2 off
+@link r2 to g0
+@r2 type above
+@r2 linestyle 1
+@r2 linewidth 1.0
+@r2 color 1
+@r2 line 0, 0, 0, 0
+@r3 off
+@link r3 to g0
+@r3 type above
+@r3 linestyle 1
+@r3 linewidth 1.0
+@r3 color 1
+@r3 line 0, 0, 0, 0
+@r4 off
+@link r4 to g0
+@r4 type above
+@r4 linestyle 1
+@r4 linewidth 1.0
+@r4 color 1
+@r4 line 0, 0, 0, 0
+@g0 on
+@g0 hidden false
+@g0 type XY
+@g0 stacked false
+@g0 bar hgap 0.000000
+@g0 fixedpoint off
+@g0 fixedpoint type 0
+@g0 fixedpoint xy 0.000000, 0.000000
+@g0 fixedpoint format general general
+@g0 fixedpoint prec 6, 6
+@with g0
+@    world 1, 0, 7000, 32500
+@    stack world 0, 0, 0, 0
+@    znorm 1
+@    view 0.150000, 0.150000, 1.250000, 0.850000
+@    title ""
+@    title font 4
+@    title size 1.600000
+@    title color 1
+@    subtitle ""
+@    subtitle font 4
+@    subtitle size 1.250000
+@    subtitle color 1
+@    xaxes scale Logarithmic
+@    yaxes scale Normal
+@    xaxes invert off
+@    yaxes invert off
+@    xaxis  on
+@    xaxis  type zero false
+@    xaxis  offset 0.000000 , 0.000000
+@    xaxis  bar on
+@    xaxis  bar color 1
+@    xaxis  bar linestyle 1
+@    xaxis  bar linewidth 1.0
+@    xaxis  label "Matrix Size"
+@    xaxis  label layout para
+@    xaxis  label place spec
+@    xaxis  label place 0.010000, 0.080000
+@    xaxis  label char size 1.200000
+@    xaxis  label font 4
+@    xaxis  label color 1
+@    xaxis  label place normal
+@    xaxis  tick on
+@    xaxis  tick major 10
+@    xaxis  tick minor ticks 9
+@    xaxis  tick default 6
+@    xaxis  tick place rounded true
+@    xaxis  tick in
+@    xaxis  tick major size 0.500000
+@    xaxis  tick major color 1
+@    xaxis  tick major linewidth 2.0
+@    xaxis  tick major linestyle 1
+@    xaxis  tick major grid off
+@    xaxis  tick minor color 1
+@    xaxis  tick minor linewidth 2.0
+@    xaxis  tick minor linestyle 1
+@    xaxis  tick minor grid off
+@    xaxis  tick minor size 0.250000
+@    xaxis  ticklabel on
+@    xaxis  ticklabel format decimal
+@    xaxis  ticklabel prec 0
+@    xaxis  ticklabel formula ""
+@    xaxis  ticklabel append ""
+@    xaxis  ticklabel prepend ""
+@    xaxis  ticklabel angle 0
+@    xaxis  ticklabel skip 0
+@    xaxis  ticklabel stagger 0
+@    xaxis  ticklabel place normal
+@    xaxis  ticklabel offset auto
+@    xaxis  ticklabel offset 0.000000 , 0.010000
+@    xaxis  ticklabel start type auto
+@    xaxis  ticklabel start 0.000000
+@    xaxis  ticklabel stop type auto
+@    xaxis  ticklabel stop 0.000000
+@    xaxis  ticklabel char size 1.000000
+@    xaxis  ticklabel font 4
+@    xaxis  ticklabel color 1
+@    xaxis  tick place normal
+@    xaxis  tick spec type none
+@    yaxis  on
+@    yaxis  type zero false
+@    yaxis  offset 0.000000 , 0.000000
+@    yaxis  bar on
+@    yaxis  bar color 1
+@    yaxis  bar linestyle 1
+@    yaxis  bar linewidth 1.0
+@    yaxis  label "MFlop/s"
+@    yaxis  label layout para
+@    yaxis  label place auto
+@    yaxis  label char size 1.200000
+@    yaxis  label font 4
+@    yaxis  label color 1
+@    yaxis  label place normal
+@    yaxis  tick on
+@    yaxis  tick major 2500
+@    yaxis  tick minor ticks 0
+@    yaxis  tick default 6
+@    yaxis  tick place rounded true
+@    yaxis  tick in
+@    yaxis  tick major size 0.500000
+@    yaxis  tick major color 1
+@    yaxis  tick major linewidth 2.0
+@    yaxis  tick major linestyle 1
+@    yaxis  tick major grid off
+@    yaxis  tick minor color 1
+@    yaxis  tick minor linewidth 2.0
+@    yaxis  tick minor linestyle 1
+@    yaxis  tick minor grid off
+@    yaxis  tick minor size 0.250000
+@    yaxis  ticklabel on
+@    yaxis  ticklabel format decimal
+@    yaxis  ticklabel prec 0
+@    yaxis  ticklabel formula ""
+@    yaxis  ticklabel append ""
+@    yaxis  ticklabel prepend ""
+@    yaxis  ticklabel angle 0
+@    yaxis  ticklabel skip 0
+@    yaxis  ticklabel stagger 0
+@    yaxis  ticklabel place normal
+@    yaxis  ticklabel offset auto
+@    yaxis  ticklabel offset 0.000000 , 0.010000
+@    yaxis  ticklabel start type auto
+@    yaxis  ticklabel start 0.000000
+@    yaxis  ticklabel stop type auto
+@    yaxis  ticklabel stop 0.000000
+@    yaxis  ticklabel char size 1.000000
+@    yaxis  ticklabel font 4
+@    yaxis  ticklabel color 1
+@    yaxis  tick place both
+@    yaxis  tick spec type none
+@    altxaxis  off
+@    altyaxis  off
+@    legend on
+@    legend loctype view
+@    legend 0.2, 0.75
+@    legend box color 0
+@    legend box pattern 1
+@    legend box linewidth 1.0
+@    legend box linestyle 1
+@    legend box fill color 0
+@    legend box fill pattern 1
+@    legend font 4
+@    legend char size 1.000000
+@    legend color 1
+@    legend length 4
+@    legend vgap 1
+@    legend hgap 1
+@    legend invert false
+@    frame type 0
+@    frame linestyle 1
+@    frame linewidth 2.0
+@    frame color 1
+@    frame pattern 1
+@    frame background color 0
+@    frame background pattern 0
+
+# Blitz++
+@    s1 hidden false
+@    s1 type xy
+@    s1 symbol 0
+@    s1 symbol size 1.000000
+@    s1 symbol color 2
+@    s1 symbol pattern 1
+@    s1 symbol fill color 2
+@    s1 symbol fill pattern 1
+@    s1 symbol linewidth 1.0
+@    s1 symbol linestyle 1
+@    s1 symbol char 65
+@    s1 symbol char font 4
+@    s1 symbol skip 0
+@    s1 line type 1
+@    s1 line linestyle 1
+@    s1 line linewidth 2.0
+@    s1 line color 2
+@    s1 line pattern 1
+@    s1 baseline type 0
+@    s1 baseline off
+@    s1 dropline off
+@    s1 fill type 0
+@    s1 fill rule 0
+@    s1 fill color 2
+@    s1 fill pattern 1
+@    s1 avalue off
+@    s1 avalue type 2
+@    s1 avalue char size 1.000000
+@    s1 avalue font 4
+@    s1 avalue color 1
+@    s1 avalue rot 0
+@    s1 avalue format general
+@    s1 avalue prec 3
+@    s1 avalue prepend ""
+@    s1 avalue append ""
+@    s1 avalue offset 0.000000 , 0.000000
+@    s1 errorbar on
+@    s1 errorbar place both
+@    s1 errorbar color 1
+@    s1 errorbar pattern 1
+@    s1 errorbar size 1.000000
+@    s1 errorbar linewidth 1.0
+@    s1 errorbar linestyle 1
+@    s1 errorbar riser linewidth 1.0
+@    s1 errorbar riser linestyle 1
+@    s1 errorbar riser clip off
+@    s1 errorbar riser clip length 0.100000
+@    s1 comment ""
+@    s1 legend  "Blitz++"
+
+# Boost uBLAS
+@    s2 hidden false
+@    s2 type xy
+@    s2 symbol 0
+@    s2 symbol size 1.000000
+@    s2 symbol color 3
+@    s2 symbol pattern 1
+@    s2 symbol fill color 3
+@    s2 symbol fill pattern 1
+@    s2 symbol linewidth 1.0
+@    s2 symbol linestyle 1
+@    s2 symbol char 65
+@    s2 symbol char font 4
+@    s2 symbol skip 0
+@    s2 line type 1
+@    s2 line linestyle 1
+@    s2 line linewidth 2.0
+@    s2 line color 3
+@    s2 line pattern 1
+@    s2 baseline type 0
+@    s2 baseline off
+@    s2 dropline off
+@    s2 fill type 0
+@    s2 fill rule 0
+@    s2 fill color 3
+@    s2 fill pattern 1
+@    s2 avalue off
+@    s2 avalue type 2
+@    s2 avalue char size 1.000000
+@    s2 avalue font 4
+@    s2 avalue color 1
+@    s2 avalue rot 0
+@    s2 avalue format general
+@    s2 avalue prec 3
+@    s2 avalue prepend ""
+@    s2 avalue append ""
+@    s2 avalue offset 0.000000 , 0.000000
+@    s2 errorbar on
+@    s2 errorbar place both
+@    s2 errorbar color 1
+@    s2 errorbar pattern 1
+@    s2 errorbar size 1.000000
+@    s2 errorbar linewidth 1.0
+@    s2 errorbar linestyle 1
+@    s2 errorbar riser linewidth 1.0
+@    s2 errorbar riser linestyle 1
+@    s2 errorbar riser clip off
+@    s2 errorbar riser clip length 0.100000
+@    s2 comment ""
+@    s2 legend  "uBLAS"
+
+# MTL4
+@    s3 hidden false
+@    s3 type xy
+@    s3 symbol 0
+@    s3 symbol size 1.000000
+@    s3 symbol color 6
+@    s3 symbol pattern 1
+@    s3 symbol fill color 6
+@    s3 symbol fill pattern 1
+@    s3 symbol linewidth 1.0
+@    s3 symbol linestyle 1
+@    s3 symbol char 65
+@    s3 symbol char font 4
+@    s3 symbol skip 0
+@    s3 line type 1
+@    s3 line linestyle 1
+@    s3 line linewidth 2.0
+@    s3 line color 6
+@    s3 line pattern 1
+@    s3 baseline type 0
+@    s3 baseline off
+@    s3 dropline off
+@    s3 fill type 0
+@    s3 fill rule 0
+@    s3 fill color 6
+@    s3 fill pattern 1
+@    s3 avalue off
+@    s3 avalue type 2
+@    s3 avalue char size 1.000000
+@    s3 avalue font 4
+@    s3 avalue color 1
+@    s3 avalue rot 0
+@    s3 avalue format general
+@    s3 avalue prec 3
+@    s3 avalue prepend ""
+@    s3 avalue append ""
+@    s3 avalue offset 0.000000 , 0.000000
+@    s3 errorbar on
+@    s3 errorbar place both
+@    s3 errorbar color 1
+@    s3 errorbar pattern 1
+@    s3 errorbar size 1.000000
+@    s3 errorbar linewidth 1.0
+@    s3 errorbar linestyle 1
+@    s3 errorbar riser linewidth 1.0
+@    s3 errorbar riser linestyle 1
+@    s3 errorbar riser clip off
+@    s3 errorbar riser clip length 0.100000
+@    s3 comment ""
+@    s3 legend  "MTL4"
+
+# Eigen3
+@    s4 hidden false
+@    s4 type xy
+@    s4 symbol 0
+@    s4 symbol size 1.000000
+@    s4 symbol color 7
+@    s4 symbol pattern 1
+@    s4 symbol fill color 7
+@    s4 symbol fill pattern 1
+@    s4 symbol linewidth 1.0
+@    s4 symbol linestyle 1
+@    s4 symbol char 65
+@    s4 symbol char font 4
+@    s4 symbol skip 0
+@    s4 line type 1
+@    s4 line linestyle 1
+@    s4 line linewidth 2.0
+@    s4 line color 7
+@    s4 line pattern 1
+@    s4 baseline type 0
+@    s4 baseline off
+@    s4 dropline off
+@    s4 fill type 0
+@    s4 fill rule 0
+@    s4 fill color 7
+@    s4 fill pattern 1
+@    s4 avalue off
+@    s4 avalue type 2
+@    s4 avalue char size 1.000000
+@    s4 avalue font 4
+@    s4 avalue color 1
+@    s4 avalue rot 0
+@    s4 avalue format general
+@    s4 avalue prec 3
+@    s4 avalue prepend ""
+@    s4 avalue append ""
+@    s4 avalue offset 0.000000 , 0.000000
+@    s4 errorbar on
+@    s4 errorbar place both
+@    s4 errorbar color 1
+@    s4 errorbar pattern 1
+@    s4 errorbar size 1.000000
+@    s4 errorbar linewidth 1.0
+@    s4 errorbar linestyle 1
+@    s4 errorbar riser linewidth 1.0
+@    s4 errorbar riser linestyle 1
+@    s4 errorbar riser clip off
+@    s4 errorbar riser clip length 0.100000
+@    s4 comment ""
+@    s4 legend  "Eigen3"
+
+# Blaze
+@    s5 hidden false
+@    s5 type xy
+@    s5 symbol 0
+@    s5 symbol size 1.000000
+@    s5 symbol color 8
+@    s5 symbol pattern 1
+@    s5 symbol fill color 8
+@    s5 symbol fill pattern 1
+@    s5 symbol linewidth 1.0
+@    s5 symbol linestyle 1
+@    s5 symbol char 65
+@    s5 symbol char font 4
+@    s5 symbol skip 0
+@    s5 line type 1
+@    s5 line linestyle 1
+@    s5 line linewidth 2.0
+@    s5 line color 8
+@    s5 line pattern 1
+@    s5 baseline type 0
+@    s5 baseline off
+@    s5 dropline off
+@    s5 fill type 0
+@    s5 fill rule 0
+@    s5 fill color 8
+@    s5 fill pattern 1
+@    s5 avalue off
+@    s5 avalue type 2
+@    s5 avalue char size 1.000000
+@    s5 avalue font 4
+@    s5 avalue color 1
+@    s5 avalue rot 0
+@    s5 avalue format general
+@    s5 avalue prec 3
+@    s5 avalue prepend ""
+@    s5 avalue append ""
+@    s5 avalue offset 0.000000 , 0.000000
+@    s5 errorbar on
+@    s5 errorbar place both
+@    s5 errorbar color 1
+@    s5 errorbar pattern 1
+@    s5 errorbar size 1.000000
+@    s5 errorbar linewidth 1.0
+@    s5 errorbar linestyle 1
+@    s5 errorbar riser linewidth 1.0
+@    s5 errorbar riser linestyle 1
+@    s5 errorbar riser clip off
+@    s5 errorbar riser clip length 0.100000
+@    s5 comment ""
+@    s5 legend  "Blaze"
+
+# Intel MKL
+@    s6 hidden false
+@    s6 type xy
+@    s6 symbol 0
+@    s6 symbol size 1.000000
+@    s6 symbol color 11
+@    s6 symbol pattern 1
+@    s6 symbol fill color 11
+@    s6 symbol fill pattern 1
+@    s6 symbol linewidth 1.0
+@    s6 symbol linestyle 1
+@    s6 symbol char 65
+@    s6 symbol char font 4
+@    s6 symbol skip 0
+@    s6 line type 1
+@    s6 line linestyle 1
+@    s6 line linewidth 2.0
+@    s6 line color 11
+@    s6 line pattern 1
+@    s6 baseline type 0
+@    s6 baseline off
+@    s6 dropline off
+@    s6 fill type 0
+@    s6 fill rule 0
+@    s6 fill color 11
+@    s6 fill pattern 1
+@    s6 avalue off
+@    s6 avalue type 2
+@    s6 avalue char size 1.000000
+@    s6 avalue font 4
+@    s6 avalue color 1
+@    s6 avalue rot 0
+@    s6 avalue format general
+@    s6 avalue prec 3
+@    s6 avalue prepend ""
+@    s6 avalue append ""
+@    s6 avalue offset 0.000000 , 0.000000
+@    s6 errorbar on
+@    s6 errorbar place both
+@    s6 errorbar color 1
+@    s6 errorbar pattern 1
+@    s6 errorbar size 1.000000
+@    s6 errorbar linewidth 1.0
+@    s6 errorbar linestyle 1
+@    s6 errorbar riser linewidth 1.0
+@    s6 errorbar riser linestyle 1
+@    s6 errorbar riser clip off
+@    s6 errorbar riser clip length 0.100000
+@    s6 comment ""
+@    s6 legend  "Intel MKL"
+
+# Peak Performance
+@    s7 hidden false
+@    s7 type xy
+@    s7 symbol 0
+@    s7 symbol size 1.000000
+@    s7 symbol color 1
+@    s7 symbol pattern 1
+@    s7 symbol fill color 1
+@    s7 symbol fill pattern 1
+@    s7 symbol linewidth 1.0
+@    s7 symbol linestyle 1
+@    s7 symbol char 65
+@    s7 symbol char font 4
+@    s7 symbol skip 0
+@    s7 line type 1
+@    s7 line linestyle 3
+@    s7 line linewidth 2.0
+@    s7 line color 1
+@    s7 line pattern 1
+@    s7 baseline type 0
+@    s7 baseline off
+@    s7 dropline off
+@    s7 fill type 0
+@    s7 fill rule 0
+@    s7 fill color 1
+@    s7 fill pattern 1
+@    s7 avalue off
+@    s7 avalue type 2
+@    s7 avalue char size 1.000000
+@    s7 avalue font 4
+@    s7 avalue color 1
+@    s7 avalue rot 0
+@    s7 avalue format general
+@    s7 avalue prec 3
+@    s7 avalue prepend ""
+@    s7 avalue append ""
+@    s7 avalue offset 0.000000 , 0.000000
+@    s7 errorbar on
+@    s7 errorbar place both
+@    s7 errorbar color 1
+@    s7 errorbar pattern 1
+@    s7 errorbar size 1.000000
+@    s7 errorbar linewidth 1.0
+@    s7 errorbar linestyle 1
+@    s7 errorbar riser linewidth 1.0
+@    s7 errorbar riser linestyle 1
+@    s7 errorbar riser clip off
+@    s7 errorbar riser clip length 0.100000
+@    s7 comment ""
+@    s7 legend  ""
+
+
+# Blitz++
+@target G0.S1
+@type xy
+     1           89.0355
+     2           505.041
+     3           873.248
+     4           1131.95
+     5           1298.03
+     6           1449.71
+     7           1650.4
+     8           1714.84
+     9           1860.21
+     10          1848.06
+     11          1941.51
+     12          1969.98
+     13          2037.55
+     14          2093.08
+     16          2204.46
+     18          2275.8
+     20          2337.98
+     23          2410.64
+     26          2458.85
+     30          2504.83
+     34          2122.29
+     39          2181.54
+     45          2226.83
+     52          2279.74
+     60          2312.83
+     69          2337.43
+     79          2373.41
+     90          2386.09
+     103         2427.01
+     118         2435.56
+     135         2438.81
+     155         2407.2
+     176         2341.98
+     200         2309.45
+     230         2262.33
+     264         2292.34
+     300         2292.3
+     345         2133.37
+     396         2288.5
+     455         2095.61
+     523         991.018
+     600         464.345
+     690         347.525
+     793         321.241
+     912         313.665
+     1048        306.767
+     1200        284.065
+     1380        310.568
+     1587        301.517
+     1825        264.894
+     2100        270.422
+     2415        258.292
+     2777        249.626
+     3193        241.265
+     3672        215.23
+     4222        214.155
+     4855        212.495
+     5583        209.966
+     6420        205.389
+     7000        202.634
+&
+
+# Boost uBLAS
+@target G0.S2
+@type xy
+     1           153.579
+     2           649.379
+     3           1165.65
+     4           1585.13
+     5           1739.69
+     6           1957.68
+     7           2061.49
+     8           2151.39
+     9           2206.92
+     10          2245.44
+     11          2177.31
+     12          2220.69
+     13          2245.9
+     14          2285.27
+     16          2331.86
+     18          2367.84
+     20          2391.94
+     23          2422.9
+     26          2444.85
+     30          2468.5
+     34          2051.91
+     39          2111.13
+     45          2165.9
+     52          2212.92
+     60          2252.1
+     69          2287.58
+     79          2321.29
+     90          2346.32
+     103         2378.83
+     118         2399.58
+     135         2425.73
+     155         2442.57
+     176         2385.8
+     200         2280.91
+     230         2200.11
+     264         2208.55
+     300         2182.92
+     345         2078.77
+     396         2174.52
+     455         2030.22
+     523         975.849
+     600         464.462
+     690         347.994
+     793         320.881
+     912         292.353
+     1048        306.107
+     1200        269.012
+     1380        310.563
+     1587        305.969
+     1825        278.81
+     2100        271.671
+     2415        264.994
+     2777        253.817
+     3193        241.61
+     3672        221.144
+     4222        220.969
+     4855        215.648
+     5583        214.093
+     6420        208.66
+     7000        204.515
+&
+
+# MTL4
+@target G0.S3
+@type xy
+     1           1.43326
+     2           20.1126
+     3           72.0548
+     4           179.545
+     5           333.299
+     6           499.963
+     7           743.015
+     8           1160.93
+     9           1402.72
+     10          1717.36
+     11          1890.33
+     12          2511.55
+     13          2383.35
+     14          2767.72
+     16          3266.77
+     18          3709.5
+     20          4182.27
+     23          3925
+     26          4478.75
+     30          4803.2
+     34          12715.1
+     39          13465.5
+     45          14618.2
+     52          18528.4
+     60          19579.3
+     69          18142.3
+     79          19473.6
+     90          21021.6
+     103         21174.6
+     118         21882.5
+     135         22516.2
+     155         23560.5
+     176         25523
+     200         26049.9
+     230         25439.4
+     264         26530.6
+     300         26685.8
+     345         25582.9
+     396         27317.7
+     455         26968.3
+     523         26423.4
+     600         27089.8
+     690         26944.6
+     793         26839.1
+     912         27355.4
+     1048        27349.5
+     1200        27610.8
+     1380        27921
+     1587        27877.7
+     1825        27872.3
+     2100        28159.5
+     2415        28163.2
+     2777        28287.1
+     3193        28360.1
+     3672        28539.9
+     4222        28452.8
+     4855        28571.6
+     5583        28634.4
+     6420        28719.9
+     7000        28401.4
+&
+
+# Eigen3
+@target G0.S4
+@type xy
+     1           12.6803
+     2           134.298
+     3           387.917
+     4           978.905
+     5           1444.43
+     6           2056.66
+     7           2381.39
+     8           3657.01
+     9           3401.98
+     10          3949.95
+     11          3850.47
+     12          4936.05
+     13          5639.04
+     14          6092.26
+     16          6818.34
+     18          7097.18
+     20          8193.55
+     23          7912.75
+     26          8977.96
+     30          9508.32
+     34          9870.71
+     39          9822.78
+     45          10767.3
+     52          11616.7
+     60          12045.1
+     69          12052
+     79          12001.1
+     90          12667.2
+     103         12609.6
+     118         13115.8
+     135         13081.9
+     155         13294.4
+     176         13770
+     200         13885.3
+     230         13848.1
+     264         13959.9
+     300         14151
+     345         14118.2
+     396         14297.7
+     455         14133.2
+     523         14072.8
+     600         14303.2
+     690         14203.2
+     793         14212.3
+     912         14280.8
+     1048        14285.7
+     1200        14333.9
+     1380        14382
+     1587        14401.1
+     1825        14469.5
+     2100        14512.1
+     2415        14531.1
+     2777        14598.8
+     3193        14612
+     3672        14653.8
+     4222        14656.8
+     4855        14656.1
+     5583        14684.2
+     6420        14698
+     7000        14711.8
+&
+
+# Blaze
+@target G0.S5
+@type xy
+     1           90.3292
+     2           735.606
+     3           2386.59
+     4           4775.13
+     5           5944.28
+     6           8206.62
+     7           10647
+     8           13120.1
+     9           9271.39
+     10          10852.7
+     11          12030.3
+     12          13709.2
+     13          13631.4
+     14          18337.4
+     16          22930.6
+     18          17216
+     20          16279.1
+     23          19890.1
+     26          17818.6
+     30          19173.1
+     34          17964.7
+     39          19554.8
+     45          20716.5
+     52          22071.2
+     60          20854.3
+     69          21334
+     79          21361.7
+     90          21663.1
+     103         21114.9
+     118         22114.3
+     135         22691.4
+     155         23693.8
+     176         25577.7
+     200         26075.8
+     230         25450.6
+     264         26551.6
+     300         26721
+     345         25676.7
+     396         27262.9
+     455         26643.7
+     523         25902.9
+     600         26615.4
+     690         26634.6
+     793         26869.9
+     912         27532.3
+     1048        27410.5
+     1200        27729.4
+     1380        27850.9
+     1587        27822.4
+     1825        27883.5
+     2100        28162.3
+     2415        28171.4
+     2777        28291.5
+     3193        28371.8
+     3672        28544.4
+     4222        28462.2
+     4855        28580.4
+     5583        28645.9
+     6420        28730.9
+     7000        28414.7
+&
+
+# Intel MKL
+@target G0.S6
+@type xy
+     1           10.0162
+     2           111.117
+     3           315.566
+     4           815.494
+     5           1197.11
+     6           1825.05
+     7           2050.77
+     8           2236.06
+     9           2130.49
+     10          2616.53
+     11          3089.92
+     12          5157.09
+     13          4182.1
+     14          4884.19
+     16          8625.52
+     18          7014.8
+     20          10894.4
+     23          9485.01
+     26          10949.6
+     30          12314.5
+     34          13512.6
+     39          14027.5
+     45          15069.1
+     52          18994.5
+     60          19995
+     69          18626.1
+     79          19837.8
+     90          21178
+     103         21121.7
+     118         21879.2
+     135         22536.3
+     155         23589.1
+     176         25542.7
+     200         26041.8
+     230         25423
+     264         26514.7
+     300         26692
+     345         25747.6
+     396         27543.6
+     455         27104.7
+     523         26458.8
+     600         27179.4
+     690         27105.9
+     793         26985.4
+     912         27457.7
+     1048        27334.7
+     1200        27598.8
+     1380        27810.8
+     1587        27842
+     1825        27870.3
+     2100        28152.6
+     2415        28165.6
+     2777        28295.3
+     3193        28371.4
+     3672        28538.1
+     4222        28461.8
+     4855        28580.4
+     5583        28638.6
+     6420        28720.5
+     7000        28421.9
+&
+
+# Peak Performance
+@target G0.S7
+@type xy
+     0        31200
+     7000     31200
+&

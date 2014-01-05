@@ -1,0 +1,267 @@
+
+ Transpose Dense Matrix/Dense Vector Multiplication:
+   Armadillo [MFlop/s]:
+     1           64.5927
+     2           411.778
+     3           914.534
+     4           1661.89
+     5           995.835
+     6           1149.84
+     7           1303.82
+     8           1387
+     9           1490.81
+     10          1545.38
+     11          1625.62
+     12          1927.25
+     13          1754.71
+     14          2044.8
+     15          2143.52
+     16          2597.95
+     17          2462.53
+     18          2789.5
+     19          2825.31
+     20          3355.04
+     22          3498.06
+     24          4035.17
+     26          4042.68
+     28          4566.86
+     30          4570.23
+     33          4441.74
+     36          5370.22
+     39          4783.13
+     42          5773.54
+     46          5954.21
+     50          6265.73
+     55          5523.11
+     60          6781.93
+     66          6162.06
+     72          6208.63
+     79          5586.45
+     86          6442.4
+     94          6367.88
+     103         5886.19
+     113         5866.74
+     124         6859.39
+     136         6974.86
+     149         6007.58
+     163         5400.76
+     179         5058.79
+     196         5489.88
+     215         4980.25
+     236         5044.35
+     259         4672.9
+     284         4991.43
+     312         5002.73
+     343         4671.11
+     377         4715.12
+     414         4978.55
+     455         4728.76
+     500         5075.15
+     550         4956.22
+     605         4701.28
+     665         4696.08
+     731         4673.48
+     804         4866.57
+     884         4751.1
+     972         4759.51
+     1069        4433.96
+     1175        4406.24
+     1292        4528.05
+     1421        4402.31
+     1563        4270.67
+     1719        4112.66
+     1890        3650.39
+     2079        3183.59
+     2286        2935.38
+     2514        2829.5
+     2765        2833.66
+     3041        2838.46
+     3345        2874.19
+     3679        2790.78
+     4046        2764.44
+     4450        2748.18
+     4895        2781.85
+     5384        2709.52
+     5922        2702.21
+     6514        2567.51
+     7165        2459.58
+     7881        2364.43
+     8669        2365.93
+     9535        2311.17
+     10000       2293.01
+   N=1, steps=168937052
+     Armadillo   = 1        (2.61542)
+   N=2, steps=151480321
+     Armadillo   = 1        (2.20721)
+   N=3, steps=137264423
+     Armadillo   = 1        (2.25138)
+   N=4, steps=125499132
+     Armadillo   = 1        (2.11445)
+   N=5, steps=101861895
+     Armadillo   = 1        (4.60296)
+   N=6, steps=95907332
+     Armadillo   = 1        (5.50502)
+   N=7, steps=86056447
+     Armadillo   = 1        (6.00631)
+   N=8, steps=81380408
+     Armadillo   = 1        (7.04086)
+   N=9, steps=79453720
+     Armadillo   = 1        (8.15423)
+   N=10, steps=72394561
+     Armadillo   = 1        (8.9007)
+   N=11, steps=67728158
+     Armadillo   = 1        (9.62417)
+   N=12, steps=62508711
+     Armadillo   = 1        (8.95184)
+   N=13, steps=51603154
+     Armadillo   = 1        (9.5577)
+   N=14, steps=48820803
+     Armadillo   = 1        (9.02499)
+   N=15, steps=46325032
+     Armadillo   = 1        (9.40109)
+   N=16, steps=43939436
+     Armadillo   = 1        (8.38891)
+   N=17, steps=25322718
+     Armadillo   = 1        (5.76889)
+   N=18, steps=27051646
+     Armadillo   = 1        (6.10953)
+   N=19, steps=25665088
+     Armadillo   = 1        (6.38604)
+   N=20, steps=24540085
+     Armadillo   = 1        (5.70522)
+   N=22, steps=19909243
+     Armadillo   = 1        (5.38417)
+   N=24, steps=18638199
+     Armadillo   = 1        (5.21016)
+   N=26, steps=15320200
+     Armadillo   = 1        (5.02503)
+   N=28, steps=14296976
+     Armadillo   = 1        (4.82111)
+   N=30, steps=14331906
+     Armadillo   = 1        (5.55059)
+   N=33, steps=10068142
+     Armadillo   = 1        (4.86209)
+   N=36, steps=8535313
+     Armadillo   = 1        (4.06245)
+   N=39, steps=7555450
+     Armadillo   = 1        (4.74355)
+   N=42, steps=6618146
+     Armadillo   = 1        (3.99596)
+   N=46, steps=5903299
+     Armadillo   = 1        (4.15021)
+   N=50, steps=4449833
+     Armadillo   = 1        (3.51542)
+   N=55, steps=3806883
+     Armadillo   = 1        (4.13214)
+   N=60, steps=3158009
+     Armadillo   = 1        (3.32474)
+   N=66, steps=1772752
+     Armadillo   = 1        (2.48735)
+   N=72, steps=1293024
+     Armadillo   = 1        (2.14427)
+   N=79, steps=1047222
+     Armadillo   = 1        (2.32504)
+   N=86, steps=856243
+     Armadillo   = 1        (1.95454)
+   N=94, steps=724781
+     Armadillo   = 1        (2.0007)
+   N=103, steps=614983
+     Armadillo   = 1        (2.20607)
+   N=113, steps=507413
+     Armadillo   = 1        (2.199)
+   N=124, steps=434655
+     Armadillo   = 1        (1.94079)
+   N=136, steps=372761
+     Armadillo   = 1        (1.96971)
+   N=149, steps=298107
+     Armadillo   = 1        (2.19591)
+   N=163, steps=233027
+     Armadillo   = 1        (2.28571)
+   N=179, steps=179673
+     Armadillo   = 1        (2.26964)
+   N=196, steps=138350
+     Armadillo   = 1        (1.9313)
+   N=215, steps=109856
+     Armadillo   = 1        (2.03455)
+   N=236, steps=88610
+     Armadillo   = 1        (1.95259)
+   N=259, steps=72738
+     Armadillo   = 1        (2.08432)
+   N=284, steps=60398
+     Armadillo   = 1        (1.94849)
+   N=312, steps=51000
+     Armadillo   = 1        (1.98155)
+   N=343, steps=41730
+     Armadillo   = 1        (2.099)
+   N=377, steps=34358
+     Armadillo   = 1        (2.06858)
+   N=414, steps=28876
+     Armadillo   = 1        (1.98582)
+   N=455, steps=24071
+     Armadillo   = 1        (2.10534)
+   N=500, steps=19870
+     Armadillo   = 1        (1.95562)
+   N=550, steps=16300
+     Armadillo   = 1        (1.98791)
+   N=605, steps=13454
+     Armadillo   = 1        (2.09323)
+   N=665, steps=11155
+     Armadillo   = 1        (2.09933)
+   N=731, steps=9171
+     Armadillo   = 1        (2.09577)
+   N=804, steps=7492
+     Armadillo   = 1        (1.98906)
+   N=884, steps=6023
+     Armadillo   = 1        (1.98019)
+   N=972, steps=5003
+     Armadillo   = 1        (1.98521)
+   N=1069, steps=4101
+     Armadillo   = 1        (2.1129)
+   N=1175, steps=3342
+     Armadillo   = 1        (2.09343)
+   N=1292, steps=2730
+     Armadillo   = 1        (2.01205)
+   N=1421, steps=2290
+     Armadillo   = 1        (2.1)
+   N=1563, steps=1864
+     Armadillo   = 1        (2.13186)
+   N=1719, steps=1460
+     Armadillo   = 1        (2.09742)
+   N=1890, steps=1040
+     Armadillo   = 1        (2.03485)
+   N=2079, steps=738
+     Armadillo   = 1        (2.00343)
+   N=2286, steps=563
+     Armadillo   = 1        (2.00416)
+   N=2514, steps=447
+     Armadillo   = 1        (1.99652)
+   N=2765, steps=369
+     Armadillo   = 1        (1.99077)
+   N=3041, steps=305
+     Armadillo   = 1        (1.98705)
+   N=3345, steps=255
+     Armadillo   = 1        (1.9851)
+   N=3679, steps=206
+     Armadillo   = 1        (1.99789)
+   N=4046, steps=169
+     Armadillo   = 1        (2.00128)
+   N=4450, steps=138
+     Armadillo   = 1        (1.98855)
+   N=4895, steps=115
+     Armadillo   = 1        (1.98086)
+   N=5384, steps=95
+     Armadillo   = 1        (2.0325)
+   N=5922, steps=77
+     Armadillo   = 1        (1.99849)
+   N=6514, steps=61
+     Armadillo   = 1        (2.01609)
+   N=7165, steps=46
+     Armadillo   = 1        (1.92013)
+   N=7881, steps=38
+     Armadillo   = 1        (1.99628)
+   N=8669, steps=31
+     Armadillo   = 1        (1.96926)
+   N=9535, steps=25
+     Armadillo   = 1        (1.96679)
+   N=10000, steps=23
+     Armadillo   = 1        (2.006)

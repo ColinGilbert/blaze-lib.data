@@ -1,0 +1,2176 @@
+# Grace project file
+#
+@version 50119
+@page size 792, 612
+@page scroll 5%
+@page inout 5%
+@link page off
+@map font 0 to "Times-Roman", "Times-Roman"
+@map font 1 to "Times-Italic", "Times-Italic"
+@map font 2 to "Times-Bold", "Times-Bold"
+@map font 3 to "Times-BoldItalic", "Times-BoldItalic"
+@map font 4 to "Helvetica", "Helvetica"
+@map font 5 to "Helvetica-Oblique", "Helvetica-Oblique"
+@map font 6 to "Helvetica-Bold", "Helvetica-Bold"
+@map font 7 to "Helvetica-BoldOblique", "Helvetica-BoldOblique"
+@map font 8 to "Courier", "Courier"
+@map font 9 to "Courier-Oblique", "Courier-Oblique"
+@map font 10 to "Courier-Bold", "Courier-Bold"
+@map font 11 to "Courier-BoldOblique", "Courier-BoldOblique"
+@map font 12 to "Symbol", "Symbol"
+@map font 13 to "ZapfDingbats", "ZapfDingbats"
+@map color 0 to (255, 255, 255), "white"
+@map color 1 to (0, 0, 0), "black"
+@map color 2 to (255, 0, 0), "red"
+@map color 3 to (0, 255, 0), "green"
+@map color 4 to (0, 0, 255), "blue"
+@map color 5 to (255, 255, 0), "yellow"
+@map color 6 to (188, 143, 143), "brown"
+@map color 7 to (130, 130, 130), "grey"
+@map color 8 to (148, 0, 211), "violet"
+@map color 9 to (0, 150, 255), "cyan"
+@map color 10 to (255, 0, 255), "magenta"
+@map color 11 to (255, 165, 0), "orange"
+@map color 12 to (114, 33, 188), "indigo"
+@map color 13 to (103, 7, 72), "maroon"
+@map color 14 to (64, 224, 208), "turquoise"
+@map color 15 to (0, 139, 0), "green4"
+@reference date 0
+@date wrap off
+@date wrap year 1950
+@default linewidth 1.0
+@default linestyle 1
+@default color 1
+@default pattern 1
+@default font 4
+@default char size 1.000000
+@default symbol size 1.000000
+@default sformat "%16.8g"
+@background color 0
+@page background fill on
+@timestamp off
+@timestamp 0.03, 0.03
+@timestamp color 1
+@timestamp rot 0
+@timestamp font 4
+@timestamp char size 1.000000
+@timestamp def "Sun Apr 22 19:01:24 2012"
+@with string
+@    string on
+@    string loctype view
+@    string 0.582254901961, 0.515
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 0.700000
+@    string def "Blitz++"
+@with string
+@    string on
+@    string loctype view
+@    string 0.561862745098, 0.427
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 0.700000
+@    string def "Armadillo"
+@with string
+@    string on
+@    string loctype view
+@    string 0.53, 0.285
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 0.700000
+@    string def "Boost uBLAS & MTL4"
+@with string
+@    string on
+@    string loctype view
+@    string 0.38, 0.475
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 0.700000
+@    string def "Eigen3"
+@with string
+@    string on
+@    string loctype view
+@    string 0.333, 0.69
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 0.700000
+@    string def "Blaze"
+@with string
+@    string on
+@    string loctype view
+@    string 0.521568627451, 0.61
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 0.700000
+@    string def "Intel MKL"
+@with string
+@    string on
+@    string loctype view
+@    string 0.8, 0.814
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 0.700000
+@    string def "Theoretical Peak Performance"
+@r0 off
+@link r0 to g0
+@r0 type above
+@r0 linestyle 1
+@r0 linewidth 1.0
+@r0 color 1
+@r0 line 0, 0, 0, 0
+@r1 off
+@link r1 to g0
+@r1 type above
+@r1 linestyle 1
+@r1 linewidth 1.0
+@r1 color 1
+@r1 line 0, 0, 0, 0
+@r2 off
+@link r2 to g0
+@r2 type above
+@r2 linestyle 1
+@r2 linewidth 1.0
+@r2 color 1
+@r2 line 0, 0, 0, 0
+@r3 off
+@link r3 to g0
+@r3 type above
+@r3 linestyle 1
+@r3 linewidth 1.0
+@r3 color 1
+@r3 line 0, 0, 0, 0
+@r4 off
+@link r4 to g0
+@r4 type above
+@r4 linestyle 1
+@r4 linewidth 1.0
+@r4 color 1
+@r4 line 0, 0, 0, 0
+@g0 on
+@g0 hidden false
+@g0 type XY
+@g0 stacked false
+@g0 bar hgap 0.000000
+@g0 fixedpoint off
+@g0 fixedpoint type 0
+@g0 fixedpoint xy 0.000000, 0.000000
+@g0 fixedpoint format general general
+@g0 fixedpoint prec 6, 6
+@with g0
+@    world 1, 0, 3500000, 16000
+@    stack world 0, 0, 0, 0
+@    znorm 1
+@    view 0.150000, 0.150000, 1.250000, 0.850000
+@    title ""
+@    title font 4
+@    title size 1.600000
+@    title color 1
+@    subtitle ""
+@    subtitle font 4
+@    subtitle size 1.250000
+@    subtitle color 1
+@    xaxes scale Logarithmic
+@    yaxes scale Normal
+@    xaxes invert off
+@    yaxes invert off
+@    xaxis  on
+@    xaxis  type zero false
+@    xaxis  offset 0.000000 , 0.000000
+@    xaxis  bar on
+@    xaxis  bar color 1
+@    xaxis  bar linestyle 1
+@    xaxis  bar linewidth 1.0
+@    xaxis  label "Vector Length"
+@    xaxis  label layout para
+@    xaxis  label place spec
+@    xaxis  label place 0.010000, 0.080000
+@    xaxis  label char size 1.200000
+@    xaxis  label font 4
+@    xaxis  label color 1
+@    xaxis  label place normal
+@    xaxis  tick on
+@    xaxis  tick major 10
+@    xaxis  tick minor ticks 9
+@    xaxis  tick default 6
+@    xaxis  tick place rounded true
+@    xaxis  tick in
+@    xaxis  tick major size 0.500000
+@    xaxis  tick major color 1
+@    xaxis  tick major linewidth 2.0
+@    xaxis  tick major linestyle 1
+@    xaxis  tick major grid off
+@    xaxis  tick minor color 1
+@    xaxis  tick minor linewidth 2.0
+@    xaxis  tick minor linestyle 1
+@    xaxis  tick minor grid off
+@    xaxis  tick minor size 0.250000
+@    xaxis  ticklabel on
+@    xaxis  ticklabel format decimal
+@    xaxis  ticklabel prec 0
+@    xaxis  ticklabel formula ""
+@    xaxis  ticklabel append ""
+@    xaxis  ticklabel prepend ""
+@    xaxis  ticklabel angle 0
+@    xaxis  ticklabel skip 0
+@    xaxis  ticklabel stagger 0
+@    xaxis  ticklabel place normal
+@    xaxis  ticklabel offset auto
+@    xaxis  ticklabel offset 0.000000 , 0.010000
+@    xaxis  ticklabel start type auto
+@    xaxis  ticklabel start 0.000000
+@    xaxis  ticklabel stop type auto
+@    xaxis  ticklabel stop 0.000000
+@    xaxis  ticklabel char size 1.000000
+@    xaxis  ticklabel font 4
+@    xaxis  ticklabel color 1
+@    xaxis  tick place normal
+@    xaxis  tick spec type none
+@    yaxis  on
+@    yaxis  type zero false
+@    yaxis  offset 0.000000 , 0.000000
+@    yaxis  bar on
+@    yaxis  bar color 1
+@    yaxis  bar linestyle 1
+@    yaxis  bar linewidth 1.0
+@    yaxis  label "MFlop/s"
+@    yaxis  label layout para
+@    yaxis  label place auto
+@    yaxis  label char size 1.200000
+@    yaxis  label font 4
+@    yaxis  label color 1
+@    yaxis  label place normal
+@    yaxis  tick on
+@    yaxis  tick major 2000
+@    yaxis  tick minor ticks 0
+@    yaxis  tick default 6
+@    yaxis  tick place rounded true
+@    yaxis  tick in
+@    yaxis  tick major size 0.500000
+@    yaxis  tick major color 1
+@    yaxis  tick major linewidth 2.0
+@    yaxis  tick major linestyle 1
+@    yaxis  tick major grid off
+@    yaxis  tick minor color 1
+@    yaxis  tick minor linewidth 2.0
+@    yaxis  tick minor linestyle 1
+@    yaxis  tick minor grid off
+@    yaxis  tick minor size 0.250000
+@    yaxis  ticklabel on
+@    yaxis  ticklabel format decimal
+@    yaxis  ticklabel prec 0
+@    yaxis  ticklabel formula ""
+@    yaxis  ticklabel append ""
+@    yaxis  ticklabel prepend ""
+@    yaxis  ticklabel angle 0
+@    yaxis  ticklabel skip 0
+@    yaxis  ticklabel stagger 0
+@    yaxis  ticklabel place normal
+@    yaxis  ticklabel offset auto
+@    yaxis  ticklabel offset 0.000000 , 0.010000
+@    yaxis  ticklabel start type auto
+@    yaxis  ticklabel start 0.000000
+@    yaxis  ticklabel stop type auto
+@    yaxis  ticklabel stop 0.000000
+@    yaxis  ticklabel char size 1.000000
+@    yaxis  ticklabel font 4
+@    yaxis  ticklabel color 1
+@    yaxis  tick place both
+@    yaxis  tick spec type none
+@    altxaxis  off
+@    altyaxis  off
+@    legend on
+@    legend loctype view
+@    legend 0.87, 0.77
+@    legend box color 0
+@    legend box pattern 1
+@    legend box linewidth 1.0
+@    legend box linestyle 1
+@    legend box fill color 0
+@    legend box fill pattern 1
+@    legend font 4
+@    legend char size 1.000000
+@    legend color 1
+@    legend length 4
+@    legend vgap 1
+@    legend hgap 1
+@    legend invert false
+@    frame type 0
+@    frame linestyle 1
+@    frame linewidth 2.0
+@    frame color 1
+@    frame pattern 1
+@    frame background color 0
+@    frame background pattern 0
+@    s1 hidden false
+@    s1 type xy
+@    s1 symbol 0
+@    s1 symbol size 0.400000
+@    s1 symbol color 2
+@    s1 symbol pattern 1
+@    s1 symbol fill color 2
+@    s1 symbol fill pattern 1
+@    s1 symbol linewidth 1.0
+@    s1 symbol linestyle 1
+@    s1 symbol char 65
+@    s1 symbol char font 4
+@    s1 symbol skip 0
+@    s1 line type 1
+@    s1 line linestyle 1
+@    s1 line linewidth 2.0
+@    s1 line color 2
+@    s1 line pattern 1
+@    s1 baseline type 0
+@    s1 baseline off
+@    s1 dropline off
+@    s1 fill type 0
+@    s1 fill rule 0
+@    s1 fill color 2
+@    s1 fill pattern 1
+@    s1 avalue off
+@    s1 avalue type 2
+@    s1 avalue char size 1.000000
+@    s1 avalue font 4
+@    s1 avalue color 1
+@    s1 avalue rot 0
+@    s1 avalue format general
+@    s1 avalue prec 3
+@    s1 avalue prepend ""
+@    s1 avalue append ""
+@    s1 avalue offset 0.000000 , 0.000000
+@    s1 errorbar on
+@    s1 errorbar place both
+@    s1 errorbar color 1
+@    s1 errorbar pattern 1
+@    s1 errorbar size 1.000000
+@    s1 errorbar linewidth 1.0
+@    s1 errorbar linestyle 1
+@    s1 errorbar riser linewidth 1.0
+@    s1 errorbar riser linestyle 1
+@    s1 errorbar riser clip off
+@    s1 errorbar riser clip length 0.100000
+@    s1 comment "agr/daxpy.agr"
+@    s1 legend  "Blitz++"
+@    s2 hidden false
+@    s2 type xy
+@    s2 symbol 0
+@    s2 symbol size 0.400000
+@    s2 symbol color 3
+@    s2 symbol pattern 1
+@    s2 symbol fill color 3
+@    s2 symbol fill pattern 1
+@    s2 symbol linewidth 1.0
+@    s2 symbol linestyle 1
+@    s2 symbol char 65
+@    s2 symbol char font 4
+@    s2 symbol skip 0
+@    s2 line type 1
+@    s2 line linestyle 1
+@    s2 line linewidth 2.0
+@    s2 line color 3
+@    s2 line pattern 1
+@    s2 baseline type 0
+@    s2 baseline off
+@    s2 dropline off
+@    s2 fill type 0
+@    s2 fill rule 0
+@    s2 fill color 3
+@    s2 fill pattern 1
+@    s2 avalue off
+@    s2 avalue type 2
+@    s2 avalue char size 1.000000
+@    s2 avalue font 4
+@    s2 avalue color 1
+@    s2 avalue rot 0
+@    s2 avalue format general
+@    s2 avalue prec 3
+@    s2 avalue prepend ""
+@    s2 avalue append ""
+@    s2 avalue offset 0.000000 , 0.000000
+@    s2 errorbar on
+@    s2 errorbar place both
+@    s2 errorbar color 1
+@    s2 errorbar pattern 1
+@    s2 errorbar size 1.000000
+@    s2 errorbar linewidth 1.0
+@    s2 errorbar linestyle 1
+@    s2 errorbar riser linewidth 1.0
+@    s2 errorbar riser linestyle 1
+@    s2 errorbar riser clip off
+@    s2 errorbar riser clip length 0.100000
+@    s2 comment "agr/daxpy.agr"
+@    s2 legend  "Boost uBLAS"
+@    s3 hidden false
+@    s3 type xy
+@    s3 symbol 0
+@    s3 symbol size 0.400000
+@    s3 symbol color 4
+@    s3 symbol pattern 1
+@    s3 symbol fill color 4
+@    s3 symbol fill pattern 1
+@    s3 symbol linewidth 1.0
+@    s3 symbol linestyle 1
+@    s3 symbol char 65
+@    s3 symbol char font 4
+@    s3 symbol skip 0
+@    s3 line type 1
+@    s3 line linestyle 1
+@    s3 line linewidth 2.0
+@    s3 line color 4
+@    s3 line pattern 1
+@    s3 baseline type 0
+@    s3 baseline off
+@    s3 dropline off
+@    s3 fill type 0
+@    s3 fill rule 0
+@    s3 fill color 4
+@    s3 fill pattern 1
+@    s3 avalue off
+@    s3 avalue type 2
+@    s3 avalue char size 1.000000
+@    s3 avalue font 4
+@    s3 avalue color 1
+@    s3 avalue rot 0
+@    s3 avalue format general
+@    s3 avalue prec 3
+@    s3 avalue prepend ""
+@    s3 avalue append ""
+@    s3 avalue offset 0.000000 , 0.000000
+@    s3 errorbar on
+@    s3 errorbar place both
+@    s3 errorbar color 1
+@    s3 errorbar pattern 1
+@    s3 errorbar size 1.000000
+@    s3 errorbar linewidth 1.0
+@    s3 errorbar linestyle 1
+@    s3 errorbar riser linewidth 1.0
+@    s3 errorbar riser linestyle 1
+@    s3 errorbar riser clip off
+@    s3 errorbar riser clip length 0.100000
+@    s3 comment "agr/daxpy.agr"
+@    s3 legend  "GMM++"
+@    s4 hidden false
+@    s4 type xy
+@    s4 symbol 0
+@    s4 symbol size 0.400000
+@    s4 symbol color 13
+@    s4 symbol pattern 1
+@    s4 symbol fill color 13
+@    s4 symbol fill pattern 1
+@    s4 symbol linewidth 1.0
+@    s4 symbol linestyle 1
+@    s4 symbol char 65
+@    s4 symbol char font 4
+@    s4 symbol skip 0
+@    s4 line type 1
+@    s4 line linestyle 1
+@    s4 line linewidth 2.0
+@    s4 line color 13
+@    s4 line pattern 1
+@    s4 baseline type 0
+@    s4 baseline off
+@    s4 dropline off
+@    s4 fill type 0
+@    s4 fill rule 0
+@    s4 fill color 13
+@    s4 fill pattern 1
+@    s4 avalue off
+@    s4 avalue type 2
+@    s4 avalue char size 1.000000
+@    s4 avalue font 4
+@    s4 avalue color 1
+@    s4 avalue rot 0
+@    s4 avalue format general
+@    s4 avalue prec 3
+@    s4 avalue prepend ""
+@    s4 avalue append ""
+@    s4 avalue offset 0.000000 , 0.000000
+@    s4 errorbar on
+@    s4 errorbar place both
+@    s4 errorbar color 1
+@    s4 errorbar pattern 1
+@    s4 errorbar size 1.000000
+@    s4 errorbar linewidth 1.0
+@    s4 errorbar linestyle 1
+@    s4 errorbar riser linewidth 1.0
+@    s4 errorbar riser linestyle 1
+@    s4 errorbar riser clip off
+@    s4 errorbar riser clip length 0.100000
+@    s4 comment "agr/daxpy.agr"
+@    s4 legend  "Armadillo"
+@    s5 hidden false
+@    s5 type xy
+@    s5 symbol 0
+@    s5 symbol size 0.400000
+@    s5 symbol color 6
+@    s5 symbol pattern 1
+@    s5 symbol fill color 6
+@    s5 symbol fill pattern 1
+@    s5 symbol linewidth 1.0
+@    s5 symbol linestyle 1
+@    s5 symbol char 65
+@    s5 symbol char font 4
+@    s5 symbol skip 0
+@    s5 line type 1
+@    s5 line linestyle 1
+@    s5 line linewidth 2.0
+@    s5 line color 6
+@    s5 line pattern 1
+@    s5 baseline type 0
+@    s5 baseline off
+@    s5 dropline off
+@    s5 fill type 0
+@    s5 fill rule 0
+@    s5 fill color 6
+@    s5 fill pattern 1
+@    s5 avalue off
+@    s5 avalue type 2
+@    s5 avalue char size 1.000000
+@    s5 avalue font 4
+@    s5 avalue color 1
+@    s5 avalue rot 0
+@    s5 avalue format general
+@    s5 avalue prec 3
+@    s5 avalue prepend ""
+@    s5 avalue append ""
+@    s5 avalue offset 0.000000 , 0.000000
+@    s5 errorbar on
+@    s5 errorbar place both
+@    s5 errorbar color 1
+@    s5 errorbar pattern 1
+@    s5 errorbar size 1.000000
+@    s5 errorbar linewidth 1.0
+@    s5 errorbar linestyle 1
+@    s5 errorbar riser linewidth 1.0
+@    s5 errorbar riser linestyle 1
+@    s5 errorbar riser clip off
+@    s5 errorbar riser clip length 0.100000
+@    s5 comment "agr/daxpy.agr"
+@    s5 legend  "MTL4"
+@    s6 hidden false
+@    s6 type xy
+@    s6 symbol 0
+@    s6 symbol size 0.400000
+@    s6 symbol color 7
+@    s6 symbol pattern 1
+@    s6 symbol fill color 7
+@    s6 symbol fill pattern 1
+@    s6 symbol linewidth 1.0
+@    s6 symbol linestyle 1
+@    s6 symbol char 65
+@    s6 symbol char font 4
+@    s6 symbol skip 0
+@    s6 line type 1
+@    s6 line linestyle 1
+@    s6 line linewidth 2.0
+@    s6 line color 7
+@    s6 line pattern 1
+@    s6 baseline type 0
+@    s6 baseline off
+@    s6 dropline off
+@    s6 fill type 0
+@    s6 fill rule 0
+@    s6 fill color 7
+@    s6 fill pattern 1
+@    s6 avalue off
+@    s6 avalue type 2
+@    s6 avalue char size 1.000000
+@    s6 avalue font 4
+@    s6 avalue color 1
+@    s6 avalue rot 0
+@    s6 avalue format general
+@    s6 avalue prec 3
+@    s6 avalue prepend ""
+@    s6 avalue append ""
+@    s6 avalue offset 0.000000 , 0.000000
+@    s6 errorbar on
+@    s6 errorbar place both
+@    s6 errorbar color 1
+@    s6 errorbar pattern 1
+@    s6 errorbar size 1.000000
+@    s6 errorbar linewidth 1.0
+@    s6 errorbar linestyle 1
+@    s6 errorbar riser linewidth 1.0
+@    s6 errorbar riser linestyle 1
+@    s6 errorbar riser clip off
+@    s6 errorbar riser clip length 0.100000
+@    s6 comment "agr/daxpy.agr"
+@    s6 legend  "Eigen3"
+@    s7 hidden false
+@    s7 type xy
+@    s7 symbol 0
+@    s7 symbol size 0.400000
+@    s7 symbol color 8
+@    s7 symbol pattern 1
+@    s7 symbol fill color 8
+@    s7 symbol fill pattern 1
+@    s7 symbol linewidth 1.0
+@    s7 symbol linestyle 1
+@    s7 symbol char 65
+@    s7 symbol char font 4
+@    s7 symbol skip 2
+@    s7 line type 1
+@    s7 line linestyle 1
+@    s7 line linewidth 2.0
+@    s7 line color 8
+@    s7 line pattern 1
+@    s7 baseline type 0
+@    s7 baseline off
+@    s7 dropline off
+@    s7 fill type 0
+@    s7 fill rule 0
+@    s7 fill color 8
+@    s7 fill pattern 1
+@    s7 avalue off
+@    s7 avalue type 2
+@    s7 avalue char size 1.000000
+@    s7 avalue font 4
+@    s7 avalue color 1
+@    s7 avalue rot 0
+@    s7 avalue format general
+@    s7 avalue prec 3
+@    s7 avalue prepend ""
+@    s7 avalue append ""
+@    s7 avalue offset 0.000000 , 0.000000
+@    s7 errorbar on
+@    s7 errorbar place both
+@    s7 errorbar color 1
+@    s7 errorbar pattern 1
+@    s7 errorbar size 1.000000
+@    s7 errorbar linewidth 1.0
+@    s7 errorbar linestyle 1
+@    s7 errorbar riser linewidth 1.0
+@    s7 errorbar riser linestyle 1
+@    s7 errorbar riser clip off
+@    s7 errorbar riser clip length 0.100000
+@    s7 comment "agr/daxpy.agr"
+@    s7 legend  "Blaze"
+@    s8 hidden false
+@    s8 type xy
+@    s8 symbol 0
+@    s8 symbol size 0.400000
+@    s8 symbol color 11
+@    s8 symbol pattern 1
+@    s8 symbol fill color 11
+@    s8 symbol fill pattern 1
+@    s8 symbol linewidth 1.0
+@    s8 symbol linestyle 1
+@    s8 symbol char 65
+@    s8 symbol char font 4
+@    s8 symbol skip 2
+@    s8 line type 1
+@    s8 line linestyle 1
+@    s8 line linewidth 2.0
+@    s8 line color 11
+@    s8 line pattern 1
+@    s8 baseline type 0
+@    s8 baseline off
+@    s8 dropline off
+@    s8 fill type 0
+@    s8 fill rule 0
+@    s8 fill color 11
+@    s8 fill pattern 1
+@    s8 avalue off
+@    s8 avalue type 2
+@    s8 avalue char size 1.000000
+@    s8 avalue font 4
+@    s8 avalue color 1
+@    s8 avalue rot 0
+@    s8 avalue format general
+@    s8 avalue prec 3
+@    s8 avalue prepend ""
+@    s8 avalue append ""
+@    s8 avalue offset 0.000000 , 0.000000
+@    s8 errorbar on
+@    s8 errorbar place both
+@    s8 errorbar color 1
+@    s8 errorbar pattern 1
+@    s8 errorbar size 1.000000
+@    s8 errorbar linewidth 1.0
+@    s8 errorbar linestyle 1
+@    s8 errorbar riser linewidth 1.0
+@    s8 errorbar riser linestyle 1
+@    s8 errorbar riser clip off
+@    s8 errorbar riser clip length 0.100000
+@    s8 comment "agr/daxpy.agr"
+@    s8 legend  "Intel MKL"
+@    s9 hidden true
+@    s9 type xy
+@    s9 symbol 0
+@    s9 symbol size 1.000000
+@    s9 symbol color 1
+@    s9 symbol pattern 1
+@    s9 symbol fill color 1
+@    s9 symbol fill pattern 0
+@    s9 symbol linewidth 1.0
+@    s9 symbol linestyle 1
+@    s9 symbol char 65
+@    s9 symbol char font 4
+@    s9 symbol skip 0
+@    s9 line type 1
+@    s9 line linestyle 3
+@    s9 line linewidth 2.0
+@    s9 line color 1
+@    s9 line pattern 1
+@    s9 baseline type 0
+@    s9 baseline off
+@    s9 dropline off
+@    s9 fill type 0
+@    s9 fill rule 0
+@    s9 fill color 1
+@    s9 fill pattern 1
+@    s9 avalue off
+@    s9 avalue type 2
+@    s9 avalue char size 1.000000
+@    s9 avalue font 4
+@    s9 avalue color 1
+@    s9 avalue rot 0
+@    s9 avalue format general
+@    s9 avalue prec 3
+@    s9 avalue prepend ""
+@    s9 avalue append ""
+@    s9 avalue offset 0.000000 , 0.000000
+@    s9 errorbar on
+@    s9 errorbar place both
+@    s9 errorbar color 1
+@    s9 errorbar pattern 1
+@    s9 errorbar size 1.000000
+@    s9 errorbar linewidth 1.0
+@    s9 errorbar linestyle 1
+@    s9 errorbar riser linewidth 1.0
+@    s9 errorbar riser linestyle 1
+@    s9 errorbar riser clip off
+@    s9 errorbar riser clip length 0.100000
+@    s9 comment "Editor"
+@    s9 legend  ""
+@    s10 hidden true
+@    s10 type xy
+@    s10 symbol 0
+@    s10 symbol size 1.000000
+@    s10 symbol color 1
+@    s10 symbol pattern 1
+@    s10 symbol fill color 1
+@    s10 symbol fill pattern 0
+@    s10 symbol linewidth 1.0
+@    s10 symbol linestyle 1
+@    s10 symbol char 65
+@    s10 symbol char font 4
+@    s10 symbol skip 0
+@    s10 line type 1
+@    s10 line linestyle 1
+@    s10 line linewidth 3.5
+@    s10 line color 1
+@    s10 line pattern 1
+@    s10 baseline type 0
+@    s10 baseline off
+@    s10 dropline off
+@    s10 fill type 0
+@    s10 fill rule 0
+@    s10 fill color 1
+@    s10 fill pattern 1
+@    s10 avalue off
+@    s10 avalue type 2
+@    s10 avalue char size 1.000000
+@    s10 avalue font 4
+@    s10 avalue color 1
+@    s10 avalue rot 0
+@    s10 avalue format general
+@    s10 avalue prec 3
+@    s10 avalue prepend ""
+@    s10 avalue append ""
+@    s10 avalue offset 0.000000 , 0.000000
+@    s10 errorbar on
+@    s10 errorbar place both
+@    s10 errorbar color 1
+@    s10 errorbar pattern 1
+@    s10 errorbar size 1.000000
+@    s10 errorbar linewidth 1.0
+@    s10 errorbar linestyle 1
+@    s10 errorbar riser linewidth 1.0
+@    s10 errorbar riser linestyle 1
+@    s10 errorbar riser clip off
+@    s10 errorbar riser clip length 0.100000
+@    s10 comment "Editor"
+@    s10 legend  ""
+@    s11 hidden false
+@    s11 type xy
+@    s11 symbol 0
+@    s11 symbol size 0.400000
+@    s11 symbol color 1
+@    s11 symbol pattern 1
+@    s11 symbol fill color 1
+@    s11 symbol fill pattern 1
+@    s11 symbol linewidth 1.0
+@    s11 symbol linestyle 1
+@    s11 symbol char 65
+@    s11 symbol char font 4
+@    s11 symbol skip 2
+@    s11 line type 1
+@    s11 line linestyle 3
+@    s11 line linewidth 2.0
+@    s11 line color 1
+@    s11 line pattern 1
+@    s11 baseline type 0
+@    s11 baseline off
+@    s11 dropline off
+@    s11 fill type 0
+@    s11 fill rule 0
+@    s11 fill color 1
+@    s11 fill pattern 1
+@    s11 avalue off
+@    s11 avalue type 2
+@    s11 avalue char size 1.000000
+@    s11 avalue font 4
+@    s11 avalue color 1
+@    s11 avalue rot 0
+@    s11 avalue format general
+@    s11 avalue prec 3
+@    s11 avalue prepend ""
+@    s11 avalue append ""
+@    s11 avalue offset 0.000000 , 0.000000
+@    s11 errorbar on
+@    s11 errorbar place both
+@    s11 errorbar color 1
+@    s11 errorbar pattern 1
+@    s11 errorbar size 1.000000
+@    s11 errorbar linewidth 1.0
+@    s11 errorbar linestyle 1
+@    s11 errorbar riser linewidth 1.0
+@    s11 errorbar riser linestyle 1
+@    s11 errorbar riser clip off
+@    s11 errorbar riser clip length 0.100000
+@    s11 comment ""
+@    s11 legend  ""
+
+@target G0.S1
+@type xy
+               1          353.045
+               2          621.391
+               3          832.139
+               4           1109.5
+               5          1337.18
+               6          1472.01
+               7          1578.18
+               8          1983.41
+               9          2116.93
+              10          2252.58
+              11          2291.59
+              12          2657.37
+              13          2681.69
+              14          2790.94
+              15          2803.79
+              16          3002.27
+              17          3130.58
+              18          3241.27
+              19          3242.82
+              20          3503.05
+              22          3620.13
+              24          3940.36
+              26          4019.73
+              28          4236.67
+              30          4340.62
+              33          4531.42
+              36           4823.9
+              39          4791.09
+              42          5050.35
+              46           5252.2
+              50          5416.13
+              55          5526.91
+              60          5827.66
+              66          5971.75
+              72          6179.19
+              79          5831.64
+              86          6087.65
+              94          6617.84
+             103          6481.82
+             113          6936.86
+             124          6308.04
+             136          7223.54
+             149          6697.73
+             163          6439.82
+             179          6931.51
+             196          7077.72
+             215          7062.42
+             236          7297.43
+             259          7320.34
+             284          7516.75
+             312          7633.51
+             343          7678.61
+             377          7624.53
+             414          7679.31
+             455          7885.89
+             500           7881.4
+             550          7857.36
+             605          7905.21
+             665          8231.55
+             731          8019.91
+             804          8253.99
+             884          8221.56
+             972          8303.68
+            1069          8350.24
+            1175          8398.42
+            1292          8447.17
+            1421          8230.24
+            1563             8209
+            1719          8210.22
+            1890          8231.03
+            2079          7078.63
+            2286          4996.46
+            2514          4973.24
+            2765          4979.37
+            3041          4992.29
+            3345          4983.48
+            3679          4954.53
+            4046          4974.44
+            4450          4908.96
+            4895          4962.08
+            5384          4988.19
+            5922          4967.58
+            6514          4931.63
+            7165          4913.13
+            7881          4957.96
+            8669          4969.71
+            9535          4940.87
+           10488          4933.08
+           11536          4905.75
+           12689          4793.33
+           13957          4755.14
+           15352          4492.64
+           16887          4342.55
+           18575          4141.49
+           20432          3976.25
+           22475          3948.37
+           24722          3920.33
+           27194          3851.67
+           29913          3888.49
+           32904          3876.11
+           36194          3877.14
+           39813          3857.62
+           43794          3867.26
+           48173          3764.94
+           52990          3874.44
+           58289          3842.97
+           64117           3790.3
+           70528          3773.96
+           77580          3774.96
+           85338          3785.49
+           93871          3789.31
+          103258          3784.01
+          113583          3786.07
+          124941          3513.31
+          137435          3782.78
+          151178          3777.14
+          166295          3760.73
+          182924          3755.23
+          201216          3548.93
+          221337          3697.54
+          243470          3721.04
+          267817           3578.5
+          294598          3710.12
+          324057          3675.65
+          356462          3644.78
+          392108           3449.9
+          431318          3127.36
+          474449          2781.63
+          521893          2578.35
+          574082          2317.61
+          631490          1995.24
+          694639           1800.8
+          764102          1708.57
+          840512           1657.3
+          924563          1597.74
+         1017019          1568.61
+         1118720           1517.8
+         1230592          1546.94
+         1353651          1513.79
+         1489016          1526.99
+         1637917          1505.19
+         1801708           1509.3
+         1981878          1500.89
+         2180065          1497.72
+         2398071          1519.72
+         2637878          1505.99
+         2901665           1532.3
+         3191831          1498.33
+         3511014          1531.54
+         3862115          1504.63
+         4248326          1547.16
+         4673158          1543.92
+         5140474          1546.99
+         5654521          1545.29
+         6219973          1542.87
+         6841970          1548.16
+         7526167          1548.92
+         8278784          1545.12
+         9106663          1547.39
+        10000000          1550.63
+&
+@target G0.S2
+@type xy
+               1          863.098
+               2           1726.2
+               3          2513.82
+               4           2895.2
+               5          2911.08
+               6          2903.69
+               7          2849.51
+               8           2822.9
+               9          2844.34
+              10          2915.02
+              11          2933.96
+              12          2938.04
+              13          2942.52
+              14          2937.53
+              15          2938.44
+              16          2903.39
+              17          2895.52
+              18          2949.46
+              19          2954.01
+              20          2953.98
+              22          2950.49
+              24          2912.01
+              26          2956.82
+              28          2959.89
+              30          2955.13
+              33          2906.85
+              36          2516.16
+              39          2521.65
+              42          2538.79
+              46           2568.7
+              50          2591.81
+              55          2654.77
+              60          2660.15
+              66          2661.36
+              72          2722.37
+              79          2764.77
+              86          2796.56
+              94          2808.84
+             103           2749.1
+             113          2778.76
+             124          2804.38
+             136          2805.01
+             149           2841.6
+             163          2853.45
+             179          2866.66
+             196          2884.33
+             215          2890.66
+             236          2901.26
+             259          2914.08
+             284          2915.49
+             312           2917.5
+             343          2922.09
+             377           2930.7
+             414           2882.9
+             455          2890.61
+             500          2955.84
+             550          2893.61
+             605          2957.01
+             665          2893.75
+             731           2913.7
+             804          2913.41
+             884          2922.96
+             972          2928.69
+            1069          2932.15
+            1175          2938.22
+            1292          2938.96
+            1421          2960.81
+            1563          2951.75
+            1719          2952.86
+            1890          2957.76
+            2079          2937.43
+            2286          2925.85
+            2514          2923.66
+            2765          2927.48
+            3041          2861.33
+            3345          2861.72
+            3679          2926.58
+            4046          2927.59
+            4450          2928.53
+            4895          2927.83
+            5384           2863.8
+            5922          2930.08
+            6514          2929.77
+            7165           2817.8
+            7881          2864.14
+            8669          2932.21
+            9535          2929.84
+           10488          2862.85
+           11536          2862.21
+           12689          2857.05
+           13957          2919.15
+           15352          2779.79
+           16887          2796.79
+           18575          2838.05
+           20432          2778.64
+           22475          2810.37
+           24722          2804.69
+           27194          2800.75
+           29913          2778.39
+           32904          2767.19
+           36194          2803.37
+           39813          2806.26
+           43794          2807.37
+           48173          2788.52
+           52990          2813.53
+           58289          2766.83
+           64117          2793.93
+           70528          2754.01
+           77580          2798.67
+           85338          2787.94
+           93871          2793.15
+          103258          2787.13
+          113583          2793.29
+          124941          2505.39
+          137435          2786.58
+          151178          2758.02
+          166295          2753.89
+          182924          2751.48
+          201216          2114.69
+          221337          2719.67
+          243470          2752.12
+          267817          2695.42
+          294598          2721.11
+          324057          2656.02
+          356462          2682.57
+          392108          2598.09
+          431318          2496.72
+          474449           2343.8
+          521893          2228.87
+          574082          2044.02
+          631490          1772.43
+          694639          1647.36
+          764102          1557.23
+          840512          1516.11
+          924563          1509.04
+         1017019          1481.19
+         1118720          1403.81
+         1230592          1443.56
+         1353651          1458.05
+         1489016          1462.95
+         1637917          1425.05
+         1801708          1416.38
+         1981878          1440.78
+         2180065          1410.45
+         2398071          1438.71
+         2637878          1423.48
+         2901665          1445.38
+         3191831          1407.69
+         3511014          1429.28
+         3862115          1442.97
+         4248326          1472.63
+         4673158          1469.44
+         5140474          1472.38
+         5654521          1469.03
+         6219973          1473.78
+         6841970          1469.27
+         7526167          1467.72
+         8278784          1470.53
+         9106663          1469.11
+        10000000          1467.34
+&
+@target G0.S3
+@type xy
+               1           862.89
+               2          1418.29
+               3          1792.38
+               4          1791.06
+               5          1968.12
+               6          2589.11
+               7          2718.79
+               8          4142.86
+               9          3679.53
+              10          3698.84
+              11           3714.9
+              12          4660.56
+              13          4206.34
+              14          4182.65
+              15          4161.19
+              16          5177.84
+              17          4715.48
+              18          4660.06
+              19          4611.77
+              20          5753.77
+              22          5178.07
+              24          5825.95
+              26           5314.7
+              28          6041.61
+              30          5548.46
+              33           5960.9
+              36          6354.73
+              39          5825.01
+              42          6041.67
+              46          6267.35
+              50          6263.85
+              55          6281.82
+              60          6853.19
+              66          6572.18
+              72          6989.84
+              79          5758.07
+              86          6815.99
+              94          6953.27
+             103          6896.55
+             113          7077.77
+             124          7296.31
+             136          6533.02
+             149          6538.57
+             163          6574.79
+             179          6638.87
+             196          6865.74
+             215          6825.87
+             236          7014.77
+             259          6998.85
+             284          7128.08
+             312          7180.43
+             343          7174.76
+             377          7262.98
+             414          7256.94
+             455          7311.55
+             500          7382.97
+             550          7399.33
+             605          7435.19
+             665          7474.65
+             731          7468.14
+             804          7532.63
+             884          7536.98
+             972          7571.82
+            1069          7575.43
+            1175          7579.83
+            1292           7613.4
+            1421          7627.34
+            1563          7621.67
+            1719          7636.51
+            1890          7631.08
+            2079          7269.77
+            2286          6091.95
+            2514          6051.63
+            2765          5974.11
+            3041          6030.74
+            3345          6039.28
+            3679          5972.96
+            4046          6016.35
+            4450          5896.96
+            4895          6010.49
+            5384             5995
+            5922           5978.1
+            6514          5902.47
+            7165          5766.93
+            7881          5874.61
+            8669          5934.47
+            9535          5917.02
+           10488          5898.17
+           11536           5849.2
+           12689          5693.95
+           13957          5511.76
+           15352          5101.54
+           16887          4784.37
+           18575          4570.24
+           20432          4326.19
+           22475          4252.81
+           24722          4219.87
+           27194          4200.98
+           29913          4186.41
+           32904           4166.9
+           36194          4149.13
+           39813          4140.23
+           43794          4142.16
+           48173          4113.29
+           52990           4166.6
+           58289          4040.37
+           64117          4002.89
+           70528          3998.72
+           77580          3998.44
+           85338          4000.97
+           93871          4006.11
+          103258          4003.21
+          113583          4004.29
+          124941          3809.59
+          137435          3990.13
+          151178          3969.79
+          166295           3947.7
+          182924          3954.85
+          201216          3635.88
+          221337          3944.21
+          243470          3950.18
+          267817          3848.28
+          294598          3918.16
+          324057          3869.69
+          356462          3705.93
+          392108          3573.72
+          431318          3291.69
+          474449          2902.36
+          521893          2665.04
+          574082          2258.94
+          631490           1924.3
+          694639          1796.38
+          764102          1646.16
+          840512          1601.68
+          924563          1566.89
+         1017019          1550.54
+         1118720          1516.98
+         1230592          1533.15
+         1353651          1507.65
+         1489016          1511.17
+         1637917          1502.53
+         1801708          1497.96
+         1981878          1492.79
+         2180065           1495.7
+         2398071          1506.07
+         2637878          1492.15
+         2901665          1509.52
+         3191831          1494.94
+         3511014          1522.44
+         3862115          1500.71
+         4248326          1499.08
+         4673158          1495.36
+         5140474          1490.85
+         5654521          1497.31
+         6219973          1495.74
+         6841970          1492.37
+         7526167          1491.46
+         8278784           1491.9
+         9106663          1498.19
+        10000000          1491.96
+&
+@target G0.S4
+@type xy
+               1          863.021
+               2          1294.52
+               3           1934.9
+               4          1565.23
+               5          1813.56
+               6           2375.9
+               7          2538.92
+               8          3375.56
+               9          3655.54
+              10          3290.22
+              11          3317.96
+              12          3638.78
+              13          4102.33
+              14          3430.05
+              15           3741.9
+              16          4148.36
+              17          4060.83
+              18          3847.02
+              19          4033.44
+              20          4575.62
+              22          4487.52
+              24          5117.42
+              26          4902.31
+              28          5617.03
+              30          5109.36
+              33          5647.57
+              36          5913.77
+              39          5399.45
+              42          5719.07
+              46          5867.39
+              50          5721.03
+              55          6039.31
+              60          6482.45
+              66          6018.36
+              72          6467.62
+              79          6443.49
+              86          6437.94
+              94          6594.67
+             103          6778.68
+             113          6659.34
+             124          7154.24
+             136           6093.1
+             149          6526.73
+             163          6482.56
+             179          6571.47
+             196          6713.18
+             215          6686.07
+             236          6871.74
+             259          6850.44
+             284          7008.27
+             312          7078.71
+             343          7052.43
+             377          7219.27
+             414           6735.2
+             455          6912.79
+             500           6960.8
+             550          6877.66
+             605          7105.79
+             665           7018.2
+             731          7026.67
+             804          7053.37
+             884          7046.15
+             972          7070.87
+            1069          7094.31
+            1175          7130.69
+            1292          7138.71
+            1421           7181.2
+            1563          7156.17
+            1719          7139.68
+            1890          7150.32
+            2079          6699.18
+            2286          5302.45
+            2514          5310.47
+            2765          5280.61
+            3041          5264.82
+            3345          5241.13
+            3679          5147.05
+            4046          5188.04
+            4450           5227.5
+            4895          5168.67
+            5384          5245.48
+            5922          5276.69
+            6514           5241.3
+            7165          5086.42
+            7881          5190.28
+            8669          5271.32
+            9535          5095.28
+           10488          5003.35
+           11536           4994.2
+           12689           4880.3
+           13957          4776.85
+           15352          4561.42
+           16887          4471.71
+           18575          4595.35
+           20432          4549.59
+           22475          4440.75
+           24722          4268.76
+           27194             4140
+           29913          3904.69
+           32904          3772.78
+           36194          3787.43
+           39813          3782.49
+           43794          3788.92
+           48173             3769
+           52990          3755.02
+           58289          3765.19
+           64117          3785.09
+           70528          3764.09
+           77580          3785.14
+           85338          3788.04
+           93871          3754.17
+          103258          3788.06
+          113583          3745.98
+          124941          3554.47
+          137435          3779.48
+          151178          3765.24
+          166295          3708.86
+          182924          3750.04
+          201216          3553.07
+          221337          3723.62
+          243470          3684.11
+          267817          3672.53
+          294598          3688.72
+          324057          3567.64
+          356462          3504.99
+          392108          3201.12
+          431318          2932.76
+          474449          2718.31
+          521893          2568.26
+          574082          2280.36
+          631490          2003.87
+          694639          1770.43
+          764102          1687.96
+          840512          1648.19
+          924563          1600.57
+         1017019          1554.47
+         1118720           1516.7
+         1230592          1539.69
+         1353651          1513.32
+         1489016          1512.24
+         1637917          1501.85
+         1801708          1495.63
+         1981878           1494.9
+         2180065          1492.44
+         2398071          1507.47
+         2637878          1494.77
+         2901665          1512.81
+         3191831          1490.55
+         3511014          1523.42
+         3862115          1496.14
+         4248326          1539.71
+         4673158          1542.32
+         5140474          1537.25
+         5654521          1542.82
+         6219973          1540.92
+         6841970          1543.35
+         7526167          1545.58
+         8278784          1543.13
+         9106663          1537.71
+        10000000          1542.07
+&
+@target G0.S5
+@type xy
+               1          863.129
+               2          1726.18
+               3          2298.97
+               4          2275.87
+               5          2411.82
+               6          2453.05
+               7           2471.3
+               8           2485.7
+               9          2496.81
+              10           2505.8
+              11          2513.19
+              12           2482.8
+              13          2494.27
+              14          2501.76
+              15           2504.6
+              16          2511.17
+              17           2514.3
+              18          2516.62
+              19          2519.91
+              20          2522.89
+              22          2529.07
+              24          2533.65
+              26          2538.78
+              28          2541.25
+              30          2544.44
+              33          2246.21
+              36          2210.96
+              39          2248.57
+              42          2285.21
+              46          2357.35
+              50          2367.66
+              55          2457.83
+              60          2449.93
+              66          2467.34
+              72          2529.12
+              79          2559.15
+              86           2585.6
+              94          2634.08
+             103           2666.3
+             113           2678.3
+             124          2705.69
+             136          2728.28
+             149          2756.26
+             163          2779.97
+             179           2778.9
+             196          2796.42
+             215          2814.85
+             236          2830.44
+             259          2846.57
+             284          2859.82
+             312          2878.97
+             343           2897.8
+             377          2911.84
+             414          2861.86
+             455          2875.44
+             500          2919.55
+             550          2883.66
+             605          2926.32
+             665          2885.41
+             731           2897.1
+             804           2906.1
+             884          2908.65
+             972          2901.94
+            1069          2903.05
+            1175          2910.24
+            1292          2913.35
+            1421          2944.18
+            1563           2949.7
+            1719          2957.49
+            1890          2957.23
+            2079          2927.61
+            2286          2885.36
+            2514          2878.52
+            2765          2887.08
+            3041          2833.96
+            3345          2834.42
+            3679          2886.73
+            4046          2888.82
+            4450          2883.15
+            4895          2889.06
+            5384          2837.47
+            5922          2885.26
+            6514          2885.55
+            7165          2768.51
+            7881          2837.51
+            8669          2893.65
+            9535          2889.45
+           10488          2827.69
+           11536          2818.49
+           12689          2795.86
+           13957          2837.26
+           15352          2707.46
+           16887          2692.73
+           18575          2749.49
+           20432          2694.32
+           22475          2706.71
+           24722          2717.08
+           27194          2699.98
+           29913          2707.13
+           32904          2693.75
+           36194          2717.45
+           39813          2716.67
+           43794          2722.34
+           48173          2715.23
+           52990          2728.09
+           58289          2673.54
+           64117          2694.34
+           70528          2679.11
+           77580          2710.63
+           85338          2700.15
+           93871          2709.49
+          103258          2700.95
+          113583          2691.75
+          124941          2451.48
+          137435          2697.68
+          151178          2674.56
+          166295          2666.13
+          182924          2669.77
+          201216          2120.41
+          221337          2651.07
+          243470          2680.54
+          267817          2619.38
+          294598          2681.03
+          324057           2575.4
+          356462          2569.23
+          392108          2494.85
+          431318          2411.52
+          474449          2281.67
+          521893          2167.28
+          574082          1968.18
+          631490          1753.96
+          694639          1627.08
+          764102          1546.14
+          840512          1503.41
+          924563          1491.64
+         1017019          1469.32
+         1118720          1407.94
+         1230592           1434.3
+         1353651          1454.01
+         1489016          1456.22
+         1637917          1419.01
+         1801708          1411.33
+         1981878          1447.44
+         2180065          1399.45
+         2398071          1435.18
+         2637878          1424.78
+         2901665          1439.37
+         3191831           1393.9
+         3511014          1417.41
+         3862115          1442.11
+         4248326          1471.92
+         4673158          1469.95
+         5140474          1470.24
+         5654521          1472.47
+         6219973          1469.78
+         6841970          1472.38
+         7526167          1471.45
+         8278784          1472.58
+         9106663          1469.46
+        10000000          1469.38
+&
+@target G0.S6
+@type xy
+               1          862.999
+               2          1726.17
+               3          2588.87
+               4          3452.19
+               5          3883.64
+               6          5178.49
+               7          4532.91
+               8          5952.55
+               9          4994.54
+              10          5975.55
+              11          5339.88
+              12           6214.7
+              13          5610.21
+              14          6396.94
+              15          5826.06
+              16          6540.57
+              17          6001.82
+              18          6658.14
+              19          6148.44
+              20          6754.62
+              22          6834.85
+              24          6903.74
+              26          6963.85
+              28          7016.07
+              30          7061.49
+              33           6744.8
+              36          7169.98
+              39           6855.7
+              42          5284.24
+              46          7291.29
+              50          7327.22
+              55          7100.31
+              60           7397.1
+              66          7429.51
+              72          6496.14
+              79           5961.3
+              86          6184.65
+              94          6293.55
+             103          6400.15
+             113          6500.73
+             124          6642.19
+             136          6728.23
+             149          6767.47
+             163           6842.9
+             179          6916.74
+             196          7014.92
+             215          7045.87
+             236          7131.98
+             259          7158.14
+             284          7231.81
+             312          7277.25
+             343          7298.53
+             377          7338.82
+             414          7374.15
+             455           7377.4
+             500           7453.8
+             550          7468.84
+             605          7494.19
+             665          7495.99
+             731          7520.21
+             804          7559.72
+             884          7577.96
+             972           7594.2
+            1069          7596.43
+            1175          7611.36
+            1292             7637
+            1421          7648.65
+            1563          7658.97
+            1719          7668.49
+            1890           7681.2
+            2079          7360.01
+            2286           6027.2
+            2514          5932.24
+            2765          5875.97
+            3041          5950.56
+            3345           5925.6
+            3679          5880.52
+            4046           5900.7
+            4450          5804.22
+            4895          5892.12
+            5384          5899.97
+            5922          5868.83
+            6514          5823.23
+            7165          5639.69
+            7881          5782.57
+            8669           5808.4
+            9535          5740.94
+           10488          5780.32
+           11536          5711.02
+           12689          5469.05
+           13957          5280.05
+           15352          4893.74
+           16887          4591.51
+           18575             4463
+           20432          4226.81
+           22475           4161.1
+           24722          4135.27
+           27194          4122.51
+           29913          4100.34
+           32904          4081.98
+           36194          4069.33
+           39813          4056.75
+           43794           4056.1
+           48173          3993.34
+           52990          4007.82
+           58289           3946.7
+           64117           3927.9
+           70528           3927.3
+           77580          3930.12
+           85338           3930.2
+           93871          3930.52
+          103258          3927.82
+          113583          3932.11
+          124941          3660.57
+          137435          3918.07
+          151178          3900.56
+          166295          3880.02
+          182924          3884.71
+          201216           3622.3
+          221337          3873.58
+          243470          3878.69
+          267817          3834.62
+          294598          3879.03
+          324057          3762.94
+          356462          3768.21
+          392108          3516.02
+          431318          3284.84
+          474449          2897.22
+          521893          2567.53
+          574082          2224.06
+          631490          1974.46
+          694639          1762.91
+          764102          1670.32
+          840512          1622.41
+          924563          1574.93
+         1017019          1542.35
+         1118720          1500.64
+         1230592          1536.49
+         1353651          1505.11
+         1489016          1508.12
+         1637917          1502.42
+         1801708          1503.91
+         1981878          1494.09
+         2180065          1489.82
+         2398071          1500.91
+         2637878          1488.99
+         2901665          1506.55
+         3191831          1490.33
+         3511014          1516.41
+         3862115          1492.68
+         4248326          1545.53
+         4673158           1541.4
+         5140474          1543.65
+         5654521          1541.66
+         6219973          1543.65
+         6841970          1545.37
+         7526167          1544.87
+         8278784          1545.08
+         9106663          1547.15
+        10000000          1546.09
+&
+@target G0.S7
+@type xy
+     1           775.958
+     2           1552.03
+     3           2327.68
+     4           3103.43
+     5           3875.39
+     6           4653.15
+     7           5425.56
+     8           6203.66
+     9           5656.56
+     10          6324.54
+     11          6931.76
+     12          7568.59
+     13          5604.29
+     14          6024.8
+     15          6453.64
+     16          8872.57
+     17          8635.15
+     18          9131.22
+     19          9637.95
+     20          10147
+     22          8582.94
+     24          9401.23
+     26          11610.7
+     28          12508.1
+     30          11043.8
+     33          11266.8
+     36          12290.8
+     39          11611.2
+     42          11462
+     46          11609
+     50          11777.1
+     55          12714.7
+     60          12284.6
+     66          12071.2
+     72          13389.8
+     79          12474.8
+     86          12594.8
+     94          12740.6
+     103         13208.6
+     113         12058.9
+     124         12338.3
+     136         13084.2
+     149         13197.2
+     163         12441.4
+     179         12372.4
+     196         12506.9
+     215         12480.2
+     236         12489.7
+     259         12422.2
+     284         12533.2
+     312         12591.2
+     343         12552.4
+     377         13906.7
+     414         12508.6
+     455         12536.4
+     500         14418.4
+     550         11829.1
+     605         12062.3
+     665         12017.7
+     731         12160.1
+     804         12411.2
+     884         12301.7
+     972         12167
+     1069        12275.6
+     1175        12235.6
+     1292        12120.8
+     1421        14001
+     1563        13846.4
+     1719        13927.1
+     1890        14041.9
+     2079        10246.6
+     2286        5650.79
+     2514        5537.52
+     2765        5494.87
+     3041        5485.89
+     3345        5516.08
+     3679        5493.3
+     4046        5558.8
+     4450        5466.81
+     4895        5522.04
+     5384        5552.18
+     5922        5519.03
+     6514        5505.26
+     7165        4863.57
+     7881        5536.46
+     8669        5463.84
+     9535        5498.28
+     10488       5531.19
+     11536       5518.61
+     12689       5455.76
+     13957       5401.34
+     15352       4677.78
+     16887       4602.21
+     18575       5017.88
+     20432       4885.94
+     22475       4794.1
+     24722       4636.84
+     27194       4149.17
+     29913       4101.02
+     32904       4090.18
+     36194       4085.43
+     39813       4089.25
+     43794       4090.05
+     48173       4079.94
+     52990       4089.12
+     58289       4087.72
+     64117       4088.79
+     70528       4088.73
+     77580       4087.89
+     85338       4085.69
+     93871       4088.4
+     103258      4089.85
+     113583      4086.9
+     124941      3901.62
+     137435      4083.79
+     151178      4016.46
+     166295      3988.74
+     182924      3978.04
+     201216      3677.57
+     221337      3999.87
+     243470      4042.41
+     267817      3982.86
+     294598      3997.22
+     324057      3804.82
+     356462      3649.68
+     392108      3498.6
+     431318      3334.4
+     474449      2861.02
+     521893      2612.11
+     574082      2224.54
+     631490      1998.11
+     694639      1819.18
+     764102      1722.2
+     840512      1613.63
+     924563      1563.98
+     1017019     1543.01
+     1118720     1505.61
+     1230592     1508.34
+     1353651     1498.94
+     1489016     1496.44
+     1637917     1493.88
+     1801708     1498.69
+     1981878     1497.63
+     2180065     1494.4
+     2398071     1492.95
+     2637878     1496.01
+     2901665     1506.46
+     3191831     1490.15
+     3511014     1504.84
+     3862115     1492.76
+     4248326     1545.77
+     4673158     1543.26
+     5140474     1543.59
+     5654521     1542.98
+     6219973     1546.44
+     6841970     1549.89
+     7526167     1548.01
+     8278784     1547.58
+     9106663     1550.2
+     10000000    1550.73
+&
+@target G0.S8
+@type xy
+               1          99.5759
+               2          191.784
+               3          277.391
+               4          388.344
+               5          467.866
+               6          541.907
+               7          610.867
+               8           722.54
+               9          785.474
+              10          844.317
+              11          899.408
+              12           1013.1
+              13          1062.93
+              14          1109.57
+              15          1153.55
+              16          1534.07
+              17           1552.7
+              18          1587.78
+              19          1619.36
+              20          1765.22
+              22          1836.79
+              24          1982.94
+              26          2036.87
+              28          2174.93
+              30          2219.29
+              33           2786.2
+              36          2974.79
+              39          2939.61
+              42          3077.01
+              46          3182.28
+              50          3726.21
+              55          3846.19
+              60          4087.17
+              66          4952.37
+              72          5167.56
+              79          4868.12
+              86          5324.86
+              94          5469.23
+             103          5788.05
+             113          6649.54
+             124          5927.19
+             136          6438.64
+             149          7468.64
+             163          7695.75
+             179          7957.43
+             196          8748.03
+             215           8003.2
+             236          8930.89
+             259          9647.86
+             284          9549.32
+             312          8979.56
+             343           9074.8
+             377          9315.05
+             414          9408.51
+             455          9905.58
+             500          9335.17
+             550           9370.3
+             605          11937.2
+             665          10577.5
+             731          10712.5
+             804          11031.5
+             884          11109.6
+             972          11284.2
+            1069          11272.5
+            1175          11407.7
+            1292          11548.7
+            1421          13601.8
+            1563          13693.3
+            1719          12592.9
+            1890          11730.8
+            2079          7189.54
+            2286          6140.43
+            2514          6264.83
+            2765          6284.09
+            3041          6182.85
+            3345          6349.71
+            3679          6461.95
+            4046          6499.63
+            4450          6567.31
+            4895          6559.92
+            5384           6589.3
+            5922          6574.86
+            6514          6638.25
+            7165           6464.7
+            7881          6652.15
+            8669          6464.95
+            9535          6633.08
+           10488          6538.91
+           11536          6404.08
+           12689           6253.3
+           13957          6045.32
+           15352          5588.99
+           16887          5001.95
+           18575          4724.45
+           20432          4538.72
+           22475          4570.82
+           24722          4590.35
+           27194          4533.47
+           29913          4545.48
+           32904           4528.9
+           36194           4520.8
+           39813          4507.43
+           43794           4498.2
+           48173          4421.58
+           52990          4460.97
+           58289          4445.12
+           64117          4455.46
+           70528          4443.16
+           77580           4444.5
+           85338           4438.8
+           93871          4423.81
+          103258          4422.59
+          113583           4401.5
+          124941          4220.48
+          137435          4396.76
+          151178          4385.42
+          166295          4357.24
+          182924           4133.2
+          201216          3584.65
+          221337          3309.44
+          243470          2798.54
+          267817          2607.01
+          294598          2313.68
+          324057          2013.38
+          356462          1873.85
+          392108          1690.41
+          431318          1618.11
+          474449          1569.54
+          521893           1561.8
+          574082          1534.26
+          631490          1518.71
+          694639          1502.74
+          764102          1510.13
+          840512          1508.26
+          924563          1501.43
+         1017019          1510.22
+         1118720           1483.7
+         1230592           1506.2
+         1353651           1496.1
+         1489016          1506.22
+         1637917          1497.33
+         1801708           1489.8
+         1981878          1538.92
+         2180065          1601.31
+         2398071          1504.58
+         2637878          1504.54
+         2901665          1503.69
+         3191831           1494.1
+         3511014          1501.42
+         3862115          1509.82
+         4248326          1525.87
+         4673158          1526.35
+         5140474          1526.82
+         5654521          1527.37
+         6219973          1529.14
+         6841970          1531.37
+         7526167          1530.85
+         8278784          1533.85
+         9106663          1533.59
+        10000000          1535.53
+&
+@target G0.S9
+@type xy
+               1            12480
+        10000000            12480
+&
+@target G0.S10
+@type xy
+         1000000             1540
+        10000000             1540
+&
+@target G0.S11
+@type xy
+     0           15600
+     10000000    15600
+&

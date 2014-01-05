@@ -1,0 +1,183 @@
+
+ Transpose Dense Matrix/Transpose Dense Matrix Multiplication:
+   Boost uBLAS [MFlop/s]:
+     1           219.64
+     2           810.832
+     3           1161.15
+     4           1350.83
+     5           1356.04
+     6           1448.54
+     7           1511.65
+     8           1555.39
+     9           1549.17
+     10          1580.91
+     11          1536.64
+     12          1568.33
+     13          1592.88
+     14          1576.65
+     16          1625.1
+     18          1628.68
+     20          1654.39
+     23          1665.82
+     26          1659.44
+     30          1666.15
+     34          1667.78
+     39          1439.46
+     45          1462.13
+     52          1498.24
+     60          1495.56
+     69          1479.41
+     79          1481.23
+     90          1489.55
+     103         1480.41
+     118         1491.44
+     135         1481.98
+     155         1473.76
+     176         1446.15
+     200         1342.08
+     230         1324.48
+     264         1310.14
+     300         1351.59
+     345         1244.05
+     396         1349.86
+     455         1234.77
+     523         1129.69
+     600         1138.82
+     690         1188.26
+     793         1176.73
+     912         1241.17
+     1048        1250.12
+     1200        1259.56
+     1380        1281.88
+     1587        1177.92
+     1825        549.394
+     2100        780.552
+     2415        424.049
+     2777        444.337
+     3193        451.25
+     3672        640.537
+     4222        490.723
+     4855        434.382
+     5583        423.809
+     6420        505.719
+     7000        509.426
+   N=1, steps=104549545
+     Boost uBLAS = 1        (0.476005)
+   N=2, steps=86094192
+     Boost uBLAS = 1        (1.27416)
+   N=3, steps=67550081
+     Boost uBLAS = 1        (2.61787)
+   N=4, steps=54888146
+     Boost uBLAS = 1        (4.55088)
+   N=5, steps=29497763
+     Boost uBLAS = 1        (4.89439)
+   N=6, steps=24916716
+     Boost uBLAS = 1        (6.8117)
+   N=7, steps=18991478
+     Boost uBLAS = 1        (8.00287)
+   N=8, steps=15887633
+     Boost uBLAS = 1        (9.80596)
+   N=9, steps=8101330
+     Boost uBLAS = 1        (7.20098)
+   N=10, steps=6976906
+     Boost uBLAS = 1        (8.38514)
+   N=11, steps=5787927
+     Boost uBLAS = 1        (9.57099)
+   N=12, steps=5052182
+     Boost uBLAS = 1        (10.6692)
+   N=13, steps=4437966
+     Boost uBLAS = 1        (11.7714)
+   N=14, steps=3978721
+     Boost uBLAS = 1        (13.3545)
+   N=16, steps=3073216
+     Boost uBLAS = 1        (15.0077)
+   N=18, steps=1748396
+     Boost uBLAS = 1        (12.1735)
+   N=20, steps=1457007
+     Boost uBLAS = 1        (13.7388)
+   N=23, steps=970962
+     Boost uBLAS = 1        (13.8753)
+   N=26, steps=628392
+     Boost uBLAS = 1        (13.0553)
+   N=30, steps=464387
+     Boost uBLAS = 1        (14.7999)
+   N=34, steps=297971
+     Boost uBLAS = 1        (13.8379)
+   N=39, steps=205008
+     Boost uBLAS = 1        (16.6798)
+   N=45, steps=136521
+     Boost uBLAS = 1        (16.8279)
+   N=52, steps=89315
+     Boost uBLAS = 1        (16.603)
+   N=60, steps=57845
+     Boost uBLAS = 1        (16.5696)
+   N=69, steps=38004
+     Boost uBLAS = 1        (16.7556)
+   N=79, steps=25034
+     Boost uBLAS = 1        (16.56)
+   N=90, steps=16996
+     Boost uBLAS = 1        (16.5436)
+   N=103, steps=11461
+     Boost uBLAS = 1        (16.8372)
+   N=118, steps=7735
+     Boost uBLAS = 1        (16.9702)
+   N=135, steps=5401
+     Boost uBLAS = 1        (17.867)
+   N=155, steps=3551
+     Boost uBLAS = 1        (17.8873)
+   N=176, steps=2555
+     Boost uBLAS = 1        (19.2092)
+   N=200, steps=1802
+     Boost uBLAS = 1        (21.4293)
+   N=230, steps=1181
+     Boost uBLAS = 1        (21.6508)
+   N=264, steps=837
+     Boost uBLAS = 1        (23.4653)
+   N=300, steps=565
+     Boost uBLAS = 1        (22.5357)
+   N=345, steps=365
+     Boost uBLAS = 1        (24.0609)
+   N=396, steps=252
+     Boost uBLAS = 1        (23.1567)
+   N=455, steps=164
+     Boost uBLAS = 1        (24.9945)
+   N=523, steps=107
+     Boost uBLAS = 1        (27.0736)
+   N=600, steps=74
+     Boost uBLAS = 1        (28.0477)
+   N=690, steps=49
+     Boost uBLAS = 1        (27.0736)
+   N=793, steps=32
+     Boost uBLAS = 1        (27.105)
+   N=912, steps=21
+     Boost uBLAS = 1        (25.6545)
+   N=1048, steps=14
+     Boost uBLAS = 1        (25.7682)
+   N=1200, steps=9
+     Boost uBLAS = 1        (24.684)
+   N=1380, steps=6
+     Boost uBLAS = 1        (24.5932)
+   N=1587, steps=4
+     Boost uBLAS = 1        (27.1375)
+   N=1825, steps=1
+     Boost uBLAS = 1        (22.1216)
+   N=2100, steps=1
+     Boost uBLAS = 1        (23.7237)
+   N=2415, steps=1
+     Boost uBLAS = 1        (66.4164)
+   N=2777, steps=1
+     Boost uBLAS = 1        (96.3755)
+   N=3193, steps=1
+     Boost uBLAS = 1        (144.259)
+   N=3672, steps=1
+     Boost uBLAS = 1        (154.573)
+   N=4222, steps=1
+     Boost uBLAS = 1        (306.688)
+   N=4855, steps=1
+     Boost uBLAS = 1        (526.843)
+   N=5583, steps=1
+     Boost uBLAS = 1        (821.152)
+   N=6420, steps=1
+     Boost uBLAS = 1        (1046.39)
+   N=7000, steps=1
+     Boost uBLAS = 1        (1346.52)
