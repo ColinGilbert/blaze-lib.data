@@ -24,6 +24,7 @@ Release Instructions
   - Update the download images
   - Update the linked version of Blaze
   - Update the news section
+  - Update the tested compilers
 - Announce the release in the following newsletters:
   - NA-Digest
   - Gauss-Allianz (redaktion@gauss-allianz.de)
