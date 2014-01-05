@@ -39,6 +39,12 @@ BLAZE_PATH=$SCRIPT_PATH/../../blaze
 BLAZETEST_PATH=$BLAZE_PATH/blazetest
 BLAZEMARK_PATH=$BLAZE_PATH/blazemark
 
+# Configuration of the build target
+TARGET="all"
+if [[ $# > 0 ]]; then
+   TARGET=$1;
+fi
+
 
 
 
@@ -70,7 +76,7 @@ echo "==========================================================================
 echo
 
 make -f $BLAZETEST_PATH/Makefile clean
-make -f $BLAZETEST_PATH/Makefile
+make -f $BLAZETEST_PATH/Makefile $TARGET
 if [ $? != 0 ]; then echo " Error during compilation of the Blaze test suite"; exit 1; fi
 
 
