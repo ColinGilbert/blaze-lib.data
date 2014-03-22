@@ -1,0 +1,1392 @@
+# Grace project file
+#
+@version 50122
+@page size 792, 612
+@page scroll 5%
+@page inout 5%
+@link page off
+@map font 0 to "Times-Roman", "Times-Roman"
+@map font 1 to "Times-Italic", "Times-Italic"
+@map font 2 to "Times-Bold", "Times-Bold"
+@map font 3 to "Times-BoldItalic", "Times-BoldItalic"
+@map font 4 to "Helvetica", "Helvetica"
+@map font 5 to "Helvetica-Oblique", "Helvetica-Oblique"
+@map font 6 to "Helvetica-Bold", "Helvetica-Bold"
+@map font 7 to "Helvetica-BoldOblique", "Helvetica-BoldOblique"
+@map font 8 to "Courier", "Courier"
+@map font 9 to "Courier-Oblique", "Courier-Oblique"
+@map font 10 to "Courier-Bold", "Courier-Bold"
+@map font 11 to "Courier-BoldOblique", "Courier-BoldOblique"
+@map font 12 to "Symbol", "Symbol"
+@map font 13 to "ZapfDingbats", "ZapfDingbats"
+@map color 0 to (255, 255, 255), "white"
+@map color 1 to (0, 0, 0), "black"
+@map color 2 to (255, 0, 0), "red"
+@map color 3 to (0, 255, 0), "green"
+@map color 4 to (0, 0, 255), "blue"
+@map color 5 to (255, 255, 0), "yellow"
+@map color 6 to (188, 143, 143), "brown"
+@map color 7 to (220, 220, 220), "grey"
+@map color 8 to (148, 0, 211), "violet"
+@map color 9 to (0, 255, 255), "cyan"
+@map color 10 to (255, 0, 255), "magenta"
+@map color 11 to (255, 165, 0), "orange"
+@map color 12 to (114, 33, 188), "indigo"
+@map color 13 to (103, 7, 72), "maroon"
+@map color 14 to (64, 224, 208), "turquoise"
+@map color 15 to (0, 139, 0), "green4"
+@reference date 0
+@date wrap off
+@date wrap year 1950
+@default linewidth 1.0
+@default linestyle 1
+@default color 1
+@default pattern 1
+@default font 4
+@default char size 1.000000
+@default symbol size 1.000000
+@default sformat "%16.8g"
+@background color 0
+@page background fill on
+@timestamp off
+@timestamp 0.03, 0.03
+@timestamp color 1
+@timestamp rot 0
+@timestamp font 4
+@timestamp char size 1.000000
+@timestamp def "Sun Aug 14 11:42:44 2011"
+
+# Theoretical Peak Performance
+#@with string
+#@    string on
+#@    string loctype view
+#@    string 0.8, 0.812
+#@    string color 1
+#@    string rot 0
+#@    string font 4
+#@    string just 0
+#@    string char size 0.700000
+#@    string def "Theoretical Peak Performance"
+
+@r0 off
+@link r0 to g0
+@r0 type above
+@r0 linestyle 1
+@r0 linewidth 1.0
+@r0 color 1
+@r0 line 0, 0, 0, 0
+@r1 off
+@link r1 to g0
+@r1 type above
+@r1 linestyle 1
+@r1 linewidth 1.0
+@r1 color 1
+@r1 line 0, 0, 0, 0
+@r2 off
+@link r2 to g0
+@r2 type above
+@r2 linestyle 1
+@r2 linewidth 1.0
+@r2 color 1
+@r2 line 0, 0, 0, 0
+@r3 off
+@link r3 to g0
+@r3 type above
+@r3 linestyle 1
+@r3 linewidth 1.0
+@r3 color 1
+@r3 line 0, 0, 0, 0
+@r4 off
+@link r4 to g0
+@r4 type above
+@r4 linestyle 1
+@r4 linewidth 1.0
+@r4 color 1
+@r4 line 0, 0, 0, 0
+@g0 on
+@g0 hidden false
+@g0 type XY
+@g0 stacked false
+@g0 bar hgap 0.000000
+@g0 fixedpoint off
+@g0 fixedpoint type 0
+@g0 fixedpoint xy 0.000000, 0.000000
+@g0 fixedpoint format general general
+@g0 fixedpoint prec 6, 6
+@with g0
+@    world 1, 0, 10000000, 14000
+@    stack world 0, 0, 0, 0
+@    znorm 1
+@    view 0.150000, 0.150000, 1.200000, 0.850000
+@    title ""
+@    title font 4
+@    title size 1.600000
+@    title color 1
+@    subtitle ""
+@    subtitle font 4
+@    subtitle size 1.250000
+@    subtitle color 1
+@    xaxes scale Logarithmic
+@    yaxes scale Normal
+@    xaxes invert off
+@    yaxes invert off
+@    xaxis  on
+@    xaxis  type zero false
+@    xaxis  offset 0.000000 , 0.000000
+@    xaxis  bar on
+@    xaxis  bar color 1
+@    xaxis  bar linestyle 1
+@    xaxis  bar linewidth 1.0
+@    xaxis  label "Vector Length"
+@    xaxis  label layout para
+@    xaxis  label place spec
+@    xaxis  label place 0.010000, 0.080000
+@    xaxis  label char size 1.200000
+@    xaxis  label font 4
+@    xaxis  label color 1
+@    xaxis  label place normal
+@    xaxis  tick on
+@    xaxis  tick major 10
+@    xaxis  tick minor ticks 9
+@    xaxis  tick default 6
+@    xaxis  tick place rounded true
+@    xaxis  tick in
+@    xaxis  tick major size 0.500000
+@    xaxis  tick major color 1
+@    xaxis  tick major linewidth 2.0
+@    xaxis  tick major linestyle 1
+@    xaxis  tick major grid off
+@    xaxis  tick minor color 1
+@    xaxis  tick minor linewidth 2.0
+@    xaxis  tick minor linestyle 1
+@    xaxis  tick minor grid off
+@    xaxis  tick minor size 0.250000
+@    xaxis  ticklabel on
+@    xaxis  ticklabel format decimal
+@    xaxis  ticklabel prec 0
+@    xaxis  ticklabel formula ""
+@    xaxis  ticklabel append ""
+@    xaxis  ticklabel prepend ""
+@    xaxis  ticklabel angle 0
+@    xaxis  ticklabel skip 0
+@    xaxis  ticklabel stagger 0
+@    xaxis  ticklabel place normal
+@    xaxis  ticklabel offset auto
+@    xaxis  ticklabel offset 0.000000 , 0.010000
+@    xaxis  ticklabel start type auto
+@    xaxis  ticklabel start 0.000000
+@    xaxis  ticklabel stop type auto
+@    xaxis  ticklabel stop 0.000000
+@    xaxis  ticklabel char size 1.000000
+@    xaxis  ticklabel font 4
+@    xaxis  ticklabel color 1
+@    xaxis  tick place normal
+@    xaxis  tick spec type none
+@    yaxis  on
+@    yaxis  type zero false
+@    yaxis  offset 0.000000 , 0.000000
+@    yaxis  bar on
+@    yaxis  bar color 1
+@    yaxis  bar linestyle 1
+@    yaxis  bar linewidth 1.0
+@    yaxis  label "MFlop/s"
+@    yaxis  label layout para
+@    yaxis  label place auto
+@    yaxis  label char size 1.200000
+@    yaxis  label font 4
+@    yaxis  label color 1
+@    yaxis  label place normal
+@    yaxis  tick on
+@    yaxis  tick major 1000
+@    yaxis  tick minor ticks 0
+@    yaxis  tick default 6
+@    yaxis  tick place rounded true
+@    yaxis  tick in
+@    yaxis  tick major size 0.500000
+@    yaxis  tick major color 1
+@    yaxis  tick major linewidth 2.0
+@    yaxis  tick major linestyle 1
+@    yaxis  tick major grid off
+@    yaxis  tick minor color 1
+@    yaxis  tick minor linewidth 2.0
+@    yaxis  tick minor linestyle 1
+@    yaxis  tick minor grid off
+@    yaxis  tick minor size 0.250000
+@    yaxis  ticklabel on
+@    yaxis  ticklabel format decimal
+@    yaxis  ticklabel prec 0
+@    yaxis  ticklabel formula ""
+@    yaxis  ticklabel append ""
+@    yaxis  ticklabel prepend ""
+@    yaxis  ticklabel angle 0
+@    yaxis  ticklabel skip 0
+@    yaxis  ticklabel stagger 0
+@    yaxis  ticklabel place normal
+@    yaxis  ticklabel offset auto
+@    yaxis  ticklabel offset 0.000000 , 0.010000
+@    yaxis  ticklabel start type auto
+@    yaxis  ticklabel start 0.000000
+@    yaxis  ticklabel stop type auto
+@    yaxis  ticklabel stop 0.000000
+@    yaxis  ticklabel char size 1.000000
+@    yaxis  ticklabel font 4
+@    yaxis  ticklabel color 1
+@    yaxis  tick place both
+@    yaxis  tick spec type none
+@    altxaxis  off
+@    altyaxis  off
+@    legend on
+@    legend loctype view
+@    legend 0.20, 0.82
+@    legend box color 0
+@    legend box pattern 1
+@    legend box linewidth 1.0
+@    legend box linestyle 1
+@    legend box fill color 0
+@    legend box fill pattern 1
+@    legend font 4
+@    legend char size 1.000000
+@    legend color 1
+@    legend length 4
+@    legend vgap 1
+@    legend hgap 1
+@    legend invert false
+@    frame type 0
+@    frame linestyle 1
+@    frame linewidth 2.0
+@    frame color 1
+@    frame pattern 1
+@    frame background color 0
+@    frame background pattern 0
+
+# Blaze (1 thread)
+@    s2 hidden false
+@    s2 type xy
+@    s2 symbol 0
+@    s2 symbol size 0.400000
+@    s2 symbol color 2
+@    s2 symbol pattern 1
+@    s2 symbol fill color 2
+@    s2 symbol fill pattern 1
+@    s2 symbol linewidth 1.0
+@    s2 symbol linestyle 1
+@    s2 symbol char 65
+@    s2 symbol char font 4
+@    s2 symbol skip 0
+@    s2 line type 1
+@    s2 line linestyle 1
+@    s2 line linewidth 2.0
+@    s2 line color 2
+@    s2 line pattern 1
+@    s2 baseline type 0
+@    s2 baseline off
+@    s2 dropline off
+@    s2 fill type 0
+@    s2 fill rule 0
+@    s2 fill color 2
+@    s2 fill pattern 1
+@    s2 avalue off
+@    s2 avalue type 2
+@    s2 avalue char size 1.000000
+@    s2 avalue font 4
+@    s2 avalue color 1
+@    s2 avalue rot 0
+@    s2 avalue format general
+@    s2 avalue prec 3
+@    s2 avalue prepend ""
+@    s2 avalue append ""
+@    s2 avalue offset 0.000000 , 0.000000
+@    s2 errorbar on
+@    s2 errorbar place both
+@    s2 errorbar color 1
+@    s2 errorbar pattern 1
+@    s2 errorbar size 1.000000
+@    s2 errorbar linewidth 1.0
+@    s2 errorbar linestyle 1
+@    s2 errorbar riser linewidth 1.0
+@    s2 errorbar riser linestyle 1
+@    s2 errorbar riser clip off
+@    s2 errorbar riser clip length 0.100000
+@    s2 comment ""
+@    s2 legend  "Blaze (1 thread)"
+
+# Blaze (2 threads)
+@    s3 hidden false
+@    s3 type xy
+@    s3 symbol 0
+@    s3 symbol size 0.400000
+@    s3 symbol color 3
+@    s3 symbol pattern 1
+@    s3 symbol fill color 3
+@    s3 symbol fill pattern 1
+@    s3 symbol linewidth 1.0
+@    s3 symbol linestyle 1
+@    s3 symbol char 65
+@    s3 symbol char font 4
+@    s3 symbol skip 0
+@    s3 line type 1
+@    s3 line linestyle 1
+@    s3 line linewidth 2.0
+@    s3 line color 3
+@    s3 line pattern 1
+@    s3 baseline type 0
+@    s3 baseline off
+@    s3 dropline off
+@    s3 fill type 0
+@    s3 fill rule 0
+@    s3 fill color 3
+@    s3 fill pattern 1
+@    s3 avalue off
+@    s3 avalue type 2
+@    s3 avalue char size 1.000000
+@    s3 avalue font 4
+@    s3 avalue color 1
+@    s3 avalue rot 0
+@    s3 avalue format general
+@    s3 avalue prec 3
+@    s3 avalue prepend ""
+@    s3 avalue append ""
+@    s3 avalue offset 0.000000 , 0.000000
+@    s3 errorbar on
+@    s3 errorbar place both
+@    s3 errorbar color 1
+@    s3 errorbar pattern 1
+@    s3 errorbar size 1.000000
+@    s3 errorbar linewidth 1.0
+@    s3 errorbar linestyle 1
+@    s3 errorbar riser linewidth 1.0
+@    s3 errorbar riser linestyle 1
+@    s3 errorbar riser clip off
+@    s3 errorbar riser clip length 0.100000
+@    s3 comment ""
+@    s3 legend  "Blaze (2 threads)"
+
+# Blaze (4 threads)
+@    s4 hidden false
+@    s4 type xy
+@    s4 symbol 0
+@    s4 symbol size 0.400000
+@    s4 symbol color 4
+@    s4 symbol pattern 1
+@    s4 symbol fill color 4
+@    s4 symbol fill pattern 1
+@    s4 symbol linewidth 1.0
+@    s4 symbol linestyle 1
+@    s4 symbol char 65
+@    s4 symbol char font 4
+@    s4 symbol skip 0
+@    s4 line type 1
+@    s4 line linestyle 1
+@    s4 line linewidth 2.0
+@    s4 line color 4
+@    s4 line pattern 1
+@    s4 baseline type 0
+@    s4 baseline off
+@    s4 dropline off
+@    s4 fill type 0
+@    s4 fill rule 0
+@    s4 fill color 4
+@    s4 fill pattern 1
+@    s4 avalue off
+@    s4 avalue type 2
+@    s4 avalue char size 1.000000
+@    s4 avalue font 4
+@    s4 avalue color 1
+@    s4 avalue rot 0
+@    s4 avalue format general
+@    s4 avalue prec 3
+@    s4 avalue prepend ""
+@    s4 avalue append ""
+@    s4 avalue offset 0.000000 , 0.000000
+@    s4 errorbar on
+@    s4 errorbar place both
+@    s4 errorbar color 1
+@    s4 errorbar pattern 1
+@    s4 errorbar size 1.000000
+@    s4 errorbar linewidth 1.0
+@    s4 errorbar linestyle 1
+@    s4 errorbar riser linewidth 1.0
+@    s4 errorbar riser linestyle 1
+@    s4 errorbar riser clip off
+@    s4 errorbar riser clip length 0.100000
+@    s4 comment ""
+@    s4 legend  "Blaze (4 threads)"
+
+# Blaze (8 threads)
+@    s5 hidden false
+@    s5 type xy
+@    s5 symbol 0
+@    s5 symbol size 0.400000
+@    s5 symbol color 13
+@    s5 symbol pattern 1
+@    s5 symbol fill color 13
+@    s5 symbol fill pattern 1
+@    s5 symbol linewidth 1.0
+@    s5 symbol linestyle 1
+@    s5 symbol char 65
+@    s5 symbol char font 4
+@    s5 symbol skip 0
+@    s5 line type 1
+@    s5 line linestyle 1
+@    s5 line linewidth 2.0
+@    s5 line color 13
+@    s5 line pattern 1
+@    s5 baseline type 0
+@    s5 baseline off
+@    s5 dropline off
+@    s5 fill type 0
+@    s5 fill rule 0
+@    s5 fill color 13
+@    s5 fill pattern 1
+@    s5 avalue off
+@    s5 avalue type 2
+@    s5 avalue char size 1.000000
+@    s5 avalue font 4
+@    s5 avalue color 1
+@    s5 avalue rot 0
+@    s5 avalue format general
+@    s5 avalue prec 3
+@    s5 avalue prepend ""
+@    s5 avalue append ""
+@    s5 avalue offset 0.000000 , 0.000000
+@    s5 errorbar on
+@    s5 errorbar place both
+@    s5 errorbar color 1
+@    s5 errorbar pattern 1
+@    s5 errorbar size 1.000000
+@    s5 errorbar linewidth 1.0
+@    s5 errorbar linestyle 1
+@    s5 errorbar riser linewidth 1.0
+@    s5 errorbar riser linestyle 1
+@    s5 errorbar riser clip off
+@    s5 errorbar riser clip length 0.100000
+@    s5 comment ""
+@    s5 legend  "Blaze (8 threads)"
+
+# Blaze (10 threads)
+@    s6 hidden false
+@    s6 type xy
+@    s6 symbol 0
+@    s6 symbol size 0.400000
+@    s6 symbol color 6
+@    s6 symbol pattern 1
+@    s6 symbol fill color 6
+@    s6 symbol fill pattern 1
+@    s6 symbol linewidth 1.0
+@    s6 symbol linestyle 1
+@    s6 symbol char 65
+@    s6 symbol char font 4
+@    s6 symbol skip 0
+@    s6 line type 1
+@    s6 line linestyle 1
+@    s6 line linewidth 2.0
+@    s6 line color 6
+@    s6 line pattern 1
+@    s6 baseline type 0
+@    s6 baseline off
+@    s6 dropline off
+@    s6 fill type 0
+@    s6 fill rule 0
+@    s6 fill color 6
+@    s6 fill pattern 1
+@    s6 avalue off
+@    s6 avalue type 2
+@    s6 avalue char size 1.000000
+@    s6 avalue font 4
+@    s6 avalue color 1
+@    s6 avalue rot 0
+@    s6 avalue format general
+@    s6 avalue prec 3
+@    s6 avalue prepend ""
+@    s6 avalue append ""
+@    s6 avalue offset 0.000000 , 0.000000
+@    s6 errorbar on
+@    s6 errorbar place both
+@    s6 errorbar color 1
+@    s6 errorbar pattern 1
+@    s6 errorbar size 1.000000
+@    s6 errorbar linewidth 1.0
+@    s6 errorbar linestyle 1
+@    s6 errorbar riser linewidth 1.0
+@    s6 errorbar riser linestyle 1
+@    s6 errorbar riser clip off
+@    s6 errorbar riser clip length 0.100000
+@    s6 comment ""
+@    s6 legend  "Blaze (10 threads)"
+
+# Theoretical Peak Performance
+@    s9 hidden false
+@    s9 type xy
+@    s9 symbol 0
+@    s9 symbol size 0.400000
+@    s9 symbol color 1
+@    s9 symbol pattern 1
+@    s9 symbol fill color 1
+@    s9 symbol fill pattern 1
+@    s9 symbol linewidth 1.0
+@    s9 symbol linestyle 1
+@    s9 symbol char 65
+@    s9 symbol char font 4
+@    s9 symbol skip 2
+@    s9 line type 1
+@    s9 line linestyle 3
+@    s9 line linewidth 2.0
+@    s9 line color 1
+@    s9 line pattern 1
+@    s9 baseline type 0
+@    s9 baseline off
+@    s9 dropline off
+@    s9 fill type 0
+@    s9 fill rule 0
+@    s9 fill color 1
+@    s9 fill pattern 1
+@    s9 avalue off
+@    s9 avalue type 2
+@    s9 avalue char size 1.000000
+@    s9 avalue font 4
+@    s9 avalue color 1
+@    s9 avalue rot 0
+@    s9 avalue format general
+@    s9 avalue prec 3
+@    s9 avalue prepend ""
+@    s9 avalue append ""
+@    s9 avalue offset 0.000000 , 0.000000
+@    s9 errorbar on
+@    s9 errorbar place both
+@    s9 errorbar color 1
+@    s9 errorbar pattern 1
+@    s9 errorbar size 1.000000
+@    s9 errorbar linewidth 1.0
+@    s9 errorbar linestyle 1
+@    s9 errorbar riser linewidth 1.0
+@    s9 errorbar riser linestyle 1
+@    s9 errorbar riser clip off
+@    s9 errorbar riser clip length 0.100000
+@    s9 comment ""
+@    s9 legend  ""
+
+
+# Blaze (1 thread)
+@target G0.S2
+@type xy
+     1           439.288
+     2           878.583
+     3           1317.88
+     4           1757.16
+     5           2141.47
+     6           2568.48
+     7           2997.04
+     8           3426.14
+     9           3025.35
+     10          3361.2
+     11          3697.85
+     12          4033.78
+     13          3359.21
+     14          3617.6
+     15          3876.01
+     16          3057.18
+     17          4035.71
+     18          4273.07
+     19          4510.54
+     20          4747.7
+     22          4832.45
+     24          5274.08
+     26          5484.56
+     28          5906.4
+     30          5736.04
+     33          5017.2
+     36          5994.82
+     39          5776.13
+     42          5727.98
+     46          5862.37
+     50          5987.67
+     55          6289
+     60          6436.73
+     66          6306.08
+     72          6048.21
+     79          6513.12
+     86          6414.41
+     94          6552.34
+     103         6656.91
+     113         6602.24
+     124         6800.79
+     136         6888.36
+     149         6769.33
+     163         6888.58
+     179         6936.05
+     196         7004.69
+     215         7012.16
+     236         7063.31
+     259         7096.02
+     284         7138.34
+     312         7171.84
+     343         7181.79
+     377         7050.26
+     414         7215.9
+     455         7261.98
+     500         7194.14
+     550         6778.5
+     605         6935.87
+     665         6967.9
+     731         7006.46
+     804         7085.94
+     884         7043.57
+     972         7058.8
+     1069        7114.03
+     1175        7130.4
+     1292        7099.69
+     1421        7195.23
+     1563        7298.04
+     1719        7292.44
+     1890        7159.56
+     2079        5361.57
+     2286        3341.24
+     2514        3117.71
+     2765        3101.43
+     3041        3075.26
+     3345        3100.1
+     3679        3086.46
+     4046        3122.19
+     4450        3065.78
+     4895        3107.66
+     5384        3132.71
+     5922        3110.91
+     6514        3099.34
+     7165        2718.42
+     7881        3113.43
+     8669        3067.35
+     9535        3097.19
+     10488       3066.64
+     11536       3031.84
+     12689       2993.41
+     13957       2992.89
+     15352       2585.26
+     16887       2507.94
+     18575       2739.08
+     20432       2630.51
+     22475       2507.66
+     24722       2372.53
+     27194       2341.27
+     29913       2243.69
+     32904       2240.45
+     36194       2201.35
+     39813       2190.84
+     43794       2190.22
+     48173       2184.17
+     52990       2191.6
+     58289       2189.22
+     64117       2191.23
+     70528       2191.16
+     77580       2190.36
+     85338       2189.79
+     93871       2191.76
+     103258      2190.13
+     113583      2190.33
+     124941      2094.61
+     137435      2175.71
+     151178      2182.09
+     166295      2174.13
+     182924      2179.23
+     201216      2018.17
+     221337      2154.02
+     243470      2194.18
+     267817      2179.71
+     294598      2188.67
+     324057      2161.19
+     356462      2173.65
+     392108      2192.95
+     431318      2191.67
+     474449      2193.4
+     521893      2196.2
+     574082      2190.97
+     631490      2182.46
+     694639      2182.8
+     764102      2185.73
+     840512      2185.57
+     924563      2193.33
+     1017019     2181.47
+     1118720     2025.05
+     1230592     2093.68
+     1353651     1983.15
+     1489016     1841.15
+     1637917     1767.23
+     1801708     1582.1
+     1981878     1409.09
+     2180065     1281.38
+     2398071     1253.04
+     2637878     1231.17
+     2901665     1187.8
+     3191831     1186.65
+     3511014     1190.35
+     3862115     1205.53
+     4248326     1157.5
+     4673158     1166.32
+     5140474     1149.5
+     5654521     1148.69
+     6219973     1156.91
+     6841970     1171.1
+     7526167     1174.67
+     8278784     1173.07
+     9106663     1142.84
+     10000000    1175.28
+&
+
+# Blaze (2 threads)
+@target G0.S3
+@type xy
+     1           162.689
+     2           325.378
+     3           488.071
+     4           650.757
+     5           732.053
+     6           878.504
+     7           1024.88
+     8           1171.33
+     9           1197.94
+     10          1331.07
+     11          1464.16
+     12          1597.3
+     13          1586.08
+     14          1708.11
+     15          1830.27
+     16          2267.11
+     17          2408.74
+     18          2550.5
+     19          2280.36
+     20          2833.93
+     22          2761.09
+     24          3012.17
+     26          2976.2
+     28          3236.79
+     30          3114.15
+     33          3205
+     36          3585.27
+     39          3652.64
+     42          3595.57
+     46          3650.62
+     50          3476.48
+     55          4068.78
+     60          4062.38
+     66          4141.76
+     72          4345.53
+     79          4289.79
+     86          4454.01
+     94          4459.65
+     103         4607.75
+     113         4413.53
+     124         4484.87
+     136         4489.83
+     149         4470.64
+     163         4721.99
+     179         4787.82
+     196         4846.31
+     215         4723.99
+     236         5111.73
+     259         5118.66
+     284         5187.94
+     312         5032.79
+     343         5038.69
+     377         5112.14
+     414         4978.19
+     455         5021.94
+     500         5270.44
+     550         4847.81
+     605         4897.71
+     665         4868.03
+     731         4904.4
+     804         4950.29
+     884         4981.17
+     972         5027.81
+     1069        5031.07
+     1175        5032.57
+     1292        5001.12
+     1421        4848.88
+     1563        4958.78
+     1719        4894.16
+     1890        4871.97
+     2079        4210.4
+     2286        3172.22
+     2514        3008.24
+     2765        3015.8
+     3041        2976.34
+     3345        3016.39
+     3679        3029.88
+     4046        3065.23
+     4450        2990.88
+     4895        3013.57
+     5384        3040.65
+     5922        3024.67
+     6514        3030.11
+     7165        2458.1
+     7881        3034.03
+     8669        3029.79
+     9535        3032.92
+     10488       3053.16
+     11536       3005.85
+     12689       2916.74
+     13957       2843.24
+     15352       2415.77
+     16887       2346.89
+     18575       2645.76
+     20432       2535.94
+     22475       2480.45
+     24722       2403.78
+     27194       2289.95
+     29913       2208.95
+     32904       2156.72
+     36194       2156.81
+     39813       4142.95
+     43794       4123.37
+     48173       3978.28
+     52990       3918.77
+     58289       3813.31
+     64117       3829.71
+     70528       3845.35
+     77580       3916.07
+     85338       3932.21
+     93871       3957.81
+     103258      3968.36
+     113583      4003.85
+     124941      3878.86
+     137435      4052.14
+     151178      4086.13
+     166295      4100.36
+     182924      4106.36
+     201216      3794.39
+     221337      4124.21
+     243470      4139.97
+     267817      4061.03
+     294598      3979.04
+     324057      3968.19
+     356462      3986.74
+     392108      3920.33
+     431318      3937.62
+     474449      3970.83
+     521893      3994.01
+     574082      4235.56
+     631490      4238.33
+     694639      4038.46
+     764102      3949.2
+     840512      4106.96
+     924563      4068.52
+     1017019     3969.96
+     1118720     3715.74
+     1230592     4103.54
+     1353651     4035.38
+     1489016     4003.35
+     1637917     4010.58
+     1801708     3912.8
+     1981878     4234.67
+     2180065     3769.35
+     2398071     3440.67
+     2637878     2957.22
+     2901665     2566.67
+     3191831     2393.46
+     3511014     2160.37
+     3862115     2094.27
+     4248326     1953.11
+     4673158     1877.22
+     5140474     1857.29
+     5654521     1813
+     6219973     1797.41
+     6841970     1794.81
+     7526167     1795.12
+     8278784     1795.86
+     9106663     1792.04
+     10000000    1796.86
+&
+
+# Blaze (4 threads)
+@target G0.S4
+@type xy
+     1           162.69
+     2           325.401
+     3           488.094
+     4           650.787
+     5           732.094
+     6           878.515
+     7           1024.9
+     8           1171.39
+     9           1198.01
+     10          1331.06
+     11          1464.13
+     12          1597.39
+     13          1586.19
+     14          1708.26
+     15          1830.25
+     16          2267.25
+     17          2408.92
+     18          2550.24
+     19          2681.53
+     20          2833.85
+     22          2760.93
+     24          3010.85
+     26          2882.65
+     28          3250.95
+     30          3107.65
+     33          3331.17
+     36          3149.83
+     39          3647.53
+     42          3616.56
+     46          3682.72
+     50          3864.73
+     55          4010.2
+     60          4093.93
+     66          4149.64
+     72          4063.3
+     79          4326.78
+     86          4450.24
+     94          4421.38
+     103         4638.81
+     113         4573.67
+     124         4697
+     136         4745.32
+     149         4709.77
+     163         4845.46
+     179         4888.02
+     196         4792
+     215         4762.54
+     236         4834.64
+     259         4845.03
+     284         4917.14
+     312         4953.47
+     343         4957.47
+     377         5087.36
+     414         5116.72
+     455         5076.84
+     500         5122.53
+     550         4912.33
+     605         4935.08
+     665         5015.39
+     731         5034.91
+     804         4965.15
+     884         5023.23
+     972         5069.99
+     1069        5123.71
+     1175        5161.15
+     1292        5118.99
+     1421        4742.41
+     1563        4823.57
+     1719        4771.07
+     1890        4646.03
+     2079        4080.25
+     2286        3117.04
+     2514        2944.8
+     2765        3063.44
+     3041        2956.43
+     3345        3003.89
+     3679        3089.43
+     4046        3106.61
+     4450        2979.85
+     4895        3107.17
+     5384        3107.47
+     5922        3013.86
+     6514        3008.75
+     7165        2516.48
+     7881        3007.13
+     8669        3062.6
+     9535        3110.63
+     10488       3117.08
+     11536       3103.4
+     12689       2954.47
+     13957       2992.58
+     15352       2642.13
+     16887       2329.81
+     18575       2735.91
+     20432       2613.45
+     22475       2424.34
+     24722       2346.35
+     27194       2266.89
+     29913       2202.42
+     32904       2191.08
+     36194       2150.29
+     39813       4768.39
+     43794       4864.02
+     48173       4847.89
+     52990       4925.62
+     58289       4995.02
+     64117       5170.06
+     70528       5318.04
+     77580       5448.64
+     85338       5638.32
+     93871       5892.74
+     103258      5957.56
+     113583      6211.78
+     124941      6213.86
+     137435      6470.7
+     151178      6650.1
+     166295      6714.92
+     182924      6703.3
+     201216      6450.87
+     221337      6747.68
+     243470      6791.83
+     267817      6776.33
+     294598      6836.04
+     324057      6767.6
+     356462      6887.18
+     392108      6974.19
+     431318      7125.48
+     474449      7085.81
+     521893      7026.09
+     574082      7064.78
+     631490      7043.42
+     694639      7031.25
+     764102      6987.92
+     840512      7104.25
+     924563      6981.91
+     1017019     7017.4
+     1118720     6689.57
+     1230592     7094.36
+     1353651     6939.87
+     1489016     7278.4
+     1637917     6808.83
+     1801708     6717.43
+     1981878     6263.79
+     2180065     5738.44
+     2398071     4989.45
+     2637878     4406.16
+     2901665     3984.73
+     3191831     3600.39
+     3511014     3541.28
+     3862115     3380.14
+     4248326     3262.31
+     4673158     3116.97
+     5140474     3240.75
+     5654521     3191.11
+     6219973     3000.46
+     6841970     2986.9
+     7526167     2921.86
+     8278784     2880.84
+     9106663     2821.12
+     10000000    2881.23
+&
+
+# Blaze (8 threads)
+@target G0.S5
+@type xy
+     1           162.697
+     2           325.395
+     3           488.083
+     4           650.773
+     5           731.904
+     6           878.263
+     7           1024.8
+     8           1171.13
+     9           1197.51
+     10          1330.54
+     11          1464.09
+     12          1597.29
+     13          1586.23
+     14          1708.24
+     15          1830.25
+     16          2267.16
+     17          2408.87
+     18          2550.46
+     19          2692.18
+     20          2833.98
+     22          2453.46
+     24          3012.04
+     26          3022.76
+     28          3253.4
+     30          3124.95
+     33          3300.71
+     36          3564.88
+     39          3058.58
+     42          3626.73
+     46          3685.75
+     50          3864.07
+     55          3652.75
+     60          4118.86
+     66          4122.96
+     72          4279.08
+     79          4232.29
+     86          4370.07
+     94          4097.51
+     103         4548.14
+     113         4654.03
+     124         4778.17
+     136         4703.38
+     149         4670.27
+     163         4950.42
+     179         4998.69
+     196         5045.04
+     215         4876.46
+     236         5109.99
+     259         4968.79
+     284         5032.68
+     312         4910.61
+     343         4931.36
+     377         5111.93
+     414         4972.45
+     455         5002.12
+     500         5227.95
+     550         4736.91
+     605         4870.72
+     665         4850.61
+     731         4933.48
+     804         4967.33
+     884         4989.72
+     972         5021.25
+     1069        5048.81
+     1175        5075.46
+     1292        5293.46
+     1421        5299.03
+     1563        5235.84
+     1719        5249.73
+     1890        5139.87
+     2079        4410.15
+     2286        3203.39
+     2514        3026.98
+     2765        3007.72
+     3041        2971.25
+     3345        3008.69
+     3679        3018.36
+     4046        3060.14
+     4450        2998.33
+     4895        3035.59
+     5384        3051.84
+     5922        3026.58
+     6514        3030
+     7165        2459.23
+     7881        2997.95
+     8669        2976.79
+     9535        2968.48
+     10488       2921.09
+     11536       2879.21
+     12689       2858.37
+     13957       2825.1
+     15352       2107.35
+     16887       2443.26
+     18575       2702.05
+     20432       2629.87
+     22475       2524.96
+     24722       2429.35
+     27194       2296.09
+     29913       2185.6
+     32904       2156.97
+     36194       2152.09
+     39813       5702.01
+     43794       5963.72
+     48173       6228.07
+     52990       6414.75
+     58289       6740.2
+     64117       6932.92
+     70528       7075.78
+     77580       7361.63
+     85338       7498.28
+     93871       7769.23
+     103258      7935.7
+     113583      8228.01
+     124941      8492.63
+     137435      8582.85
+     151178      8866.65
+     166295      8951.72
+     182924      9121.63
+     201216      9205.61
+     221337      9433.98
+     243470      9510.2
+     267817      9564.2
+     294598      9861.83
+     324057      9883.25
+     356462      10129.8
+     392108      9940.36
+     431318      10128.8
+     474449      10186
+     521893      10337.9
+     574082      10269.4
+     631490      10248.7
+     694639      10338.1
+     764102      10369.1
+     840512      10268.4
+     924563      10345.9
+     1017019     10296.2
+     1118720     10182.6
+     1230592     10305
+     1353651     10179.4
+     1489016     10121.8
+     1637917     9755.96
+     1801708     9763.03
+     1981878     9229.67
+     2180065     8281.38
+     2398071     7707.38
+     2637878     6523.61
+     2901665     5778.98
+     3191831     4936.09
+     3511014     4290.07
+     3862115     3952.93
+     4248326     3659.84
+     4673158     3465.59
+     5140474     3207.69
+     5654521     3178.91
+     6219973     3166.42
+     6841970     3153.66
+     7526167     3134.26
+     8278784     3131.91
+     9106663     3064.18
+     10000000    3139.22
+&
+
+# Blaze (10 threads)
+@target G0.S6
+@type xy
+     1           162.67
+     2           325.325
+     3           487.989
+     4           650.624
+     5           731.928
+     6           878.309
+     7           1024.66
+     8           1171.13
+     9           1197.95
+     10          1331.09
+     11          1464.23
+     12          1597.36
+     13          1586.23
+     14          1708.21
+     15          1830.03
+     16          2266.59
+     17          2407.73
+     18          2548.61
+     19          2691.09
+     20          2832.56
+     22          2759.77
+     24          3010.91
+     26          3004.19
+     28          3236.22
+     30          3112.86
+     33          3168.03
+     36          3643.51
+     39          3652.77
+     42          3623.06
+     46          3694.53
+     50          3688.42
+     55          4069.83
+     60          4102.81
+     66          3771.97
+     72          4383.81
+     79          4339.26
+     86          3942.35
+     94          4458.04
+     103         4247.1
+     113         4239.82
+     124         4523.71
+     136         4463.69
+     149         4446.23
+     163         4711.29
+     179         4790.13
+     196         4842.29
+     215         4706.77
+     236         5120.99
+     259         5119.07
+     284         5185.06
+     312         5031.04
+     343         5035
+     377         5126.54
+     414         4965.14
+     455         5019.69
+     500         5061.66
+     550         4864.12
+     605         4888.28
+     665         4908.31
+     731         4970.18
+     804         4992.51
+     884         5000.97
+     972         5274.82
+     1069        5058.04
+     1175        5078.7
+     1292        5267.91
+     1421        5054.93
+     1563        4987.06
+     1719        4994.98
+     1890        4942.1
+     2079        4197.58
+     2286        3107.66
+     2514        3008.42
+     2765        2920.82
+     3041        2956.46
+     3345        3006.9
+     3679        3003.89
+     4046        3026.43
+     4450        2998.68
+     4895        2984.75
+     5384        2982.86
+     5922        2931.45
+     6514        2920.4
+     7165        2334.39
+     7881        2814.11
+     8669        2792.08
+     9535        2773.1
+     10488       2800.95
+     11536       2758.22
+     12689       2723.48
+     13957       2669.18
+     15352       2193.06
+     16887       2180.92
+     18575       2616.04
+     20432       2551.9
+     22475       2496.08
+     24722       2380.44
+     27194       2311.51
+     29913       2273.3
+     32904       2264.99
+     36194       2233.08
+     39813       5942.02
+     43794       6223.42
+     48173       6623.51
+     52990       6962.41
+     58289       7259.68
+     64117       7434.22
+     70528       7806.56
+     77580       8103.72
+     85338       8430.21
+     93871       8581.05
+     103258      9002.66
+     113583      9202.81
+     124941      9437.97
+     137435      9783.15
+     151178      10119.6
+     166295      10386.9
+     182924      10678.7
+     201216      10779.2
+     221337      11116.3
+     243470      11334.3
+     267817      11411.6
+     294598      11500.3
+     324057      11579.5
+     356462      11742.9
+     392108      11801.9
+     431318      12013.4
+     474449      11982.6
+     521893      12167.9
+     574082      12288.5
+     631490      12286.4
+     694639      12241.3
+     764102      12492
+     840512      12440.1
+     924563      12481.2
+     1017019     12532.5
+     1118720     12454.6
+     1230592     12467.7
+     1353651     12328.3
+     1489016     12268.8
+     1637917     11578
+     1801708     10781.1
+     1981878     9870.87
+     2180065     8415.36
+     2398071     7171.37
+     2637878     6108.56
+     2901665     5283.54
+     3191831     4528.29
+     3511014     4083.17
+     3862115     3920.16
+     4248326     3802.32
+     4673158     3593.9
+     5140474     3469.02
+     5654521     3320.13
+     6219973     3282.63
+     6841970     3211.23
+     7526167     3154.42
+     8278784     3122.11
+     9106663     3070.2
+     10000000    3078.95
+&

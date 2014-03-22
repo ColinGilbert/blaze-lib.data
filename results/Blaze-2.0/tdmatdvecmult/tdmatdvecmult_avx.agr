@@ -1,0 +1,1099 @@
+# Grace project file
+#
+@version 50122
+@page size 792, 612
+@page scroll 5%
+@page inout 5%
+@link page off
+@map font 0 to "Times-Roman", "Times-Roman"
+@map font 1 to "Times-Italic", "Times-Italic"
+@map font 2 to "Times-Bold", "Times-Bold"
+@map font 3 to "Times-BoldItalic", "Times-BoldItalic"
+@map font 4 to "Helvetica", "Helvetica"
+@map font 5 to "Helvetica-Oblique", "Helvetica-Oblique"
+@map font 6 to "Helvetica-Bold", "Helvetica-Bold"
+@map font 7 to "Helvetica-BoldOblique", "Helvetica-BoldOblique"
+@map font 8 to "Courier", "Courier"
+@map font 9 to "Courier-Oblique", "Courier-Oblique"
+@map font 10 to "Courier-Bold", "Courier-Bold"
+@map font 11 to "Courier-BoldOblique", "Courier-BoldOblique"
+@map font 12 to "Symbol", "Symbol"
+@map font 13 to "ZapfDingbats", "ZapfDingbats"
+@map color 0 to (255, 255, 255), "white"
+@map color 1 to (0, 0, 0), "black"
+@map color 2 to (255, 0, 0), "red"
+@map color 3 to (0, 255, 0), "green"
+@map color 4 to (0, 0, 255), "blue"
+@map color 5 to (255, 255, 0), "yellow"
+@map color 6 to (188, 143, 143), "brown"
+@map color 7 to (130, 130, 130), "grey"
+@map color 8 to (148, 0, 211), "violet"
+@map color 9 to (0, 150, 255), "cyan"
+@map color 10 to (255, 0, 255), "magenta"
+@map color 11 to (255, 165, 0), "orange"
+@map color 12 to (114, 33, 188), "indigo"
+@map color 13 to (103, 7, 72), "maroon"
+@map color 14 to (64, 224, 208), "turquoise"
+@map color 15 to (0, 139, 0), "green4"
+@reference date 0
+@date wrap off
+@date wrap year 1950
+@default linewidth 1.0
+@default linestyle 1
+@default color 1
+@default pattern 1
+@default font 4
+@default char size 1.000000
+@default symbol size 1.000000
+@default sformat "%16.8g"
+@background color 0
+@page background fill on
+@timestamp off
+@timestamp 0.03, 0.03
+@timestamp color 1
+@timestamp rot 0
+@timestamp font 4
+@timestamp char size 1.000000
+@timestamp def "Sun Aug 14 11:42:44 2011"
+
+# Blaze (1 thread)
+@with string
+@    string on
+@    string loctype view
+@    string 0.88, 0.264
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 0.700000
+@    string def "Blaze (1 thread)"
+
+# Blaze (2 threads)
+@with string
+@    string on
+@    string loctype view
+@    string 0.906, 0.315
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 0.700000
+@    string def "Blaze (2 threads)"
+
+# Blaze (4 threads)
+@with string
+@    string on
+@    string loctype view
+@    string 0.907, 0.43
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 0.700000
+@    string def "Blaze (4 threads)"
+
+# Blaze (8 threads)
+#@with string
+#@    string on
+#@    string loctype view
+#@    string 0.93, 0.62
+#@    string color 1
+#@    string rot 0
+#@    string font 4
+#@    string just 0
+#@    string char size 0.700000
+#@    string def "Blaze (8 threads)"
+
+# Blaze (10 threads)
+@with string
+@    string on
+@    string loctype view
+@    string 0.822, 0.76
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 0.700000
+@    string def "Blaze (10 threads)"
+
+# Parallelization threshold
+@with string
+@    string on
+@    string loctype view
+@    string 0.74, 0.44
+@    string color 1
+@    string rot 90
+@    string font 4
+@    string just 0
+@    string char size 0.700000
+@    string def "Parallelization threshold"
+
+@r0 off
+@link r0 to g0
+@r0 type above
+@r0 linestyle 1
+@r0 linewidth 1.0
+@r0 color 1
+@r0 line 0, 0, 0, 0
+@r1 off
+@link r1 to g0
+@r1 type above
+@r1 linestyle 1
+@r1 linewidth 1.0
+@r1 color 1
+@r1 line 0, 0, 0, 0
+@r2 off
+@link r2 to g0
+@r2 type above
+@r2 linestyle 1
+@r2 linewidth 1.0
+@r2 color 1
+@r2 line 0, 0, 0, 0
+@r3 off
+@link r3 to g0
+@r3 type above
+@r3 linestyle 1
+@r3 linewidth 1.0
+@r3 color 1
+@r3 line 0, 0, 0, 0
+@r4 off
+@link r4 to g0
+@r4 type above
+@r4 linestyle 1
+@r4 linewidth 1.0
+@r4 color 1
+@r4 line 0, 0, 0, 0
+@g0 on
+@g0 hidden false
+@g0 type XY
+@g0 stacked false
+@g0 bar hgap 0.000000
+@g0 fixedpoint off
+@g0 fixedpoint type 0
+@g0 fixedpoint xy 0.000000, 0.000000
+@g0 fixedpoint format general general
+@g0 fixedpoint prec 6, 6
+@with g0
+@    world 1, 0, 10000, 24000
+@    stack world 0, 0, 0, 0
+@    znorm 1
+@    view 0.150000, 0.150000, 1.250000, 0.850000
+@    title ""
+@    title font 4
+@    title size 1.600000
+@    title color 1
+@    subtitle ""
+@    subtitle font 4
+@    subtitle size 1.250000
+@    subtitle color 1
+@    xaxes scale Logarithmic
+@    yaxes scale Normal
+@    xaxes invert off
+@    yaxes invert off
+@    xaxis  on
+@    xaxis  type zero false
+@    xaxis  offset 0.000000 , 0.000000
+@    xaxis  bar on
+@    xaxis  bar color 1
+@    xaxis  bar linestyle 1
+@    xaxis  bar linewidth 1.0
+@    xaxis  label "Matrix/Vector Size"
+@    xaxis  label layout para
+@    xaxis  label place spec
+@    xaxis  label place 0.010000, 0.080000
+@    xaxis  label char size 1.200000
+@    xaxis  label font 4
+@    xaxis  label color 1
+@    xaxis  label place normal
+@    xaxis  tick on
+@    xaxis  tick major 10
+@    xaxis  tick minor ticks 9
+@    xaxis  tick default 6
+@    xaxis  tick place rounded true
+@    xaxis  tick in
+@    xaxis  tick major size 0.500000
+@    xaxis  tick major color 1
+@    xaxis  tick major linewidth 2.0
+@    xaxis  tick major linestyle 1
+@    xaxis  tick major grid off
+@    xaxis  tick minor color 1
+@    xaxis  tick minor linewidth 2.0
+@    xaxis  tick minor linestyle 1
+@    xaxis  tick minor grid off
+@    xaxis  tick minor size 0.250000
+@    xaxis  ticklabel on
+@    xaxis  ticklabel format decimal
+@    xaxis  ticklabel prec 0
+@    xaxis  ticklabel formula ""
+@    xaxis  ticklabel append ""
+@    xaxis  ticklabel prepend ""
+@    xaxis  ticklabel angle 0
+@    xaxis  ticklabel skip 0
+@    xaxis  ticklabel stagger 0
+@    xaxis  ticklabel place normal
+@    xaxis  ticklabel offset auto
+@    xaxis  ticklabel offset 0.000000 , 0.010000
+@    xaxis  ticklabel start type auto
+@    xaxis  ticklabel start 0.000000
+@    xaxis  ticklabel stop type auto
+@    xaxis  ticklabel stop 0.000000
+@    xaxis  ticklabel char size 1.000000
+@    xaxis  ticklabel font 4
+@    xaxis  ticklabel color 1
+@    xaxis  tick place normal
+@    xaxis  tick spec type none
+@    yaxis  on
+@    yaxis  type zero false
+@    yaxis  offset 0.000000 , 0.000000
+@    yaxis  bar on
+@    yaxis  bar color 1
+@    yaxis  bar linestyle 1
+@    yaxis  bar linewidth 1.0
+@    yaxis  label "MFlop/s"
+@    yaxis  label layout para
+@    yaxis  label place auto
+@    yaxis  label char size 1.200000
+@    yaxis  label font 4
+@    yaxis  label color 1
+@    yaxis  label place normal
+@    yaxis  tick on
+@    yaxis  tick major 2000
+@    yaxis  tick minor ticks 0
+@    yaxis  tick default 6
+@    yaxis  tick place rounded true
+@    yaxis  tick in
+@    yaxis  tick major size 0.500000
+@    yaxis  tick major color 1
+@    yaxis  tick major linewidth 2.0
+@    yaxis  tick major linestyle 1
+@    yaxis  tick major grid off
+@    yaxis  tick minor color 1
+@    yaxis  tick minor linewidth 2.0
+@    yaxis  tick minor linestyle 1
+@    yaxis  tick minor grid off
+@    yaxis  tick minor size 0.250000
+@    yaxis  ticklabel on
+@    yaxis  ticklabel format decimal
+@    yaxis  ticklabel prec 0
+@    yaxis  ticklabel formula ""
+@    yaxis  ticklabel append ""
+@    yaxis  ticklabel prepend ""
+@    yaxis  ticklabel angle 0
+@    yaxis  ticklabel skip 0
+@    yaxis  ticklabel stagger 0
+@    yaxis  ticklabel place normal
+@    yaxis  ticklabel offset auto
+@    yaxis  ticklabel offset 0.000000 , 0.010000
+@    yaxis  ticklabel start type auto
+@    yaxis  ticklabel start 0.000000
+@    yaxis  ticklabel stop type auto
+@    yaxis  ticklabel stop 0.000000
+@    yaxis  ticklabel char size 1.000000
+@    yaxis  ticklabel font 4
+@    yaxis  ticklabel color 1
+@    yaxis  tick place both
+@    yaxis  tick spec type none
+@    altxaxis  off
+@    altyaxis  off
+@    legend on
+@    legend loctype view
+@    legend 0.2, 0.75
+@    legend box color 0
+@    legend box pattern 1
+@    legend box linewidth 1.0
+@    legend box linestyle 1
+@    legend box fill color 0
+@    legend box fill pattern 1
+@    legend font 4
+@    legend char size 1.000000
+@    legend color 1
+@    legend length 4
+@    legend vgap 1
+@    legend hgap 1
+@    legend invert false
+@    frame type 0
+@    frame linestyle 1
+@    frame linewidth 2.0
+@    frame color 1
+@    frame pattern 1
+@    frame background color 0
+@    frame background pattern 0
+
+# Blaze (10 threads)
+@    s1 hidden false
+@    s1 type xy
+@    s1 symbol 0
+@    s1 symbol size 1.000000
+@    s1 symbol color 2
+@    s1 symbol pattern 1
+@    s1 symbol fill color 2
+@    s1 symbol fill pattern 1
+@    s1 symbol linewidth 1.0
+@    s1 symbol linestyle 1
+@    s1 symbol char 65
+@    s1 symbol char font 4
+@    s1 symbol skip 0
+@    s1 line type 1
+@    s1 line linestyle 1
+@    s1 line linewidth 2.0
+@    s1 line color 2
+@    s1 line pattern 1
+@    s1 baseline type 0
+@    s1 baseline off
+@    s1 dropline off
+@    s1 fill type 0
+@    s1 fill rule 0
+@    s1 fill color 2
+@    s1 fill pattern 1
+@    s1 avalue off
+@    s1 avalue type 2
+@    s1 avalue char size 1.000000
+@    s1 avalue font 4
+@    s1 avalue color 1
+@    s1 avalue rot 0
+@    s1 avalue format general
+@    s1 avalue prec 3
+@    s1 avalue prepend ""
+@    s1 avalue append ""
+@    s1 avalue offset 0.000000 , 0.000000
+@    s1 errorbar on
+@    s1 errorbar place both
+@    s1 errorbar color 1
+@    s1 errorbar pattern 1
+@    s1 errorbar size 1.000000
+@    s1 errorbar linewidth 1.0
+@    s1 errorbar linestyle 1
+@    s1 errorbar riser linewidth 1.0
+@    s1 errorbar riser linestyle 1
+@    s1 errorbar riser clip off
+@    s1 errorbar riser clip length 0.100000
+@    s1 comment ""
+@    s1 legend  "Blaze (10 threads)"
+
+# Blaze (8 threads)
+@    s2 hidden false
+@    s2 type xy
+@    s2 symbol 0
+@    s2 symbol size 1.000000
+@    s2 symbol color 11
+@    s2 symbol pattern 1
+@    s2 symbol fill color 11
+@    s2 symbol fill pattern 1
+@    s2 symbol linewidth 1.0
+@    s2 symbol linestyle 1
+@    s2 symbol char 65
+@    s2 symbol char font 4
+@    s2 symbol skip 0
+@    s2 line type 1
+@    s2 line linestyle 1
+@    s2 line linewidth 2.0
+@    s2 line color 11
+@    s2 line pattern 1
+@    s2 baseline type 0
+@    s2 baseline off
+@    s2 dropline off
+@    s2 fill type 0
+@    s2 fill rule 0
+@    s2 fill color 11
+@    s2 fill pattern 1
+@    s2 avalue off
+@    s2 avalue type 2
+@    s2 avalue char size 1.000000
+@    s2 avalue font 4
+@    s2 avalue color 1
+@    s2 avalue rot 0
+@    s2 avalue format general
+@    s2 avalue prec 3
+@    s2 avalue prepend ""
+@    s2 avalue append ""
+@    s2 avalue offset 0.000000 , 0.000000
+@    s2 errorbar on
+@    s2 errorbar place both
+@    s2 errorbar color 1
+@    s2 errorbar pattern 1
+@    s2 errorbar size 1.000000
+@    s2 errorbar linewidth 1.0
+@    s2 errorbar linestyle 1
+@    s2 errorbar riser linewidth 1.0
+@    s2 errorbar riser linestyle 1
+@    s2 errorbar riser clip off
+@    s2 errorbar riser clip length 0.100000
+@    s2 comment ""
+@    s2 legend  "Blaze (8 threads)"
+
+# Blaze (4 threads)
+@    s3 hidden false
+@    s3 type xy
+@    s3 symbol 0
+@    s3 symbol size 1.000000
+@    s3 symbol color 3
+@    s3 symbol pattern 1
+@    s3 symbol fill color 3
+@    s3 symbol fill pattern 1
+@    s3 symbol linewidth 1.0
+@    s3 symbol linestyle 1
+@    s3 symbol char 65
+@    s3 symbol char font 4
+@    s3 symbol skip 0
+@    s3 line type 1
+@    s3 line linestyle 1
+@    s3 line linewidth 2.0
+@    s3 line color 3
+@    s3 line pattern 1
+@    s3 baseline type 0
+@    s3 baseline off
+@    s3 dropline off
+@    s3 fill type 0
+@    s3 fill rule 0
+@    s3 fill color 3
+@    s3 fill pattern 1
+@    s3 avalue off
+@    s3 avalue type 2
+@    s3 avalue char size 1.000000
+@    s3 avalue font 4
+@    s3 avalue color 1
+@    s3 avalue rot 0
+@    s3 avalue format general
+@    s3 avalue prec 3
+@    s3 avalue prepend ""
+@    s3 avalue append ""
+@    s3 avalue offset 0.000000 , 0.000000
+@    s3 errorbar on
+@    s3 errorbar place both
+@    s3 errorbar color 1
+@    s3 errorbar pattern 1
+@    s3 errorbar size 1.000000
+@    s3 errorbar linewidth 1.0
+@    s3 errorbar linestyle 1
+@    s3 errorbar riser linewidth 1.0
+@    s3 errorbar riser linestyle 1
+@    s3 errorbar riser clip off
+@    s3 errorbar riser clip length 0.100000
+@    s3 comment ""
+@    s3 legend  "Blaze (4 threads)"
+
+# Blaze (2 threads)
+@    s4 hidden false
+@    s4 type xy
+@    s4 symbol 0
+@    s4 symbol size 1.000000
+@    s4 symbol color 4
+@    s4 symbol pattern 1
+@    s4 symbol fill color 4
+@    s4 symbol fill pattern 1
+@    s4 symbol linewidth 1.0
+@    s4 symbol linestyle 1
+@    s4 symbol char 65
+@    s4 symbol char font 4
+@    s4 symbol skip 0
+@    s4 line type 1
+@    s4 line linestyle 1
+@    s4 line linewidth 2.0
+@    s4 line color 4
+@    s4 line pattern 1
+@    s4 baseline type 0
+@    s4 baseline off
+@    s4 dropline off
+@    s4 fill type 0
+@    s4 fill rule 0
+@    s4 fill color 4
+@    s4 fill pattern 1
+@    s4 avalue off
+@    s4 avalue type 2
+@    s4 avalue char size 1.000000
+@    s4 avalue font 4
+@    s4 avalue color 1
+@    s4 avalue rot 0
+@    s4 avalue format general
+@    s4 avalue prec 3
+@    s4 avalue prepend ""
+@    s4 avalue append ""
+@    s4 avalue offset 0.000000 , 0.000000
+@    s4 errorbar on
+@    s4 errorbar place both
+@    s4 errorbar color 1
+@    s4 errorbar pattern 1
+@    s4 errorbar size 1.000000
+@    s4 errorbar linewidth 1.0
+@    s4 errorbar linestyle 1
+@    s4 errorbar riser linewidth 1.0
+@    s4 errorbar riser linestyle 1
+@    s4 errorbar riser clip off
+@    s4 errorbar riser clip length 0.100000
+@    s4 comment ""
+@    s4 legend  "Blaze (2 threads)"
+
+# Blaze (1 thread)
+@    s5 hidden false
+@    s5 type xy
+@    s5 symbol 0
+@    s5 symbol size 1.000000
+@    s5 symbol color 8
+@    s5 symbol pattern 1
+@    s5 symbol fill color 8
+@    s5 symbol fill pattern 1
+@    s5 symbol linewidth 1.0
+@    s5 symbol linestyle 1
+@    s5 symbol char 65
+@    s5 symbol char font 4
+@    s5 symbol skip 0
+@    s5 line type 1
+@    s5 line linestyle 1
+@    s5 line linewidth 2.0
+@    s5 line color 8
+@    s5 line pattern 1
+@    s5 baseline type 0
+@    s5 baseline off
+@    s5 dropline off
+@    s5 fill type 0
+@    s5 fill rule 0
+@    s5 fill color 8
+@    s5 fill pattern 1
+@    s5 avalue off
+@    s5 avalue type 2
+@    s5 avalue char size 1.000000
+@    s5 avalue font 4
+@    s5 avalue color 1
+@    s5 avalue rot 0
+@    s5 avalue format general
+@    s5 avalue prec 3
+@    s5 avalue prepend ""
+@    s5 avalue append ""
+@    s5 avalue offset 0.000000 , 0.000000
+@    s5 errorbar on
+@    s5 errorbar place both
+@    s5 errorbar color 1
+@    s5 errorbar pattern 1
+@    s5 errorbar size 1.000000
+@    s5 errorbar linewidth 1.0
+@    s5 errorbar linestyle 1
+@    s5 errorbar riser linewidth 1.0
+@    s5 errorbar riser linestyle 1
+@    s5 errorbar riser clip off
+@    s5 errorbar riser clip length 0.100000
+@    s5 comment ""
+@    s5 legend  "Blaze (1 thread)"
+
+# Parallelization threshold
+@    s6 hidden false
+@    s6 type xy
+@    s6 symbol 0
+@    s6 symbol size 0.400000
+@    s6 symbol color 1
+@    s6 symbol pattern 1
+@    s6 symbol fill color 1
+@    s6 symbol fill pattern 1
+@    s6 symbol linewidth 1.0
+@    s6 symbol linestyle 1
+@    s6 symbol char 65
+@    s6 symbol char font 4
+@    s6 symbol skip 0
+@    s6 line type 1
+@    s6 line linestyle 3
+@    s6 line linewidth 2.0
+@    s6 line color 1
+@    s6 line pattern 1
+@    s6 baseline type 0
+@    s6 baseline off
+@    s6 dropline off
+@    s6 fill type 0
+@    s6 fill rule 0
+@    s6 fill color 1
+@    s6 fill pattern 1
+@    s6 avalue off
+@    s6 avalue type 2
+@    s6 avalue char size 1.000000
+@    s6 avalue font 4
+@    s6 avalue color 1
+@    s6 avalue rot 0
+@    s6 avalue format general
+@    s6 avalue prec 3
+@    s6 avalue prepend ""
+@    s6 avalue append ""
+@    s6 avalue offset 0.000000 , 0.000000
+@    s6 errorbar on
+@    s6 errorbar place both
+@    s6 errorbar color 1
+@    s6 errorbar pattern 1
+@    s6 errorbar size 1.000000
+@    s6 errorbar linewidth 1.0
+@    s6 errorbar linestyle 1
+@    s6 errorbar riser linewidth 1.0
+@    s6 errorbar riser linestyle 1
+@    s6 errorbar riser clip off
+@    s6 errorbar riser clip length 0.100000
+@    s6 comment ""
+@    s6 legend  ""
+
+
+# Blaze (10 threads)
+@target G0.S1
+@type xy
+     1           84.4676
+     2           470.572
+     3           1097.96
+     4           1921.49
+     5           2470.74
+     6           3370.92
+     7           4344.79
+     8           5377.94
+     9           5981.21
+     10          6795.85
+     11          7753.82
+     12          8527.36
+     13          8324.28
+     14          9149.72
+     15          9961.04
+     16          10769.5
+     17          7885.62
+     18          8440.66
+     19          8939.13
+     20          9490.85
+     22          9376.42
+     24          10470.8
+     26          10128.4
+     28          10967.7
+     30          12457.8
+     33          10494.5
+     36          11392.2
+     39          11231.1
+     42          11488
+     46          12156.1
+     50          10999.9
+     55          11108.1
+     60          10937
+     66          7571.13
+     72          6584.55
+     79          6446.07
+     86          6238.48
+     94          6345.76
+     103         6464.78
+     113         6382.71
+     124         6601.69
+     136         6793.91
+     149         6520.14
+     163         6683.1
+     179         7802.93
+     196         9193.3
+     215         9987.69
+     236         12423.2
+     259         13451.9
+     284         15767.7
+     312         18444.1
+     343         8298.38
+     377         18148.1
+     414         11714.4
+     455         10485.4
+     500         12501.5
+     550         17312.7
+     605         11779.2
+     665         15229
+     731         16295.7
+     804         15235.2
+     884         16440.2
+     972         16489.7
+     1069        18433.3
+     1175        22516.4
+     1292        19161.4
+     1421        18798.6
+     1563        19469.3
+     1719        21876.6
+     1890        19063.3
+     2079        13559.5
+     2286        9921.35
+     2514        8317.11
+     2765        7790.88
+     3041        7598.43
+     3345        7575.44
+     3679        7661.65
+     4046        7750.4
+     4450        7696.17
+     4895        7799.22
+     5384        7851.33
+     5922        7893.91
+     6514        7939.82
+     7165        7980.04
+     7881        7969.26
+     8669        7952.28
+     9535        8106.54
+     10000       8139.61
+&
+
+# Blaze (8 threads)
+@target G0.S2
+@type xy
+     1           84.4676
+     2           470.572
+     3           1097.96
+     4           1921.49
+     5           2470.74
+     6           3370.92
+     7           4344.79
+     8           5377.94
+     9           5981.21
+     10          6795.85
+     11          7753.82
+     12          8527.36
+     13          8324.28
+     14          9149.72
+     15          9961.04
+     16          10769.5
+     17          7885.62
+     18          8440.66
+     19          8939.13
+     20          9490.85
+     22          9376.42
+     24          10470.8
+     26          10128.4
+     28          10967.7
+     30          12457.8
+     33          10494.5
+     36          11392.2
+     39          11231.1
+     42          11488
+     46          12156.1
+     50          10999.9
+     55          11108.1
+     60          10937
+     66          7571.13
+     72          6584.55
+     79          6446.07
+     86          6238.48
+     94          6345.76
+     103         6464.78
+     113         6382.71
+     124         6601.69
+     136         6793.91
+     149         6520.14
+     163         6727.63
+     179         8097.04
+     196         9081.1
+     215         10828.4
+     236         12951.9
+     259         13104.3
+     284         6403.05
+     312         8270.6
+     343         10028.6
+     377         9027.63
+     414         9690.27
+     455         11687.2
+     500         10578.4
+     550         10039.2
+     605         12521.2
+     665         13216.5
+     731         14483.7
+     804         18885
+     884         13516.5
+     972         16791.5
+     1069        18701.2
+     1175        17411.8
+     1292        18463.3
+     1421        19266.1
+     1563        20209.6
+     1719        19420.5
+     1890        18036.4
+     2079        13778.4
+     2286        10890.4
+     2514        9263.26
+     2765        8533.41
+     3041        8119.34
+     3345        8256.44
+     3679        8318.82
+     4046        8306.87
+     4450        8253.54
+     4895        8376.83
+     5384        8387.35
+     5922        8489.78
+     6514        8535.72
+     7165        8491.55
+     7881        8587.48
+     8669        8625.34
+     9535        8793.34
+     10000       8818.78
+&
+
+# Blaze (4 threads)
+@target G0.S3
+@type xy
+     1           84.4676
+     2           470.572
+     3           1097.96
+     4           1921.49
+     5           2470.74
+     6           3370.92
+     7           4344.79
+     8           5377.94
+     9           5981.21
+     10          6795.85
+     11          7753.82
+     12          8527.36
+     13          8324.28
+     14          9149.72
+     15          9961.04
+     16          10769.5
+     17          7885.62
+     18          8440.66
+     19          8939.13
+     20          9490.85
+     22          9376.42
+     24          10470.8
+     26          10128.4
+     28          10967.7
+     30          12457.8
+     33          10494.5
+     36          11392.2
+     39          11231.1
+     42          11488
+     46          12156.1
+     50          10999.9
+     55          11108.1
+     60          10937
+     66          7571.13
+     72          6584.55
+     79          6446.07
+     86          6238.48
+     94          6345.76
+     103         6464.78
+     113         6382.71
+     124         6601.69
+     136         6793.91
+     149         6520.14
+     163         7352.69
+     179         8149.76
+     196         6169.15
+     215         5730.16
+     236         7897.76
+     259         6009.05
+     284         8562.82
+     312         6283.95
+     343         6504.06
+     377         8463.64
+     414         7274.9
+     455         9135.39
+     500         8144.64
+     550         11622.8
+     605         8622.41
+     665         9376.22
+     731         9557.1
+     804         13215.2
+     884         11138.2
+     972         12821.5
+     1069        13218
+     1175        14814.6
+     1292        13138.4
+     1421        16483.4
+     1563        13537.9
+     1719        14905.6
+     1890        14030.2
+     2079        12082.3
+     2286        9064.55
+     2514        7445.04
+     2765        6989.32
+     3041        6721.64
+     3345        6683.83
+     3679        6506.28
+     4046        6524.02
+     4450        6414.18
+     4895        6528.07
+     5384        6616.16
+     5922        6557.58
+     6514        6558.13
+     7165        6509.35
+     7881        6608.44
+     8669        6767.82
+     9535        6725.06
+     10000       6807.67
+&
+
+# Blaze (2 threads)
+@target G0.S4
+@type xy
+     1           84.4676
+     2           470.572
+     3           1097.96
+     4           1921.49
+     5           2470.74
+     6           3370.92
+     7           4344.79
+     8           5377.94
+     9           5981.21
+     10          6795.85
+     11          7753.82
+     12          8527.36
+     13          8324.28
+     14          9149.72
+     15          9961.04
+     16          10769.5
+     17          7885.62
+     18          8440.66
+     19          8939.13
+     20          9490.85
+     22          9376.42
+     24          10470.8
+     26          10128.4
+     28          10967.7
+     30          12457.8
+     33          10494.5
+     36          11392.2
+     39          11231.1
+     42          11488
+     46          12156.1
+     50          10999.9
+     55          11108.1
+     60          10937
+     66          7571.13
+     72          6584.55
+     79          6446.07
+     86          6238.48
+     94          6345.76
+     103         6464.78
+     113         6382.71
+     124         6601.69
+     136         6793.91
+     149         6520.14
+     163         3910.6
+     179         4055.1
+     196         3959.58
+     215         4363.41
+     236         4878.78
+     259         4529
+     284         4350.27
+     312         6714.47
+     343         6658.34
+     377         5695.61
+     414         5413.39
+     455         6132.02
+     500         8306.55
+     550         6635.74
+     605         6496.34
+     665         6406.49
+     731         7037.61
+     804         6698.54
+     884         7276.65
+     972         7030.89
+     1069        7755.05
+     1175        8055.25
+     1292        8527.18
+     1421        8134.78
+     1563        8179.08
+     1719        8041.99
+     1890        7344.36
+     2079        6299.64
+     2286        5298.67
+     2514        4740.44
+     2765        4512.82
+     3041        4167.06
+     3345        4024.96
+     3679        3918.14
+     4046        3987.46
+     4450        3863.4
+     4895        3954.57
+     5384        4015.89
+     5922        3907.42
+     6514        3900.47
+     7165        3668.45
+     7881        3637.39
+     8669        3814.74
+     9535        3844.29
+     10000       3914.37
+&
+
+# Blaze (1 thread)
+@target G0.S5
+@type xy
+     1           84.4676
+     2           470.572
+     3           1097.96
+     4           1921.49
+     5           2470.74
+     6           3370.92
+     7           4344.79
+     8           5377.94
+     9           5981.21
+     10          6795.85
+     11          7753.82
+     12          8527.36
+     13          8324.28
+     14          9149.72
+     15          9961.04
+     16          10769.5
+     17          7885.62
+     18          8440.66
+     19          8939.13
+     20          9490.85
+     22          9376.42
+     24          10470.8
+     26          10128.4
+     28          10967.7
+     30          12457.8
+     33          10494.5
+     36          11392.2
+     39          11231.1
+     42          11488
+     46          12156.1
+     50          10999.9
+     55          11108.1
+     60          10937
+     66          7571.13
+     72          6584.55
+     79          6446.07
+     86          6238.48
+     94          6345.76
+     103         6464.78
+     113         6382.71
+     124         6601.69
+     136         6793.91
+     149         6520.14
+     163         5988.56
+     179         5943.46
+     196         5303.81
+     215         5004.3
+     236         4921.73
+     259         4856.31
+     284         4865.94
+     312         4964.84
+     343         4909.22
+     377         4874.32
+     414         4937.93
+     455         4979.1
+     500         4959.74
+     550         4960.24
+     605         5001.81
+     665         4918.43
+     731         4892.47
+     804         4810.03
+     884         4679.88
+     972         4694.95
+     1069        4663.85
+     1175        4587.51
+     1292        4535.62
+     1421        4582.97
+     1563        4543.05
+     1719        4260.13
+     1890        3685.69
+     2079        3186.74
+     2286        2943.19
+     2514        2823.74
+     2765        2824.82
+     3041        2820.3
+     3345        2853.81
+     3679        2814.43
+     4046        2808.91
+     4450        2780.81
+     4895        2794.47
+     5384        2776.59
+     5922        2711.59
+     6514        2654.18
+     7165        2521.57
+     7881        2404.76
+     8669        2409.22
+     9535        2320.72
+     10000       2322.5
+&
+
+@target G0.S6
+@type xy
+        149            0
+        149       180000
+&
+
