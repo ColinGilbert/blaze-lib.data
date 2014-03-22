@@ -34,8 +34,8 @@
 
 
 # Release information
-MAJOR=1
-MINOR=4
+MAJOR=2
+MINOR=0
 
 
 
@@ -48,7 +48,7 @@ mkdir blaze-$MAJOR.$MINOR
 mkdir blaze-docu-$MAJOR.$MINOR
 git clone http://code.google.com/p/blaze-lib ./blaze-$MAJOR.$MINOR
 cd blaze-$MAJOR.$MINOR
-rm -rf .git
+rm -rf .git .gitignore
 find * -type f -iname ".gitignore" -exec rm -f {} \;
 cd ..
 tar czf blaze-$MAJOR.$MINOR.tar.gz ./blaze-$MAJOR.$MINOR
